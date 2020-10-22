@@ -18,17 +18,11 @@ Actors:&#xD;
 	Secondary: &lt;none>&#xD;
 Pre-Condition: The app has to be installed in the phone.&#xD;
 Main flow:&#xD;
-1. The UC starts when the client uses the ticket in the ticket validation machine.&#xD;
-2. Include &lt;Validate ticket>&#xD;
-3. The system records the entrance.&#xD;
-4. The system opens the door.&#xD;
-5. The system detects that the ticket owner passes.&#xD;
-6. The system closes the door.&#xD;
-7. The UC ends.&#xD;
 &#xD;
-Alternative flows: Ticket is not readable; Ticket is expired; Not enough credit.&#xD;
 &#xD;
-Post-Conditions: The entrance is recorded.&#xD;
+Alternative flows: &#xD;
+&#xD;
+Post-Conditions: &#xD;
 &#xD;
 </body>
       </ownedComment>
