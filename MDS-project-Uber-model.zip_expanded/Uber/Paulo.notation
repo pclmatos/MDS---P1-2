@@ -4,9 +4,9 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="_df6csQ2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_df6csg2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_df6csw2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_foB_wA2ZEeujq4q3EywG0A" type="PapyrusUMLActivityDiagram" name="ActivityDiagram1" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_foB_wQ2ZEeujq4q3EywG0A" type="Activity_Shape">
@@ -30,15 +30,15 @@
       <children xmi:type="notation:BasicCompartment" xmi:id="_foB_0A2ZEeujq4q3EywG0A" type="Activity_ActivityNodeCompartment">
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_foB_0Q2ZEeujq4q3EywG0A"/>
       </children>
-      <element xmi:type="uml:Activity" href="collaborator4.uml#_e2lUsA2ZEeujq4q3EywG0A"/>
+      <element xmi:type="uml:Activity" href="Paulo.uml#_e2lUsA2ZEeujq4q3EywG0A"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_foB_0g2ZEeujq4q3EywG0A"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_foB_0w2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_foB_1A2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_foB_1Q2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.activity">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Activity" href="collaborator4.uml#_e2lUsA2ZEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Activity" href="Paulo.uml#_e2lUsA2ZEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_hTA64A2ZEeujq4q3EywG0A" type="PapyrusUMLActivityDiagram" name="ActivityDiagram2" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_hTA64Q2ZEeujq4q3EywG0A" type="Activity_Shape">
@@ -62,31 +62,31 @@
       <children xmi:type="notation:BasicCompartment" xmi:id="_hTA68A2ZEeujq4q3EywG0A" type="Activity_ActivityNodeCompartment">
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hTA68Q2ZEeujq4q3EywG0A"/>
       </children>
-      <element xmi:type="uml:Activity" href="collaborator4.uml#_ggstIA2ZEeujq4q3EywG0A"/>
+      <element xmi:type="uml:Activity" href="Paulo.uml#_ggstIA2ZEeujq4q3EywG0A"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hTA68g2ZEeujq4q3EywG0A"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_hTA68w2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_hTA69A2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_hTA69Q2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.activity">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Activity" href="collaborator4.uml#_ggstIA2ZEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Activity" href="Paulo.uml#_ggstIA2ZEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_j1RcQA2ZEeujq4q3EywG0A" type="PapyrusUMLClassDiagram" name="ClassDiagram-Analysis" measurementUnit="Pixel">
     <styles xmi:type="notation:StringValueStyle" xmi:id="_j1RcQQ2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_j1RcQg2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_j1RcQw2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_l-xfYA2ZEeujq4q3EywG0A" type="PapyrusUMLClassDiagram" name="ClassDiagram-Design" measurementUnit="Pixel">
     <styles xmi:type="notation:StringValueStyle" xmi:id="_l-xfYQ2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_l-xfYg2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_l-xfYw2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_pR2ZsA2ZEeujq4q3EywG0A" type="PapyrusUMLSequenceDiagram" name="SequenceDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_pR2ZsQ2ZEeujq4q3EywG0A" type="Interaction_Shape">
@@ -94,15 +94,15 @@
       <children xmi:type="notation:BasicCompartment" xmi:id="_pR2Zsw2ZEeujq4q3EywG0A" type="Interaction_SubfragmentCompartment">
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pR2ZtA2ZEeujq4q3EywG0A"/>
       </children>
-      <element xmi:type="uml:Interaction" href="collaborator4.uml#_owSkwA2ZEeujq4q3EywG0A"/>
+      <element xmi:type="uml:Interaction" href="Paulo.uml#_owSkwA2ZEeujq4q3EywG0A"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pR2ZtQ2ZEeujq4q3EywG0A"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_pR2Ztg2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_pR2Ztw2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_pR2ZuA2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Interaction" href="collaborator4.uml#_owSkwA2ZEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Interaction" href="Paulo.uml#_owSkwA2ZEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_sUtGsA2ZEeujq4q3EywG0A" type="PapyrusUMLStateMachineDiagram" name="StateMachineDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_sUtGsQ2ZEeujq4q3EywG0A" type="StateMachine_Shape">
@@ -117,35 +117,35 @@
           <children xmi:type="notation:BasicCompartment" xmi:id="_sUtGuA2ZEeujq4q3EywG0A" type="Region_SubvertexCompartment">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUtGuQ2ZEeujq4q3EywG0A"/>
           </children>
-          <element xmi:type="uml:Region" href="collaborator4.uml#_sUsfoA2ZEeujq4q3EywG0A"/>
+          <element xmi:type="uml:Region" href="Paulo.uml#_sUsfoA2ZEeujq4q3EywG0A"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUtGug2ZEeujq4q3EywG0A" width="700" height="280"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUtGuw2ZEeujq4q3EywG0A" y="21" width="700" height="279"/>
       </children>
-      <element xmi:type="uml:StateMachine" href="collaborator4.uml#_raorIA2ZEeujq4q3EywG0A"/>
+      <element xmi:type="uml:StateMachine" href="Paulo.uml#_raorIA2ZEeujq4q3EywG0A"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUtGvA2ZEeujq4q3EywG0A" x="30" y="30" width="700" height="300"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_sUtGvQ2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_sUtGvg2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_sUtGvw2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.stateMachine">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:StateMachine" href="collaborator4.uml#_raorIA2ZEeujq4q3EywG0A"/>
+    <element xmi:type="uml:StateMachine" href="Paulo.uml#_raorIA2ZEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_uEGnwA2ZEeujq4q3EywG0A" type="PapyrusUMLComponentDiagram" name="ComponentDiagram" measurementUnit="Pixel">
     <styles xmi:type="notation:StringValueStyle" xmi:id="_uEGnwQ2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_uEGnwg2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_uEGnww2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.component.root.package">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
   </notation:Diagram>
   <notation:Diagram xmi:id="_v7ve0A2ZEeujq4q3EywG0A" type="PapyrusUMLDeploymentDiagram" name="DeploymentDiagram" measurementUnit="Pixel">
     <styles xmi:type="notation:StringValueStyle" xmi:id="_v7ve0Q2ZEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_v7ve0g2ZEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_v7ve0w2ZEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.deployment">
-      <owner xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+      <owner xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
     </styles>
-    <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
+    <element xmi:type="uml:Package" href="Paulo.uml#_Q3mgEA2TEeujq4q3EywG0A"/>
   </notation:Diagram>
 </xmi:XMI>
