@@ -7,4 +7,5 @@
     <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="__YZjABVNEeujntGF9gahBg" name="Uber Bike"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GTnMMBVPEeujntGF9gahBg" name="Client"/>
 </uml:Package>
