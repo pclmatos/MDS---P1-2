@@ -9,20 +9,25 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_xqfeEBSIEeukDa0C09SSww" name="UberRides">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_5QHysBSIEeukDa0C09SSww" name="Setup Ride"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_894BYBSJEeukDa0C09SSww" name="Accept Ride"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_FmD_MBSKEeukDa0C09SSww" name="Create Account">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_FmD_MBSKEeukDa0C09SSww" name="Create User Account">
       <ownedComment xmi:type="uml:Comment" xmi:id="_VZbtIBSREeukDa0C09SSww">
-        <body>Name: Create Account&#xD;
-Description: This UC creates a new account in the system.&#xD;
+        <body>Name: Create User Account&#xD;
+Description: This UC creates a new user account in the system.&#xD;
 Actors:&#xD;
-	Main: User wothout account&#xD;
+	Main: User without account&#xD;
 	Secondary: &lt;none>&#xD;
-Pre-Condition: The app has to be installed in the phone.&#xD;
+Pre-Condition: The app has to be installed on the phone. Password has to be valid.&#xD;
 Main flow:&#xD;
+1. This UC starts when the user opens the app for the first time.&#xD;
+2. The user is asked to create an account.&#xD;
+3. The user writes his email address, his name, his password and his phone number.&#xD;
+4. Include &lt;Validate Password>&#xD;
+5. The user chooses the payment method he wants to use to pay his trips.&#xD;
+6. The UC ends.&#xD;
 &#xD;
+Alternative flows: Password is not valid.&#xD;
 &#xD;
-Alternative flows: &#xD;
-&#xD;
-Post-Conditions: &#xD;
+Post-Conditions: The system logs the user in.&#xD;
 &#xD;
 </body>
       </ownedComment>
@@ -30,9 +35,82 @@ Post-Conditions: &#xD;
     <packagedElement xmi:type="uml:UseCase" xmi:id="_DnBYQBSNEeukDa0C09SSww" name="Pickup User"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_VH0gEBSOEeukDa0C09SSww" name="Rate Driver"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_fNhS0BSQEeukDa0C09SSww" name="Drive To Destination"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_i4izEBSQEeukDa0C09SSww" name="Wait For Driver To Arrive"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_60DxABSQEeukDa0C09SSww" name="Enter Car"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_-XliIBSQEeukDa0C09SSww" name="Get Out Of Car"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-XliIBSQEeukDa0C09SSww" name="Exit Car"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4gCLkBUiEeu0_vsCmRFoAg" name="Validate Password">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ZK104BUjEeu0_vsCmRFoAg">
+        <body>Name: Validate Password&#xD;
+Description: This UC checks if the password is valid.&#xD;
+Actors:&#xD;
+	Main: User without account&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: &#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+Actors:&#xD;
+	Main: User without account&#xD;
+	Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is not valid and asks the client to repeat.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about password's validation&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="__AMF4BUiEeu0_vsCmRFoAg" name="&lt;include>" client="_FmD_MBSKEeukDa0C09SSww" supplier="_4gCLkBUiEeu0_vsCmRFoAg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GOrF0BUjEeu0_vsCmRFoAg" name="Login">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_WViCYBUoEeu0_vsCmRFoAg">
+        <body>Name: Login&#xD;
+Description: This UC authenticates the user.&#xD;
+Actors:&#xD;
+	Main: Usert&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: User must have an account.&#xD;
+Main flow:&#xD;
+1. The UC starts when the user opens the app.&#xD;
+2. The systems prompts an authentication screen.&#xD;
+3. The user inputs the account email and password.&#xD;
+4. &#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+Post-Conditions: The system logs the user in.&#xD;
+&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4hO2sBUoEeu0_vsCmRFoAg" name="Create Driver Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_BajAwBUpEeu0_vsCmRFoAg">
+        <body>Name: Create Driver Account&#xD;
+Description: This UC creates a new driver account in the system.&#xD;
+Actors:&#xD;
+	Main: Driver without account&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. Password has to be valid. The driver needs to have a driving license. The driver's license date has to be lower then the current threshold.&#xD;
+Main flow:&#xD;
+1. This UC starts when the user opens the app for the first time.&#xD;
+2. The driver is asked to create an account.&#xD;
+3. The driver writes his email address, his name, his password and his phone number.&#xD;
+4. Include &lt;Validate Password>&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+Post-Conditions: The system logs the user in.&#xD;
+&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-vz40BUoEeu0_vsCmRFoAg" name="&lt;include>" client="_4hO2sBUoEeu0_vsCmRFoAg" supplier="_4gCLkBUiEeu0_vsCmRFoAg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oyAvUBUpEeu0_vsCmRFoAg" name="Register car"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_1bylcBSIEeukDa0C09SSww" name="User"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_1ttb4BSIEeukDa0C09SSww" name="Driver"/>
@@ -79,13 +157,6 @@ Post-Conditions: &#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_hikeoBSQEeukDa0C09SSww" name="driver" type="_1ttb4BSIEeukDa0C09SSww" association="_hijQgBSQEeukDa0C09SSww"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_hikeoRSQEeukDa0C09SSww" name="drive to destination" type="_fNhS0BSQEeukDa0C09SSww" association="_hijQgBSQEeukDa0C09SSww"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_14B74BSQEeukDa0C09SSww" memberEnd="_14Ci8hSQEeukDa0C09SSww _14Ci8xSQEeukDa0C09SSww">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_14Ci8BSQEeukDa0C09SSww" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_14Ci8RSQEeukDa0C09SSww" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_14Ci8hSQEeukDa0C09SSww" name="user" type="_1bylcBSIEeukDa0C09SSww" association="_14B74BSQEeukDa0C09SSww"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_14Ci8xSQEeukDa0C09SSww" name="wait for driver arrival" type="_i4izEBSQEeukDa0C09SSww" association="_14B74BSQEeukDa0C09SSww"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_8ig24BSQEeukDa0C09SSww" memberEnd="_8ihd8BSQEeukDa0C09SSww _8ihd8RSQEeukDa0C09SSww">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8ig24RSQEeukDa0C09SSww" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8ig24hSQEeukDa0C09SSww" key="nature" value="UML_Nature"/>
@@ -99,5 +170,20 @@ Post-Conditions: &#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_ClyA4hSREeukDa0C09SSww" name="user" type="_1bylcBSIEeukDa0C09SSww" association="_ClxZ0BSREeukDa0C09SSww"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_ClyA4xSREeukDa0C09SSww" name="get out of car" type="_-XliIBSQEeukDa0C09SSww" association="_ClxZ0BSREeukDa0C09SSww"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LDPoEBUjEeu0_vsCmRFoAg" memberEnd="_LDT5gBUjEeu0_vsCmRFoAg _LDUgkBUjEeu0_vsCmRFoAg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LDSEUBUjEeu0_vsCmRFoAg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LDSrYBUjEeu0_vsCmRFoAg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LDT5gBUjEeu0_vsCmRFoAg" name="user" type="_1bylcBSIEeukDa0C09SSww" association="_LDPoEBUjEeu0_vsCmRFoAg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LDUgkBUjEeu0_vsCmRFoAg" name="login" type="_GOrF0BUjEeu0_vsCmRFoAg" association="_LDPoEBUjEeu0_vsCmRFoAg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Z9hcwBUoEeu0_vsCmRFoAg" name="Driver without account"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cc1X0BUoEeu0_vsCmRFoAg" memberEnd="_cc3NABUoEeu0_vsCmRFoAg _cc30EBUoEeu0_vsCmRFoAg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cc2l8BUoEeu0_vsCmRFoAg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cc2l8RUoEeu0_vsCmRFoAg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cc3NABUoEeu0_vsCmRFoAg" name="driver without account" type="_Z9hcwBUoEeu0_vsCmRFoAg" association="_cc1X0BUoEeu0_vsCmRFoAg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cc30EBUoEeu0_vsCmRFoAg" name="create account" type="_4hO2sBUoEeu0_vsCmRFoAg" association="_cc1X0BUoEeu0_vsCmRFoAg"/>
   </packagedElement>
 </uml:Package>
