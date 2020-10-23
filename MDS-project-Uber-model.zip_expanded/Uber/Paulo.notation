@@ -154,7 +154,7 @@
             <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_5QUnAxSIEeukDa0C09SSww"/>
           </children>
           <element xmi:type="uml:UseCase" href="Paulo.uml#_5QHysBSIEeukDa0C09SSww"/>
-          <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_5QRjsRSIEeukDa0C09SSww" x="18" y="216"/>
+          <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_5QRjsRSIEeukDa0C09SSww" x="5" y="223"/>
         </children>
         <children xmi:type="notation_1:Shape" xmi:id="_8-Gq4BSJEeukDa0C09SSww" type="UseCase_Shape_CN">
           <children xmi:type="notation_1:DecorationNode" xmi:id="_8-Gq4hSJEeukDa0C09SSww" type="UseCase_NameLabel_CN"/>
@@ -271,7 +271,7 @@
             <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_GO69dRUjEeu0_vsCmRFoAg"/>
           </children>
           <element xmi:type="uml:UseCase" href="Paulo.uml#_GOrF0BUjEeu0_vsCmRFoAg"/>
-          <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_GO6WYRUjEeu0_vsCmRFoAg" x="5" y="143"/>
+          <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_GO6WYRUjEeu0_vsCmRFoAg" x="25" y="143"/>
         </children>
         <children xmi:type="notation_1:Shape" xmi:id="_4hfVYBUoEeu0_vsCmRFoAg" type="UseCase_Shape_CN">
           <children xmi:type="notation_1:DecorationNode" xmi:id="_4hfVYhUoEeu0_vsCmRFoAg" type="UseCase_NameLabel_CN"/>
