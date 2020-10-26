@@ -6,6 +6,9 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_sUsfoA2ZEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_PnQUEBe7EeuXq-tJP09PJw" name="UseCase5"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_PxNhUBe7EeuXq-tJP09PJw" name="UseCase6"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_dFfa0Be7EeuXq-tJP09PJw" name="UberRides">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PxNhUBe7EeuXq-tJP09PJw" name="UseCase6"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PnQUEBe7EeuXq-tJP09PJw" name="UseCase5"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lHj-YBe8EeuxvcKDEk6LAw" name="UseCase3"/>
+  </packagedElement>
 </uml:Package>
