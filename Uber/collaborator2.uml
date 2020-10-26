@@ -6,4 +6,5 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_QxBksA2YEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_SG810A2YEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_cv3AsBfJEeu4ZvH4Leh-1w" name="Uber Freight"/>
 </uml:Package>

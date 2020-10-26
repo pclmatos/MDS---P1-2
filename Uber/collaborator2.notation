@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <notation:Diagram xmi:id="_5yz8gA2XEeujq4q3EywG0A" type="UseCase" name="UseCaseDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_cwIGcBfJEeu4ZvH4Leh-1w" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cwbocBfJEeu4ZvH4Leh-1w" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_cwcPgBfJEeu4ZvH4Leh-1w" type="Package_PackagedElementCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cwcPgRfJEeu4ZvH4Leh-1w"/>
+      </children>
+      <element xmi:type="uml:Package" href="collaborator2.uml#_cv3AsBfJEeu4ZvH4Leh-1w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cwIGcRfJEeu4ZvH4Leh-1w" x="874" y="201"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_5yz8gQ2XEeujq4q3EywG0A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_5yz8gg2XEeujq4q3EywG0A"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_5yz8gw2XEeujq4q3EywG0A" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
