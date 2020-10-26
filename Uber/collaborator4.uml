@@ -6,4 +6,6 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_sUsfoA2ZEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GxMHwBe6EeuXq-tJP09PJw" name="UseCase5"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_G6nJgBe6EeuXq-tJP09PJw" name="UseCase6"/>
 </uml:Package>
