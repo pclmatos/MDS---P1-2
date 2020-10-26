@@ -140,32 +140,6 @@
     </styles>
     <element xmi:type="uml:Package" href="collaborator4.uml#_Q3mgEA2TEeujq4q3EywG0A"/></notation:Diagram>
   <notation_1:Diagram xmi:id="_Gc6g4Be6EeuXq-tJP09PJw" type="UseCase" name="UberRides" measurementUnit="Pixel">
-    <children xmi:type="notation_1:Shape" xmi:id="_GxY8EBe6EeuXq-tJP09PJw" type="UseCase_Shape">
-      <children xmi:type="notation_1:DecorationNode" xmi:id="_GxaxQBe6EeuXq-tJP09PJw" type="UseCase_NameLabel"/>
-      <children xmi:type="notation_1:DecorationNode" xmi:id="_GxaxQRe6EeuXq-tJP09PJw" type="UseCase_FloatingNameLabel">
-        <layoutConstraint xmi:type="notation_1:Location" xmi:id="_GxaxQhe6EeuXq-tJP09PJw" y="15"/>
-      </children>
-      <children xmi:type="notation_1:BasicCompartment" xmi:id="_GxbYUBe6EeuXq-tJP09PJw" type="UseCase_ExtensionPointCompartment">
-        <styles xmi:type="notation_1:SortingStyle" xmi:id="_GxbYURe6EeuXq-tJP09PJw"/>
-        <styles xmi:type="notation_1:FilteringStyle" xmi:id="_GxbYUhe6EeuXq-tJP09PJw"/>
-        <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_GxbYUxe6EeuXq-tJP09PJw"/>
-      </children>
-      <element xmi:type="uml:UseCase" href="collaborator4.uml#_GxMHwBe6EeuXq-tJP09PJw"/>
-      <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_GxY8ERe6EeuXq-tJP09PJw" x="780" y="226"/>
-    </children>
-    <children xmi:type="notation_1:Shape" xmi:id="_G6o-sBe6EeuXq-tJP09PJw" type="UseCase_Shape">
-      <children xmi:type="notation_1:DecorationNode" xmi:id="_G6plwBe6EeuXq-tJP09PJw" type="UseCase_NameLabel"/>
-      <children xmi:type="notation_1:DecorationNode" xmi:id="_G6plwRe6EeuXq-tJP09PJw" type="UseCase_FloatingNameLabel">
-        <layoutConstraint xmi:type="notation_1:Location" xmi:id="_G6plwhe6EeuXq-tJP09PJw" y="15"/>
-      </children>
-      <children xmi:type="notation_1:BasicCompartment" xmi:id="_G6plwxe6EeuXq-tJP09PJw" type="UseCase_ExtensionPointCompartment">
-        <styles xmi:type="notation_1:SortingStyle" xmi:id="_G6plxBe6EeuXq-tJP09PJw"/>
-        <styles xmi:type="notation_1:FilteringStyle" xmi:id="_G6plxRe6EeuXq-tJP09PJw"/>
-        <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_G6plxhe6EeuXq-tJP09PJw"/>
-      </children>
-      <element xmi:type="uml:UseCase" href="collaborator4.uml#_G6nJgBe6EeuXq-tJP09PJw"/>
-      <layoutConstraint xmi:type="notation_1:Bounds" xmi:id="_G6o-sRe6EeuXq-tJP09PJw" x="1053" y="164"/>
-    </children>
     <styles xmi:type="notation_1:StringValueStyle" xmi:id="_Gc6g4Re6EeuXq-tJP09PJw" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation_1:DiagramStyle" xmi:id="_Gc6g4he6EeuXq-tJP09PJw"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_Gc6g4xe6EeuXq-tJP09PJw" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
