@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
   <packagedElement xmi:type="uml:Activity" xmi:id="_e2lUsA2ZEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_owSkwA2ZEeujq4q3EywG0A" name="Interaction3"/>
@@ -7,8 +7,220 @@
     <region xmi:type="uml:Region" xmi:id="_sUsfoA2ZEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_dFfa0Be7EeuXq-tJP09PJw" name="UberRides">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_PxNhUBe7EeuXq-tJP09PJw" name="UseCase6"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_PnQUEBe7EeuXq-tJP09PJw" name="UseCase5"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_lHj-YBe8EeuxvcKDEk6LAw" name="UseCase3"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PxNhUBe7EeuXq-tJP09PJw" name="Login">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_vsfgQBe9EeuxvcKDEk6LAw">
+        <body>The user logs into his account with the credentials used upon account creation. </body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_tGiKoBe9EeuxvcKDEk6LAw" addition="_qtNi0Be9EeuxvcKDEk6LAw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PnQUEBe7EeuXq-tJP09PJw" name="Create Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_aMF54Be9EeuxvcKDEk6LAw">
+        <body>Name: Create User Account&#xD;
+Description: This UC creates a new user account in the system.&#xD;
+Actors:&#xD;
+	Main: User without account&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. Password has to be valid.&#xD;
+Main flow:&#xD;
+1. This UC starts when the the app is opened for the first time.&#xD;
+2. The user is asked to create an account.&#xD;
+3. The user writes his email address, his name, his password and his phone number.&#xD;
+4. Include &lt;Validate Password>&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+Post-Conditions: The system registers the user account.&#xD;
+&#xD;
+</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_VJzEsBe9EeuxvcKDEk6LAw" addition="_lHj-YBe8EeuxvcKDEk6LAw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lHj-YBe8EeuxvcKDEk6LAw" name="Validate password">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_d45i0Be9EeuxvcKDEk6LAw">
+        <body>Name: Validate Password&#xD;
+Description: This UC checks if the password is valid.&#xD;
+Actors:&#xD;
+	Main: User without account&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: &#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Password doesn't fit the conditions to be valid.&#xD;
+Actors:&#xD;
+	Main: User without account&#xD;
+	Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is not valid and asks the client to repeat.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about password's validation&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qtNi0Be9EeuxvcKDEk6LAw" name="Check Credentials">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uqCkwBe9EeuxvcKDEk6LAw">
+        <body>This UC checks if the credentials used to login match an account in the system.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yfnvMBe9EeuxvcKDEk6LAw" name="Register Car">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_1uxLwBe9EeuxvcKDEk6LAw">
+        <body>The driver registers the car he will use to transport users, when he uses the app for the first time.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_A9yo8Be-EeuxvcKDEk6LAw" addition="_8vQL8Be9EeuxvcKDEk6LAw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8vQL8Be9EeuxvcKDEk6LAw" name="Check Car Registry Conditions">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_CHGaYBe-EeuxvcKDEk6LAw">
+        <body>This UC checks if the car that the drivers wants to use, matches a certaain amount of conditions.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GZn_gBe-EeuxvcKDEk6LAw" name="Setup Ride">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_LgUzkBe-EeuxvcKDEk6LAw">
+        <body>The user chooses the pickup location, the destination, what type of uber car is available and the payment method used to pay for the ride.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_SUOJQBe-EeuxvcKDEk6LAw" addition="_MDbgoBe-EeuxvcKDEk6LAw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_MDbgoBe-EeuxvcKDEk6LAw" name="Check Payment Method">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_URHTwBe-EeuxvcKDEk6LAw">
+        <body>This UC checks if the payment method used by the user is valid and if it has enough credit.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UZGyIBe-EeuxvcKDEk6LAw" name="Enter Car">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XvuIoBe-EeuxvcKDEk6LAw">
+        <body>The user, after waiting for the driver arrival, checks if the car and driver match the one assigned to him and then enters the car.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_X2L9ABe-EeuxvcKDEk6LAw" name="Exit Car">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cUnQIBe-EeuxvcKDEk6LAw">
+        <body>The user exits the car after arriving at the destination.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YhWZ4Be-EeuxvcKDEk6LAw" name="Rate Driver">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uanzQBe-EeuxvcKDEk6LAw">
+        <body>The user rates the driver, up to five stars.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_yQkxIBe-EeuxvcKDEk6LAw" name="Respond To Ride Request">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_IMHbYBe_EeuxvcKDEk6LAw">
+        <body>The driver receives a ride request and chooses wheter he accepts or denies the ride.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2ChYwBe-EeuxvcKDEk6LAw" name="Pickup User">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_JBiAcBe_EeuxvcKDEk6LAw">
+        <body>The driver after accepting the ride, drives to the pickup location the user chose.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AxgrABe_EeuxvcKDEk6LAw" name="Drive To Destination">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_KjmQIBe_EeuxvcKDEk6LAw">
+        <body>The driver, drives to the destination the user chose.</body>
+      </ownedComment>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KpxbgBe9EeuxvcKDEk6LAw" name="User without account">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_NxP34Be_EeuxvcKDEk6LAw">
+      <body>The user without account is the actor that wants to use the system but doesn't have an account yet.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_LjhG8Be9EeuxvcKDEk6LAw" name="User">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_M2Q2UBe_EeuxvcKDEk6LAw">
+      <body>The user is the actor who uses the system.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ehvEcBe9EeuxvcKDEk6LAw" memberEnd="_ehyHwBe9EeuxvcKDEk6LAw _ehyHwRe9EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ehw5oBe9EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ehxgsBe9EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ehyHwBe9EeuxvcKDEk6LAw" name="create account" type="_PnQUEBe7EeuXq-tJP09PJw" association="_ehvEcBe9EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ehyHwRe9EeuxvcKDEk6LAw" name="user without account" type="_KpxbgBe9EeuxvcKDEk6LAw" association="_ehvEcBe9EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gMv0wBe9EeuxvcKDEk6LAw" name="Driver">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_HhB3ABe_EeuxvcKDEk6LAw">
+      <body>The driver is the actor that gives a ride to the users.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_l2AjUBe9EeuxvcKDEk6LAw" memberEnd="_l2BKYhe9EeuxvcKDEk6LAw _l2BxcBe9EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l2BKYBe9EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l2BKYRe9EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_l2BKYhe9EeuxvcKDEk6LAw" name="login" type="_PxNhUBe7EeuXq-tJP09PJw" association="_l2AjUBe9EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_l2BxcBe9EeuxvcKDEk6LAw" name="user" type="_LjhG8Be9EeuxvcKDEk6LAw" association="_l2AjUBe9EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m51-4Be9EeuxvcKDEk6LAw" memberEnd="_m52l8he9EeuxvcKDEk6LAw _m52l8xe9EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m52l8Be9EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m52l8Re9EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m52l8he9EeuxvcKDEk6LAw" name="driver" type="_gMv0wBe9EeuxvcKDEk6LAw" association="_m51-4Be9EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m52l8xe9EeuxvcKDEk6LAw" name="login" type="_PxNhUBe7EeuXq-tJP09PJw" association="_m51-4Be9EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_4ObFEBe9EeuxvcKDEk6LAw" name="Driver without account">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_GuXrABe_EeuxvcKDEk6LAw">
+      <body>The driver without account is the actor of a driver that doesn't have a driver account on the system.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6B9fQBe9EeuxvcKDEk6LAw" memberEnd="_6B-GURe9EeuxvcKDEk6LAw _6B-GUhe9EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6B9fQRe9EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6B-GUBe9EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6B-GURe9EeuxvcKDEk6LAw" name="driver without account" type="_4ObFEBe9EeuxvcKDEk6LAw" association="_6B9fQBe9EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6B-GUhe9EeuxvcKDEk6LAw" name="register car" type="_yfnvMBe9EeuxvcKDEk6LAw" association="_6B9fQBe9EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I630QBe-EeuxvcKDEk6LAw" memberEnd="_I64bUhe-EeuxvcKDEk6LAw _I64bUxe-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I64bUBe-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I64bURe-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I64bUhe-EeuxvcKDEk6LAw" name="setup ride" type="_GZn_gBe-EeuxvcKDEk6LAw" association="_I630QBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I64bUxe-EeuxvcKDEk6LAw" name="user" type="_LjhG8Be9EeuxvcKDEk6LAw" association="_I630QBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Wc_VcBe-EeuxvcKDEk6LAw" memberEnd="_Wc_8ghe-EeuxvcKDEk6LAw _Wc_8gxe-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wc_8gBe-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wc_8gRe-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Wc_8ghe-EeuxvcKDEk6LAw" name="user" type="_LjhG8Be9EeuxvcKDEk6LAw" association="_Wc_VcBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Wc_8gxe-EeuxvcKDEk6LAw" name="enter car" type="_UZGyIBe-EeuxvcKDEk6LAw" association="_Wc_VcBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQp0UBe-EeuxvcKDEk6LAw" memberEnd="_aQrCcBe-EeuxvcKDEk6LAw _aQrCcRe-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aQqbYBe-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aQqbYRe-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aQrCcBe-EeuxvcKDEk6LAw" name="user" type="_LjhG8Be9EeuxvcKDEk6LAw" association="_aQp0UBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aQrCcRe-EeuxvcKDEk6LAw" name="exit car" type="_X2L9ABe-EeuxvcKDEk6LAw" association="_aQp0UBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_a04iwBe-EeuxvcKDEk6LAw" memberEnd="_a05J0he-EeuxvcKDEk6LAw _a05w4Be-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a05J0Be-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a05J0Re-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a05J0he-EeuxvcKDEk6LAw" type="_LjhG8Be9EeuxvcKDEk6LAw" association="_a04iwBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_a05w4Be-EeuxvcKDEk6LAw" name="rate driver" type="_YhWZ4Be-EeuxvcKDEk6LAw" association="_a04iwBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0waQoBe-EeuxvcKDEk6LAw" memberEnd="_0wa3sBe-EeuxvcKDEk6LAw _0wa3sRe-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0waQoRe-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0waQohe-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0wa3sBe-EeuxvcKDEk6LAw" type="_m51-4Be9EeuxvcKDEk6LAw" association="_0waQoBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0wa3sRe-EeuxvcKDEk6LAw" name="respond to ride request" type="_yQkxIBe-EeuxvcKDEk6LAw" association="_0waQoBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4KZEMBe-EeuxvcKDEk6LAw" memberEnd="_4KZrQRe-EeuxvcKDEk6LAw _4KZrQhe-EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4KZEMRe-EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4KZrQBe-EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4KZrQRe-EeuxvcKDEk6LAw" name="driver" type="_gMv0wBe9EeuxvcKDEk6LAw" association="_4KZEMBe-EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4KZrQhe-EeuxvcKDEk6LAw" name="pickup user" type="_2ChYwBe-EeuxvcKDEk6LAw" association="_4KZEMBe-EeuxvcKDEk6LAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EY_IABe_EeuxvcKDEk6LAw" memberEnd="_EZA9MBe_EeuxvcKDEk6LAw _EZA9MRe_EeuxvcKDEk6LAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EZAWIBe_EeuxvcKDEk6LAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EZAWIRe_EeuxvcKDEk6LAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EZA9MBe_EeuxvcKDEk6LAw" name="driver" type="_gMv0wBe9EeuxvcKDEk6LAw" association="_EY_IABe_EeuxvcKDEk6LAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EZA9MRe_EeuxvcKDEk6LAw" name="drive to destination" type="_AxgrABe_EeuxvcKDEk6LAw" association="_EY_IABe_EeuxvcKDEk6LAw"/>
   </packagedElement>
 </uml:Package>
