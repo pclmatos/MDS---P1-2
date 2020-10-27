@@ -198,7 +198,7 @@ Description: This UC checks if the person who is receiving the order/food is the
 &#xD;
 Flow:&#xD;
 1. The Uber Employee/Restaurant checks if the receiver of the order is correct&#xD;
-2. The Uber Employee checks if the order is correct</body>
+2. The Uber Employee checks if the order is correct mm</body>
       </ownedComment>
     </packagedElement>
   </packagedElement>
