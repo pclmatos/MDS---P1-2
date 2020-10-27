@@ -1,9 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CTL0YA2TEeujq4q3EywG0A" name="collaborator1">
   <packagedElement xmi:type="uml:Activity" xmi:id="_lyDO0A2VEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CkxxoBh-Eeu8ms_OI6OgPg" name="Eats">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G9qdcBh-Eeu8ms_OI6OgPg" name="Open App"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ICleIBh-Eeu8ms_OI6OgPg" name="Choose Restaurant">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_LYt3ABh_Eeu8ms_OI6OgPg">
+        <body>Name: Choose Restaurant&#xD;
+Description: This UC selects the restaurant the Client wants the food to come from.&#xD;
+Actors: &#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+Pre conditions: The Client must have an Uber account and the app downloaded. The restaurant has to be open.&#xD;
+Main Flow:&#xD;
+1. The UC starts when the client has the app open&#xD;
+2. The system checks if the restaurant is open&#xD;
+3. The system checks if the restaurant is valid.&#xD;
+4. The Client selects the restaurant&#xD;
+5. The UC ends.&#xD;
+&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JO0nwBh-Eeu8ms_OI6OgPg" name="Choose Food"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_KNFm0Bh-Eeu8ms_OI6OgPg" name="Pay Order">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Ou_2UBh_Eeu8ms_OI6OgPg">
+        <body>Name: Pay Order&#xD;
+Description: This UC pays the order that the Client made.&#xD;
+Actors: &#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre conditions: The Client must have a payment mode selected. The payment card has to be valid.  The Client must have enough credit in the card.&#xD;
+&#xD;
+Main Flow:&#xD;
+1. The UC starts when the Client checks &quot;Finish order&quot; option on the app&#xD;
+2. The system checks if the payment card is valid.&#xD;
+3. The system checks if there is any promotion code&#xD;
+4. The system checks if the card has enough credit&#xD;
+5. The system places the order. &#xD;
+6. The UC ends.&#xD;
+&#xD;
+Alternative Flows: Client does not have a payment mode selected. The card is not valid. Not have enough credit.&#xD;
+&#xD;
+Post Conditions: The order is sent to the restaurant to be prepared.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Client does not have a payment mode selected&#xD;
+Description: The Client did not select any payment mode so the system can not finish the order.&#xD;
+Actor:&#xD;
+	Main:  Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The is no card registered in the system.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs that there is no card in the system.&#xD;
+3. The system shows a message asking the Client to add a card to pay the order.&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: The payment card has to be valid.&#xD;
+Description: The payment card has to be valid&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card is not valid because it expired or the bank blocked the app. &#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs that the payment card is not valid.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+----------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Not enough credit&#xD;
+Description: The payment card does not have the minimum amount&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card does not have the minimum amount&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 3 of the main flow. &#xD;
+2. The system informs that the payment card does not have minimum credit to place the order.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none></body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PiC5UBh-Eeu8ms_OI6OgPg" name="Receive Order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_aYMjgBh-Eeu8ms_OI6OgPg" name="Get Food"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_dp2hgBh-Eeu8ms_OI6OgPg" name="Deliver Order">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_RfSzsBh_Eeu8ms_OI6OgPg">
+        <body>Name: Deliver Order&#xD;
+Description: This UC delivers the order to the Client.&#xD;
+Actors: &#xD;
+	Main:Uber Employee&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the Client is collecting the order. &#xD;
+&#xD;
+Main Flow:&#xD;
+1. The UC starts when the Uber Employee arrives at the place arranged bye the Client&#xD;
+2. The Uber Employee checks if the Client is correct&#xD;
+3. The Uber Employee checks if the order is correct&#xD;
+4. The system records that the order was delivered&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative Flows: Client is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
+&#xD;
+Post Conditions: The order is recorded as delivered.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Client is not at the place arranged.&#xD;
+Description: The Client is not at the place he said he would be, in the App, to collect the order.&#xD;
+Actor:&#xD;
+	Main:  Uber Employee&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The ticket is expired.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 3 of the main flow. &#xD;
+2. The system informs that the ticket is expired.&#xD;
+3. The system shows a message asking the Client to contact the Help Desk&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Not enough credit&#xD;
+Description: the ticket does not have the minimum amount&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The ticket does not have the minimum amount&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 4 of the main flow. &#xD;
+2. The system informs that the ticket does not have minimum credit and that the client has to charge the ticket..&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none></body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_xFiBoBh_Eeu8ms_OI6OgPg" addition="_ZytbYBh_Eeu8ms_OI6OgPg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nMANMBh-Eeu8ms_OI6OgPg" name="Receive Order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_onD18Bh-Eeu8ms_OI6OgPg" name="Prepare Order"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_pka2EBh-Eeu8ms_OI6OgPg" name="Deliver Food">
+      <include xmi:type="uml:Include" xmi:id="_vkQcIBh_Eeu8ms_OI6OgPg" addition="_ZytbYBh_Eeu8ms_OI6OgPg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZytbYBh_Eeu8ms_OI6OgPg" name="Confirm Order">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_spXYUBh_Eeu8ms_OI6OgPg">
+        <body>This UC checks if the person who is receiving the order/food is the correct one.</body>
+      </ownedComment>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EUmJcBh-Eeu8ms_OI6OgPg" name="Client"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UKK7ABh-Eeu8ms_OI6OgPg" memberEnd="_UKqqQBh-Eeu8ms_OI6OgPg _UKrRUBh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UKMJIBh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UKMJIRh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UKqqQBh-Eeu8ms_OI6OgPg" name="open app" type="_G9qdcBh-Eeu8ms_OI6OgPg" association="_UKK7ABh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UKrRUBh-Eeu8ms_OI6OgPg" name="client" type="_EUmJcBh-Eeu8ms_OI6OgPg" association="_UKK7ABh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Utit0Bh-Eeu8ms_OI6OgPg" memberEnd="_UtjU4hh-Eeu8ms_OI6OgPg _UtkjABh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UtjU4Bh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtjU4Rh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UtjU4hh-Eeu8ms_OI6OgPg" name="choose restaurant" type="_ICleIBh-Eeu8ms_OI6OgPg" association="_Utit0Bh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UtkjABh-Eeu8ms_OI6OgPg" name="client" type="_EUmJcBh-Eeu8ms_OI6OgPg" association="_Utit0Bh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VdKM4Bh-Eeu8ms_OI6OgPg" memberEnd="_VdKz8hh-Eeu8ms_OI6OgPg _VdLbABh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VdKz8Bh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VdKz8Rh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VdKz8hh-Eeu8ms_OI6OgPg" name="choose food" type="_JO0nwBh-Eeu8ms_OI6OgPg" association="_VdKM4Bh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VdLbABh-Eeu8ms_OI6OgPg" name="client" type="_EUmJcBh-Eeu8ms_OI6OgPg" association="_VdKM4Bh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WRcwkBh-Eeu8ms_OI6OgPg" memberEnd="_WRd-sRh-Eeu8ms_OI6OgPg _WRd-shh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WRdXoBh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WRd-sBh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WRd-sRh-Eeu8ms_OI6OgPg" name="pay order" type="_KNFm0Bh-Eeu8ms_OI6OgPg" association="_WRcwkBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WRd-shh-Eeu8ms_OI6OgPg" name="client" type="_EUmJcBh-Eeu8ms_OI6OgPg" association="_WRcwkBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W3nYsBh-Eeu8ms_OI6OgPg" memberEnd="_W3om0Rh-Eeu8ms_OI6OgPg _W3om0hh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W3n_wBh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_W3om0Bh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W3om0Rh-Eeu8ms_OI6OgPg" name="receive order" type="_PiC5UBh-Eeu8ms_OI6OgPg" association="_W3nYsBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W3om0hh-Eeu8ms_OI6OgPg" name="client" type="_EUmJcBh-Eeu8ms_OI6OgPg" association="_W3nYsBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YbLdMBh-Eeu8ms_OI6OgPg" name="Uber Employee"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f_GhoBh-Eeu8ms_OI6OgPg" memberEnd="_f_HvwRh-Eeu8ms_OI6OgPg _f_Hvwhh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f_HIsBh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f_HvwBh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f_HvwRh-Eeu8ms_OI6OgPg" name="get food" type="_aYMjgBh-Eeu8ms_OI6OgPg" association="_f_GhoBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f_Hvwhh-Eeu8ms_OI6OgPg" name="uber employee" type="_YbLdMBh-Eeu8ms_OI6OgPg" association="_f_GhoBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g1YCUBh-Eeu8ms_OI6OgPg" memberEnd="_g1ZQcBh-Eeu8ms_OI6OgPg _g1ZQcRh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g1YpYBh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g1YpYRh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g1ZQcBh-Eeu8ms_OI6OgPg" name="deliver order" type="_dp2hgBh-Eeu8ms_OI6OgPg" association="_g1YCUBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g1ZQcRh-Eeu8ms_OI6OgPg" name="uber employee" type="_YbLdMBh-Eeu8ms_OI6OgPg" association="_g1YCUBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ibCYkBh-Eeu8ms_OI6OgPg" name="Restaurant"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rqCewBh-Eeu8ms_OI6OgPg" memberEnd="_rqDF0hh-Eeu8ms_OI6OgPg _rqDF0xh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rqDF0Bh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rqDF0Rh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rqDF0hh-Eeu8ms_OI6OgPg" name="receive order" type="_nMANMBh-Eeu8ms_OI6OgPg" association="_rqCewBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rqDF0xh-Eeu8ms_OI6OgPg" name="restaurant" type="_ibCYkBh-Eeu8ms_OI6OgPg" association="_rqCewBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sQVCsBh-Eeu8ms_OI6OgPg" memberEnd="_sQWQ0hh-Eeu8ms_OI6OgPg _sQW34Bh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sQWQ0Bh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQWQ0Rh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sQWQ0hh-Eeu8ms_OI6OgPg" name="restaurant" type="_ibCYkBh-Eeu8ms_OI6OgPg" association="_sQVCsBh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sQW34Bh-Eeu8ms_OI6OgPg" name="prepare order" type="_onD18Bh-Eeu8ms_OI6OgPg" association="_sQVCsBh-Eeu8ms_OI6OgPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tINs8Bh-Eeu8ms_OI6OgPg" memberEnd="_tIOUABh-Eeu8ms_OI6OgPg _tIOUARh-Eeu8ms_OI6OgPg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tINs8Rh-Eeu8ms_OI6OgPg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tINs8hh-Eeu8ms_OI6OgPg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tIOUABh-Eeu8ms_OI6OgPg" name="restaurant" type="_ibCYkBh-Eeu8ms_OI6OgPg" association="_tINs8Bh-Eeu8ms_OI6OgPg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tIOUARh-Eeu8ms_OI6OgPg" name="deliver food" type="_pka2EBh-Eeu8ms_OI6OgPg" association="_tINs8Bh-Eeu8ms_OI6OgPg"/>
   </packagedElement>
 </uml:Package>
