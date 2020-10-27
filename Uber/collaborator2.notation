@@ -23,7 +23,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_AQgs8xhSEeu8v6WJmSvmTA" y="15"/>
       </children>
       <element xmi:type="uml:Actor" href="collaborator2.uml#_AQL80BhSEeu8v6WJmSvmTA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQdpoRhSEeu8v6WJmSvmTA" x="540" y="220" width="80" height="100"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AQdpoRhSEeu8v6WJmSvmTA" x="540" y="160" width="80" height="100"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_As1ckBhSEeu8v6WJmSvmTA" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_As2DoBhSEeu8v6WJmSvmTA" type="Actor_NameLabel">
