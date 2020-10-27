@@ -11,15 +11,16 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Mhw-ABhkEeuqhqCrHvvM5g" name="Create Account"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_XN5JgBhkEeuqhqCrHvvM5g" name="Login"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Zw8VEBhkEeuqhqCrHvvM5g" name="Recharge Scoot"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_eXNVkBhkEeuqhqCrHvvM5g" name="Unlock Scoot"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eXNVkBhkEeuqhqCrHvvM5g" name="Scan QR code"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_nIiBQBhkEeuqhqCrHvvM5g" name="Payment"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_tJdo8BhkEeuqhqCrHvvM5g" name="End Ride"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_xT63MBhkEeuqhqCrHvvM5g" name="Photograph Parking"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_36m3UBhkEeuqhqCrHvvM5g" name="«include»" client="_tJdo8BhkEeuqhqCrHvvM5g" supplier="_xT63MBhkEeuqhqCrHvvM5g"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Cd8TMBhlEeuqhqCrHvvM5g" name="Validadate Password"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_FBi4YBhlEeuqhqCrHvvM5g" name="«include»" client="_Mhw-ABhkEeuqhqCrHvvM5g" supplier="_Cd8TMBhlEeuqhqCrHvvM5g"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_N2aAQBhlEeuqhqCrHvvM5g" name="Check Payment Method"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_R1Bx8BhlEeuqhqCrHvvM5g" name="«include»" client="_eXNVkBhkEeuqhqCrHvvM5g" supplier="_N2aAQBhlEeuqhqCrHvvM5g"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_N2aAQBhlEeuqhqCrHvvM5g" name="Select Payment Method"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_h6oA4BiDEeuqIsKbvW_1jA" name="Create complaint"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ohXEUBiDEeuqIsKbvW_1jA" name="Solve complaints"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_Ica5QBhkEeuqhqCrHvvM5g" name="User without account"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_P8A3UBhkEeuqhqCrHvvM5g" memberEnd="_P8HlABhkEeuqhqCrHvvM5g _P8HlARhkEeuqhqCrHvvM5g">
@@ -72,6 +73,28 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uvi18RhkEeuqhqCrHvvM5g" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_uvi18hhkEeuqhqCrHvvM5g" name="end ride" type="_tJdo8BhkEeuqhqCrHvvM5g" association="_uviO4BhkEeuqhqCrHvvM5g"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_uvi18xhkEeuqhqCrHvvM5g" type="_o3-loBhkEeuqhqCrHvvM5g" association="_uviO4BhkEeuqhqCrHvvM5g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uvi18xhkEeuqhqCrHvvM5g" type="_UQs_oBhkEeuqhqCrHvvM5g" association="_uviO4BhkEeuqhqCrHvvM5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_XZj14BiDEeuqIsKbvW_1jA" name="Admin"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nmbtIBiDEeuqIsKbvW_1jA" memberEnd="_nmhzwBiDEeuqIsKbvW_1jA _nmhzwRiDEeuqIsKbvW_1jA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nmdiUBiDEeuqIsKbvW_1jA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nmeJYBiDEeuqIsKbvW_1jA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nmhzwBiDEeuqIsKbvW_1jA" name="user" type="_UQs_oBhkEeuqhqCrHvvM5g" association="_nmbtIBiDEeuqIsKbvW_1jA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nmhzwRiDEeuqIsKbvW_1jA" name="create complain" type="_h6oA4BiDEeuqIsKbvW_1jA" association="_nmbtIBiDEeuqIsKbvW_1jA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_syx2MBiDEeuqIsKbvW_1jA" memberEnd="_syzEURiDEeuqIsKbvW_1jA _syzrYBiDEeuqIsKbvW_1jA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_syydQBiDEeuqIsKbvW_1jA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_syzEUBiDEeuqIsKbvW_1jA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_syzEURiDEeuqIsKbvW_1jA" name="admin" type="_XZj14BiDEeuqIsKbvW_1jA" association="_syx2MBiDEeuqIsKbvW_1jA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_syzrYBiDEeuqIsKbvW_1jA" name="solve complaints" type="_ohXEUBiDEeuqIsKbvW_1jA" association="_syx2MBiDEeuqIsKbvW_1jA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GcGZwBiEEeuqIsKbvW_1jA" memberEnd="_GcIO8RiEEeuqIsKbvW_1jA _GcI2ABiEEeuqIsKbvW_1jA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GcHn4BiEEeuqIsKbvW_1jA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GcIO8BiEEeuqIsKbvW_1jA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GcIO8RiEEeuqIsKbvW_1jA" name="user" type="_UQs_oBhkEeuqhqCrHvvM5g" association="_GcGZwBiEEeuqIsKbvW_1jA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GcI2ABiEEeuqIsKbvW_1jA" name="check payment method" type="_N2aAQBhlEeuqhqCrHvvM5g" association="_GcGZwBiEEeuqIsKbvW_1jA"/>
   </packagedElement>
 </uml:Package>
