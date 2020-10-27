@@ -145,7 +145,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZzCykxh_Eeu8ms_OI6OgPg"/>
           </children>
           <element xmi:type="uml:UseCase" href="collaborator1.uml#_ZytbYBh_Eeu8ms_OI6OgPg"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZzCLgRh_Eeu8ms_OI6OgPg" x="474" y="403"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZzCLgRh_Eeu8ms_OI6OgPg" x="474" y="403" width="161"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ck_0Ehh-Eeu8ms_OI6OgPg"/>
       </children>

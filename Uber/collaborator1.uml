@@ -10,18 +10,43 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_G9qdcBh-Eeu8ms_OI6OgPg" name="Open App"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ICleIBh-Eeu8ms_OI6OgPg" name="Choose Restaurant">
       <ownedComment xmi:type="uml:Comment" xmi:id="_LYt3ABh_Eeu8ms_OI6OgPg">
-        <body>Name: Choose Restaurant&#xD;
+        <body>Name: Choose Restaurant			****Prob Not****&#xD;
 Description: This UC selects the restaurant the Client wants the food to come from.&#xD;
 Actors: &#xD;
 	Main: Client&#xD;
 	Secondary: &lt;none>&#xD;
-Pre conditions: The Client must have an Uber account and the app downloaded. The restaurant has to be open.&#xD;
+&#xD;
+Pre conditions: The Client must have an Uber account and the app downloaded. The restaurant has to be open. &#xD;
+&#xD;
 Main Flow:&#xD;
 1. The UC starts when the client has the app open&#xD;
 2. The system checks if the restaurant is open&#xD;
-3. The system checks if the restaurant is valid.&#xD;
+3. The system checks if the restaurant is valid&#xD;
 4. The Client selects the restaurant&#xD;
 5. The UC ends.&#xD;
+&#xD;
+Alternative Flows: The restaurant is closed.&#xD;
+&#xD;
+Post Conditions: The restaurant is chosen and the system displays the menus/food available.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: The restaurant is closed.&#xD;
+Description: The restaurant is not open for business.&#xD;
+Actor:&#xD;
+	Main:  Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The restaurant is selected.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 2 of the main flow. &#xD;
+2. The system informs that the restaurant is not open.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
 &#xD;
 </body>
       </ownedComment>
@@ -155,7 +180,7 @@ Pre- conditions: The ticket does not have the minimum amount&#xD;
 &#xD;
 Main Flow: &#xD;
 1. The alternative flow starts after step 4 of the main flow. &#xD;
-2. The system informs that the ticket does not have minimum credit and that the client has to charge the ticket..&#xD;
+2. The system informs that the ticket does not have minimum credit and that the client has to charge the ticket.&#xD;
 3. The main UC ends.&#xD;
 &#xD;
 Post - conditions: &lt;none></body>
@@ -169,7 +194,12 @@ Post - conditions: &lt;none></body>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ZytbYBh_Eeu8ms_OI6OgPg" name="Confirm Order">
       <ownedComment xmi:type="uml:Comment" xmi:id="_spXYUBh_Eeu8ms_OI6OgPg">
-        <body>This UC checks if the person who is receiving the order/food is the correct one.</body>
+        <body>Name: Confirm Order&#xD;
+Description: This UC checks if the person who is receiving the order/food is the correct one.&#xD;
+&#xD;
+Flow:&#xD;
+1. The Uber Employee/Restaurant checks if the receiver of the order is correct&#xD;
+2. The Uber Employee checks if the order is correct</body>
       </ownedComment>
     </packagedElement>
   </packagedElement>
