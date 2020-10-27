@@ -134,7 +134,7 @@ Post - conditions: &lt;none></body>
         <body>Name: Deliver Order&#xD;
 Description: This UC delivers the order to the Client.&#xD;
 Actors: &#xD;
-	Main:Uber Employee&#xD;
+	Main: Uber Employee&#xD;
 	Secondary: &lt;none>&#xD;
 &#xD;
 Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the Client is collecting the order. &#xD;
