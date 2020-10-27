@@ -86,18 +86,19 @@ Main Flow:&#xD;
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ohXEUBiDEeuqIsKbvW_1jA" name="Solve complaints">
       <ownedComment xmi:type="uml:Comment" xmi:id="_zOyNIBh_Eeus68sb1ikOOg">
         <body>Name: Solve Complaints&#xD;
-Description: This UC describes the &#xD;
+Description: This UC describes the actions preformed by an Uber Admin to solve the complaints created by a User&#xD;
 Actor:&#xD;
-	Main: User&#xD;
-	Secondary: &lt;none>&#xD;
-Pre-conditions. The user is logged in; QR code must be valid; User isn't currently in an ongoing ride.&#xD;
+	Main: Admin&#xD;
+	Secondary: User&#xD;
+Pre-conditions. There are complaints to solve&#xD;
 Main flow:&#xD;
-	1. The UC starts when the User scans the QR code.&#xD;
-	2. The app checks if the code is valid.&#xD;
-	3. The app checks if the QR code is associated to a Bike or Scoot.&#xD;
-	4. Unlocks the Bike or Scoot.&#xD;
-	5. The UC ends.&#xD;
-Alternative flows: QR code isn't readable; QR code isn't associated to Uber Bike or Uber Scoot; Bike or Scoot associated to QR code is already unlocked.&#xD;
+	1. The Admin selects the complaint that needs to be solved&#xD;
+	2. The Admin reads the report written by the User&#xD;
+	3. The Admin evaluates the situation&#xD;
+	4. The Admin chooses the action that must be performed to solve the situation&#xD;
+	5. The Admin marks the complaint as &quot;solved&quot;&#xD;
+	6. The UC ends.&#xD;
+Alternative flows: &lt;none>&#xD;
 Post-conditions: &lt;none></body>
       </ownedComment>
     </packagedElement>
