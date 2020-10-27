@@ -141,8 +141,7 @@ Pre conditions: The Uber Employee must have the order in condition. The Uber Emp
 &#xD;
 Main Flow:&#xD;
 1. The UC starts when the Uber Employee arrives at the place arranged bye the Client&#xD;
-2. The Uber Employee checks if the Client is correct&#xD;
-3. The Uber Employee checks if the order is correct&#xD;
+2. Include &lt;Confirm Order>&#xD;
 4. The system records that the order was delivered&#xD;
 5. The UC ends.&#xD;
 &#xD;
