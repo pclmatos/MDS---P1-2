@@ -150,7 +150,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ck_0Ehh-Eeu8ms_OI6OgPg"/>
       </children>
       <element xmi:type="uml:Package" href="collaborator1.uml#_CkxxoBh-Eeu8ms_OI6OgPg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ck9-4Rh-Eeu8ms_OI6OgPg" x="240" y="80" width="821" height="561"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ck9-4Rh-Eeu8ms_OI6OgPg" x="240" y="80" width="841" height="561"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_EUn-oBh-Eeu8ms_OI6OgPg" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_EUolsBh-Eeu8ms_OI6OgPg" type="Actor_NameLabel">
