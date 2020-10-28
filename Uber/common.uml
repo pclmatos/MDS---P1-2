@@ -331,10 +331,14 @@ Main Flow:&#xD;
 </body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_4QaLUBksEeugnPTAsPFJnw" name="Create Complaint"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4QaLUBksEeugnPTAsPFJnw" name="Create Complaint">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_aLXvwBk_EeuWj5_JrjzH4g">
+          <body>The user creates a complaint on the app and is stored in the system. </body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_8j0hQBksEeugnPTAsPFJnw" name="End Ride">
         <ownedComment xmi:type="uml:Comment" xmi:id="_4Bb-YBkwEeuwGKbHftMADg">
-          <body>The user ends the ride on the app, and the payment per minute stops, </body>
+          <body>The user ends the ride on the app, and the payment per minute stops.</body>
         </ownedComment>
         <include xmi:type="uml:Include" xmi:id="_HsRcYBktEeugnPTAsPFJnw" addition="_Acp0ABktEeugnPTAsPFJnw"/>
       </packagedElement>
@@ -343,7 +347,23 @@ Main Flow:&#xD;
           <body>The system asks for a photograph of the parking of the product.</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_XUOBoBktEeugnPTAsPFJnw" name="Payment"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_XUOBoBktEeugnPTAsPFJnw" name="Payment">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eBWi0Bk_EeuWj5_JrjzH4g">
+          <body>Name: Recharge Scoot&#xD;
+Description: This UC describes the actions preformed by an Uber Worker to charge the system products.&#xD;
+Actor:&#xD;
+	Main: Worker&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-conditions. Payment&#xD;
+Main flow:&#xD;
+	1. The Worker goes to the product to be recharged&#xD;
+	2. The Worker picks up the product and put it chargig in the charging station.&#xD;
+	3. When its full charge, the Worker leaves the product in a designated area.&#xD;
+	6. The UC ends.&#xD;
+Alternative flows: &lt;none>&#xD;
+Post-conditions: &lt;none></body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_civqEBkvEeugnPTAsPFJnw" name="Recharge Scoot/Bike">
         <ownedComment xmi:type="uml:Comment" xmi:id="_2gqvMBkwEeuwGKbHftMADg">
           <body>Name: Recharge Scoot&#xD;
@@ -365,7 +385,35 @@ Post-conditions: &lt;none></body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
       <include xmi:type="uml:Include" xmi:id="_LNzM8BkuEeugnPTAsPFJnw" addition="_HewIUBkuEeugnPTAsPFJnw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_uzAcwBksEeugnPTAsPFJnw" name="Select Payment Method"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uzAcwBksEeugnPTAsPFJnw" name="Select Payment Method">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_18fGQBk_EeuWj5_JrjzH4g">
+        <body>Name: Select Payment Method&#xD;
+Description: This UC checks if the payment method is valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. User has to be logged in.&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+2. Payment Method is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: payment method is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Payment method is not valid or no longer valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+3. Payment method is not valid and asks the user for a different payment method.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about payment method.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_JeckoBktEeugnPTAsPFJnw" name="Uber Scoot/Bike Worker"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_Nx4IsBktEeugnPTAsPFJnw" name="Admin"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time"/>
@@ -700,5 +748,12 @@ Post-conditions: &lt;none></body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_HFLRExk2EeulX5DAYB4Giw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_HFLREBk2EeulX5DAYB4Giw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_HFLRFBk2EeulX5DAYB4Giw" name="pay" type="_3U-L4BkuEeugnPTAsPFJnw" association="_HFLREBk2EeulX5DAYB4Giw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3e4GEBk_EeuWj5_JrjzH4g" memberEnd="_3fDFMBk_EeuWj5_JrjzH4g _3fDsQBk_EeuWj5_JrjzH4g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3fB3EBk_EeuWj5_JrjzH4g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3fB3ERk_EeuWj5_JrjzH4g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3fDFMBk_EeuWj5_JrjzH4g" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_3e4GEBk_EeuWj5_JrjzH4g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3fDsQBk_EeuWj5_JrjzH4g" name="select payment method" type="_uzAcwBksEeugnPTAsPFJnw" association="_3e4GEBk_EeuWj5_JrjzH4g"/>
   </packagedElement>
 </uml:Package>
