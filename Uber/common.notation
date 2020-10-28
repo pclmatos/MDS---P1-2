@@ -654,7 +654,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DWzmGBkvEeugnPTAsPFJnw"/>
               </children>
               <element xmi:type="uml:UseCase" href="common.uml#_DWPlYBkvEeugnPTAsPFJnw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DWzmERkvEeugnPTAsPFJnw" x="236" y="134" width="161" height="41"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DWzmERkvEeugnPTAsPFJnw" x="234" y="128" width="161" height="41"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_FTTvABkvEeugnPTAsPFJnw" type="UseCase_Shape_CN">
               <children xmi:type="notation:DecorationNode" xmi:id="_FTTvAhkvEeugnPTAsPFJnw" type="UseCase_NameLabel_CN"/>
