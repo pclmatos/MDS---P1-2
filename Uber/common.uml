@@ -4,20 +4,158 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_4iCDoBkoEeugnPTAsPFJnw" name="Eats">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_oDpTsBkqEeugnPTAsPFJnw" name="Choose Restaurant"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_rmw1IBkqEeugnPTAsPFJnw" name="Choose Food"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_wvXtsBkqEeugnPTAsPFJnw" name="Pay Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_wvXtsBkqEeugnPTAsPFJnw" name="Pay Order">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mtTkIBkwEeuwGKbHftMADg">
+          <body>Name: Pay Order&#xD;
+Description: This UC pays the order that the Client made.&#xD;
+Actors: &#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre conditions: The Client must have a payment mode selected. The payment card has to be valid.  The Client must have enough credit in the card.&#xD;
+&#xD;
+Main Flow:&#xD;
+1. The UC starts when the Client checks &quot;Finish order&quot; option on the app&#xD;
+2. The system checks if the payment card is valid.&#xD;
+3. The system checks if there is any promotion code&#xD;
+4. The system checks if the card has enough credit&#xD;
+5. The system places the order. &#xD;
+6. The UC ends.&#xD;
+&#xD;
+Alternative Flows: Client does not have a payment mode selected. The card is not valid. Not have enough credit.&#xD;
+&#xD;
+Post Conditions: The order is sent to the restaurant to be prepared.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Client does not have a payment mode selected&#xD;
+Description: The Client did not select any payment mode so the system can not finish the order.&#xD;
+Actor:&#xD;
+	Main:  Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The is no card registered in the system.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs that there is no card in the system.&#xD;
+3. The system shows a message asking the Client to add a card to pay the order.&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: The payment card has to be valid.&#xD;
+Description: The payment card has to be valid&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card is not valid because it expired or the bank blocked the app. &#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs that the payment card is not valid.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+----------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Not enough credit&#xD;
+Description: The payment card does not have the minimum amount&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card does not have the minimum amount&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 3 of the main flow. &#xD;
+2. The system informs that the payment card does not have minimum credit to place the order.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none></body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ymFXsBkqEeugnPTAsPFJnw" name="Receive Order"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_AZKtEBkrEeugnPTAsPFJnw" name="Get Food"/>
+<<<<<<< HEAD
       <packagedElement xmi:type="uml:UseCase" xmi:id="_BV-TkBkrEeugnPTAsPFJnw" name="Deliver Order"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_FmUHYBkrEeugnPTAsPFJnw" name="Confirm Order">
         <include xmi:type="uml:Include" xmi:id="_WVNCYBkyEeucUqLoWc2S3Q" addition="_BV-TkBkrEeugnPTAsPFJnw"/>
       </packagedElement>
+=======
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BV-TkBkrEeugnPTAsPFJnw" name="Deliver Order">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_w-7k8BkwEeuwGKbHftMADg">
+          <body>Name: Deliver Order&#xD;
+Description: This UC delivers the order to the Client.&#xD;
+Actors: &#xD;
+	Main: Uber Employee&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the Client is collecting the order. &#xD;
+&#xD;
+Main Flow:&#xD;
+1. The UC starts when the Uber Employee arrives at the place arranged bye the Client&#xD;
+2. Include &lt;Confirm Order>&#xD;
+4. The system records that the order was delivered&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative Flows: Client is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
+&#xD;
+Post Conditions: The order is recorded as delivered.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Client is not at the place arranged.&#xD;
+Description: The Client is not at the place he said he would be, in the App, to collect the order.&#xD;
+Actor:&#xD;
+	Main:  Uber Employee&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The ticket is expired.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 3 of the main flow. &#xD;
+2. The system informs that the ticket is expired.&#xD;
+3. The system shows a message asking the Client to contact the Help Desk&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Not enough credit&#xD;
+Description: the ticket does not have the minimum amount&#xD;
+Actor:&#xD;
+	Main: Client&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The ticket does not have the minimum amount&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 4 of the main flow. &#xD;
+2. The system informs that the ticket does not have minimum credit and that the client has to charge the ticket.&#xD;
+3. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none></body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FmUHYBkrEeugnPTAsPFJnw" name="Confirm Order"/>
+>>>>>>> branch 'master' of https://github.com/pclmatos/MDS---P1-2.git
       <packagedElement xmi:type="uml:UseCase" xmi:id="_KpOnoBkrEeugnPTAsPFJnw" name="Receive Order"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_NfuToBkrEeugnPTAsPFJnw" name="Prepare Order"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_QJRIwBkrEeugnPTAsPFJnw" name="Deliver Food">
         <include xmi:type="uml:Include" xmi:id="_UXDToBkyEeucUqLoWc2S3Q" addition="_FmUHYBkrEeugnPTAsPFJnw"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DexZ0BkwEeuwGKbHftMADg">
+        <body>The user without account is the actor that wants to use the system but doesn't have an account yet.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="__4O1IBkoEeugnPTAsPFJnw" name="Create Account">
       <ownedComment xmi:type="uml:Comment" xmi:id="_hMN-UBkpEeugnPTAsPFJnw">
         <body>Name: Create User Account&#xD;
@@ -70,22 +208,119 @@ Main flow:&#xD;
 Post-Conditions: The systems informs the user about password's validation</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ChJT8BkwEeuwGKbHftMADg">
+        <body>The driver without account is the actor of a driver that doesn't have a driver account on the system.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_GLvlIBkqEeugnPTAsPFJnw" name="Register Car">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Aw6scBkwEeuwGKbHftMADg">
+        <body>The driver registers the car he will use to transport users, when he uses the app for the first time.</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_TmCDMBkuEeugnPTAsPFJnw" addition="_3R_l0BktEeugnPTAsPFJnw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_-ucQoBkqEeugnPTAsPFJnw" name="Uber Eats Employee"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_IaBlIBkrEeugnPTAsPFJnw" name="Restaurant Employee"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FCMUYBkwEeuwGKbHftMADg">
+        <body>The user is the actor who uses the system.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_-59HoBkrEeugnPTAsPFJnw" name="Scoot/Bike">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_2YyiYBksEeugnPTAsPFJnw" name="Scan QR Code"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_2YyiYBksEeugnPTAsPFJnw" name="Scan QR Code">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6aBmYBkwEeuwGKbHftMADg">
+          <body>Name: Scan QR&#xD;
+Description: This UC describes the scanning of the QR code located on the Bike/Scoot&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-conditions. The user is logged in; QR code must be valid; User isn't currently in an ongoing ride.&#xD;
+Main flow:&#xD;
+	1. The UC starts when the User scans the QR code.&#xD;
+	2. The app checks if the code is valid.&#xD;
+	3. The app checks if the QR code is associated to a Bike or Scoot.&#xD;
+	4. Unlocks the Bike or Scoot.&#xD;
+	5. The UC ends.&#xD;
+Alternative flows: QR code isn't readable; QR code isn't associated to Uber Bike or Uber Scoot; Bike or Scoot associated to QR code is already unlocked.&#xD;
+Post-conditions: &lt;none>&#xD;
+&#xD;
+-----------------&#xD;
+&#xD;
+Alternative Flow&#xD;
+Name: QR code isn't readable&#xD;
+Description: The QR code read by the User isn't readable by the app&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main Flow:&#xD;
+	1. This UC starts after step 2 of the Main Flow&#xD;
+	2. The app can't read the code&#xD;
+	3. The app prompts the user with a message informing that the code isn't readable&#xD;
+	4. The QR code scanner resets&#xD;
+	5. The UC ends.&#xD;
+&#xD;
+-----------------&#xD;
+&#xD;
+Alternative Flow&#xD;
+Name: QR code isn't associated to Uber Bike or Uber Scoot&#xD;
+Description: The QR code read by the User isn't associated to the Uber services&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main Flow:&#xD;
+	1. This UC starts after step 2 of the Main Flow&#xD;
+	2. The app reads the code&#xD;
+	3. The app prompts the user with a message informing that the code isn't associated to the Uber services&#xD;
+	4. The QR code scanner resets&#xD;
+	5. The UC ends.&#xD;
+&#xD;
+-----------------&#xD;
+&#xD;
+Alternative Flow&#xD;
+Name: Bike or Scoot associated to QR code is already unlocked&#xD;
+Description: The QR code read by the User belongs to a Bike or Scoot already in use&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main Flow:&#xD;
+	1. This UC starts after step 3 of the Main Flow&#xD;
+	2. The app reads the code&#xD;
+	3. The app prompts the user with a message informing that the Bike or Scoot associated to the code is already in use&#xD;
+	4. The QR code scanner resets&#xD;
+	5. The UC ends.&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_4QaLUBksEeugnPTAsPFJnw" name="Create Complaint"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_8j0hQBksEeugnPTAsPFJnw" name="End Ride">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4Bb-YBkwEeuwGKbHftMADg">
+          <body>The user ends the ride on the app, and the payment per minute stops, </body>
+        </ownedComment>
         <include xmi:type="uml:Include" xmi:id="_HsRcYBktEeugnPTAsPFJnw" addition="_Acp0ABktEeugnPTAsPFJnw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Acp0ABktEeugnPTAsPFJnw" name="Photograph Parking"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Acp0ABktEeugnPTAsPFJnw" name="Photograph Parking">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4mCgQBkwEeuwGKbHftMADg">
+          <body>The system asks for a photograph of the parking of the product.</body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_XUOBoBktEeugnPTAsPFJnw" name="Payment"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_civqEBkvEeugnPTAsPFJnw" name="Recharge Scoot/Bike"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_civqEBkvEeugnPTAsPFJnw" name="Recharge Scoot/Bike">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2gqvMBkwEeuwGKbHftMADg">
+          <body>Name: Recharge Scoot&#xD;
+Description: This UC describes the actions preformed by an Uber Worker to charge the system products.&#xD;
+Actor:&#xD;
+	Main: Worker&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-conditions. There are products to be recharged&#xD;
+Main flow:&#xD;
+	1. The Worker goes to the product to be recharged&#xD;
+	2. The Worker picks up the product and put it chargig in the charging station.&#xD;
+	3. When its full charge, the Worker leaves the product in a designated area.&#xD;
+	6. The UC ends.&#xD;
+Alternative flows: &lt;none>&#xD;
+Post-conditions: &lt;none></body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
       <include xmi:type="uml:Include" xmi:id="_LNzM8BkuEeugnPTAsPFJnw" addition="_HewIUBkuEeugnPTAsPFJnw"/>
@@ -95,15 +330,47 @@ Post-Conditions: The systems informs the user about password's validation</body>
     <packagedElement xmi:type="uml:Actor" xmi:id="_Nx4IsBktEeugnPTAsPFJnw" name="Admin"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_es9JwBktEeugnPTAsPFJnw" name="Ride">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_tBK2QBktEeugnPTAsPFJnw" name="Setup Ride"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_u5uTUBktEeugnPTAsPFJnw" name="Enter Car"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_xEC10BktEeugnPTAsPFJnw" name="Exit Car"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_yrn3oBktEeugnPTAsPFJnw" name="Rate Driver"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_etkYUBkuEeugnPTAsPFJnw" name="Respond to Ride Request"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_iMqVYBkuEeugnPTAsPFJnw" name="Pickup User"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_nt-o4BkuEeugnPTAsPFJnw" name="Drive To Destination"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_tBK2QBktEeugnPTAsPFJnw" name="Setup Ride">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JM5aQBkwEeuwGKbHftMADg">
+          <body>The user chooses the pickup location, the destination, what type of uber car is available and the payment method used to pay for the ride.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_u5uTUBktEeugnPTAsPFJnw" name="Enter Car">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PrxiMBkwEeuwGKbHftMADg">
+          <body>The user, after waiting for the driver arrival, checks if the car and driver match the one assigned to him and then enters the car.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xEC10BktEeugnPTAsPFJnw" name="Exit Car">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_QcU1YBkwEeuwGKbHftMADg">
+          <body>The user exits the car after arriving at the destination.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yrn3oBktEeugnPTAsPFJnw" name="Rate Driver">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_RUcwMBkwEeuwGKbHftMADg">
+          <body>The user rates the driver, up to five stars.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_etkYUBkuEeugnPTAsPFJnw" name="Respond to Ride Request">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_SmgN8BkwEeuwGKbHftMADg">
+          <body>The driver receives a ride request and chooses wheter he accepts or denies the ride.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_iMqVYBkuEeugnPTAsPFJnw" name="Pickup User">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_TPPo8BkwEeuwGKbHftMADg">
+          <body>The driver after accepting the ride, drives to the pickup location the user chose.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_nt-o4BkuEeugnPTAsPFJnw" name="Drive To Destination">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_UFpsgBkwEeuwGKbHftMADg">
+          <body>The driver, drives to the destination the user chose.</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_3R_l0BktEeugnPTAsPFJnw" name="Check Car Registration Conditions"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3R_l0BktEeugnPTAsPFJnw" name="Check Car Registration Conditions">
+      <ownedComment xmi:type="uml:Comment" xmi:id="__m1e8BkvEeuwGKbHftMADg">
+        <body>This UC checks if the car that the drivers wants to use, matches a certaain amount of conditions.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_HewIUBkuEeugnPTAsPFJnw" name="Check Credentials"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_p97SQBkuEeugnPTAsPFJnw" name="Driver"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_xIuFABkuEeugnPTAsPFJnw" name="Freight">

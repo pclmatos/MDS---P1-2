@@ -875,12 +875,22 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_uhztIBkuEeugnPTAsPFJnw" type="Association_Edge" source="_ErgdQBkxEeucUqLoWc2S3Q" target="_TU_BYBksEeugnPTAsPFJnw">
       <children xmi:type="notation:DecorationNode" xmi:id="_uhztIxkuEeugnPTAsPFJnw" type="Association_NameLabel">
+<<<<<<< HEAD
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9AqRcBkwEeucUqLoWc2S3Q" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJBkuEeugnPTAsPFJnw" y="39"/>
+=======
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zzudQBkvEeuwGKbHftMADg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJBkuEeugnPTAsPFJnw" x="-1" y="38"/>
+>>>>>>> branch 'master' of https://github.com/pclmatos/MDS---P1-2.git
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_uhztJRkuEeugnPTAsPFJnw" type="Association_StereotypeLabel">
+<<<<<<< HEAD
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_9BxEsBkwEeucUqLoWc2S3Q" name="IS_UPDATED_POSITION" booleanValue="true"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJhkuEeugnPTAsPFJnw" x="1" y="-17"/>
+=======
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_z0RP0BkvEeuwGKbHftMADg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJhkuEeugnPTAsPFJnw" x="1" y="-18"/>
+>>>>>>> branch 'master' of https://github.com/pclmatos/MDS---P1-2.git
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_uhztIRkuEeugnPTAsPFJnw"/>
       <element xmi:type="uml:Association" href="common.uml#_uhyfABkuEeugnPTAsPFJnw"/>
