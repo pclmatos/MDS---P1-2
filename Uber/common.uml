@@ -563,7 +563,7 @@ Post-Conditions: Driver found a load to book&#xD;
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uhzGERkuEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_uhzGEhkuEeugnPTAsPFJnw" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_uhyfABkuEeugnPTAsPFJnw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_uhzGExkuEeugnPTAsPFJnw" name="driver" type="_bz4KMBk1EeulX5DAYB4Giw" association="_uhyfABkuEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uhzGExkuEeugnPTAsPFJnw" name="driver" type="_c7130Bk1EeulX5DAYB4Giw" association="_uhyfABkuEeugnPTAsPFJnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_caxnkBk0EeulX5DAYB4Giw" memberEnd="_ca3uMhk0EeulX5DAYB4Giw _ca3uMxk0EeulX5DAYB4Giw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ca3uMBk0EeulX5DAYB4Giw" source="org.eclipse.papyrus">
