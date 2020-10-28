@@ -180,7 +180,7 @@
     </children>
     <children xmi:type="notation:Shape" xmi:id="_AQdpoBhSEeu8v6WJmSvmTA" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_AQfe0BhSEeu8v6WJmSvmTA" type="Actor_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_AQgF4BhSEeu8v6WJmSvmTA" y="15"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AQgF4BhSEeu8v6WJmSvmTA" x="25" y="145"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_AQgF4RhSEeu8v6WJmSvmTA" type="Actor_StereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_AQgF4hhSEeu8v6WJmSvmTA" x="20" y="100"/>
@@ -212,7 +212,7 @@
     </children>
     <children xmi:type="notation:Shape" xmi:id="_2cblIBiQEeuwfIRuN5hTGQ" type="Actor_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_2cblIhiQEeuwfIRuN5hTGQ" type="Actor_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_2cblIxiQEeuwfIRuN5hTGQ" y="15"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2cblIxiQEeuwfIRuN5hTGQ" x="15" y="140"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_2cblJBiQEeuwfIRuN5hTGQ" type="Actor_StereotypeLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_2cblJRiQEeuwfIRuN5hTGQ" x="20" y="100"/>
