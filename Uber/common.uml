@@ -1,2 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__z-nAA2SEeujq4q3EywG0A" name="common"/>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__z-nAA2SEeujq4q3EywG0A" name="common">
+  <packagedElement xmi:type="uml:Package" xmi:id="_xjtmoBkoEeugnPTAsPFJnw" name="Uber">
+    <packagedElement xmi:type="uml:Package" xmi:id="_4iCDoBkoEeugnPTAsPFJnw" name="Eats">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oDpTsBkqEeugnPTAsPFJnw" name="Choose Restaurant"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rmw1IBkqEeugnPTAsPFJnw" name="Choose Food"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_wvXtsBkqEeugnPTAsPFJnw" name="Pay Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ymFXsBkqEeugnPTAsPFJnw" name="Receive Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_AZKtEBkrEeugnPTAsPFJnw" name="Get Food"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BV-TkBkrEeugnPTAsPFJnw" name="Deliver Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FmUHYBkrEeugnPTAsPFJnw" name="Confirm Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_KpOnoBkrEeugnPTAsPFJnw" name="Receive Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_NfuToBkrEeugnPTAsPFJnw" name="Prepare Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_QJRIwBkrEeugnPTAsPFJnw" name="Deliver Food"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__4O1IBkoEeugnPTAsPFJnw" name="Create Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hMN-UBkpEeugnPTAsPFJnw">
+        <body>Name: Create User Account&#xD;
+Description: This UC creates a new user account in the system.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. Password has to be valid.&#xD;
+Main flow:&#xD;
+1. This UC starts when the the app is opened for the first time.&#xD;
+2. The user is asked to create an account.&#xD;
+3. The user writes his email address, his name, his password and his phone number.&#xD;
+4. Include &lt;Validate Password>&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+Post-Conditions: The system registers the user account.</body>
+      </ownedComment>
+      <include xmi:type="uml:Include" xmi:id="_XOnswBkpEeugnPTAsPFJnw" addition="_OIGNIBkpEeugnPTAsPFJnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OIGNIBkpEeugnPTAsPFJnw" name="Validate Password">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_b8VZEBkpEeugnPTAsPFJnw">
+        <body>Name: Validate Password&#xD;
+Description: This UC checks if the password is valid.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Pre-Condition: &#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Password doesn't fit the conditions to be valid.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is not valid and asks the client to repeat.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about password's validation</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GLvlIBkqEeugnPTAsPFJnw" name="Register Car">
+      <include xmi:type="uml:Include" xmi:id="_TmCDMBkuEeugnPTAsPFJnw" addition="_3R_l0BktEeugnPTAsPFJnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_-ucQoBkqEeugnPTAsPFJnw" name="Uber Eats Employee"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_IaBlIBkrEeugnPTAsPFJnw" name="Restaurant Employee"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-59HoBkrEeugnPTAsPFJnw" name="Scoot/Bike">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_2YyiYBksEeugnPTAsPFJnw" name="Scan QR Code"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4QaLUBksEeugnPTAsPFJnw" name="Create Complaint"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8j0hQBksEeugnPTAsPFJnw" name="End Ride">
+        <include xmi:type="uml:Include" xmi:id="_HsRcYBktEeugnPTAsPFJnw" addition="_Acp0ABktEeugnPTAsPFJnw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Acp0ABktEeugnPTAsPFJnw" name="Photograph Parking"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_XUOBoBktEeugnPTAsPFJnw" name="Payment"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_civqEBkvEeugnPTAsPFJnw" name="Recharge Scoot/Bike"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
+      <include xmi:type="uml:Include" xmi:id="_LNzM8BkuEeugnPTAsPFJnw" addition="_HewIUBkuEeugnPTAsPFJnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uzAcwBksEeugnPTAsPFJnw" name="Select Payment Method"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JeckoBktEeugnPTAsPFJnw" name="Uber Scoot/Bike Worker"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Nx4IsBktEeugnPTAsPFJnw" name="Admin"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_es9JwBktEeugnPTAsPFJnw" name="Ride">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_tBK2QBktEeugnPTAsPFJnw" name="Setup Ride"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_u5uTUBktEeugnPTAsPFJnw" name="Enter Car"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xEC10BktEeugnPTAsPFJnw" name="Exit Car"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yrn3oBktEeugnPTAsPFJnw" name="Rate Driver"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_etkYUBkuEeugnPTAsPFJnw" name="Respond to Ride Request"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_iMqVYBkuEeugnPTAsPFJnw" name="Pickup User"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_nt-o4BkuEeugnPTAsPFJnw" name="Drive To Destination"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3R_l0BktEeugnPTAsPFJnw" name="Check Car Registration Conditions"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_HewIUBkuEeugnPTAsPFJnw" name="Check Credentials"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_p97SQBkuEeugnPTAsPFJnw" name="Driver"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_xIuFABkuEeugnPTAsPFJnw" name="Freight">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1FT2YBkuEeugnPTAsPFJnw" name="Input load details"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_2EXfoBkuEeugnPTAsPFJnw" name="Track load online"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_3U-L4BkuEeugnPTAsPFJnw" name="Pay"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_9jtmEBkuEeugnPTAsPFJnw" name="Book load"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_-1mrwBkuEeugnPTAsPFJnw" name="Post truck"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BtI5kBkvEeugnPTAsPFJnw" name="Pickup delivery"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_DWPlYBkvEeugnPTAsPFJnw" name="Deliver load"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FS1N4BkvEeugnPTAsPFJnw" name="Call Uber Freight Support"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HuNrMBkvEeugnPTAsPFJnw" name="Take picture of confirmation"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_LQSDwBkvEeugnPTAsPFJnw" name="Get paid"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_N3iZ4BkvEeugnPTAsPFJnw" name="Receive the load"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_QBz5EBkvEeugnPTAsPFJnw" name="Receiver"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IJPCABkpEeugnPTAsPFJnw" memberEnd="_IJUhkBkpEeugnPTAsPFJnw _IJUhkRkpEeugnPTAsPFJnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IJQQIBkpEeugnPTAsPFJnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IJQQIRkpEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IJUhkBkpEeugnPTAsPFJnw" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_IJPCABkpEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IJUhkRkpEeugnPTAsPFJnw" name="client" type="_9OsnEBkoEeugnPTAsPFJnw" association="_IJPCABkpEeugnPTAsPFJnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_on_MUBkpEeugnPTAsPFJnw" memberEnd="_ooAacRkpEeugnPTAsPFJnw _ooAachkpEeugnPTAsPFJnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_on_zYBkpEeugnPTAsPFJnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ooAacBkpEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ooAacRkpEeugnPTAsPFJnw" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_on_MUBkpEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ooAachkpEeugnPTAsPFJnw" name="driver without account" type="_lc6-gBkpEeugnPTAsPFJnw" association="_on_MUBkpEeugnPTAsPFJnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VnBAUBkqEeugnPTAsPFJnw" memberEnd="_VnBnYhkqEeugnPTAsPFJnw _VnBnYxkqEeugnPTAsPFJnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnBnYBkqEeugnPTAsPFJnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VnBnYRkqEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VnBnYhkqEeugnPTAsPFJnw" name="driver without account" type="_lc6-gBkpEeugnPTAsPFJnw" association="_VnBAUBkqEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VnBnYxkqEeugnPTAsPFJnw" name="register car" type="_GLvlIBkqEeugnPTAsPFJnw" association="_VnBAUBkqEeugnPTAsPFJnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0q4EgBkrEeugnPTAsPFJnw" memberEnd="_0q4rkhkrEeugnPTAsPFJnw _0q4rkxkrEeugnPTAsPFJnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0q4rkBkrEeugnPTAsPFJnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0q4rkRkrEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0q4rkhkrEeugnPTAsPFJnw" name="uber eats user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_0q4EgBkrEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0q4rkxkrEeugnPTAsPFJnw" name="choose restaurant" type="_oDpTsBkqEeugnPTAsPFJnw" association="_0q4EgBkrEeugnPTAsPFJnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uhyfABkuEeugnPTAsPFJnw" memberEnd="_uhzGEhkuEeugnPTAsPFJnw _uhzGExkuEeugnPTAsPFJnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uhzGEBkuEeugnPTAsPFJnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uhzGERkuEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uhzGEhkuEeugnPTAsPFJnw" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_uhyfABkuEeugnPTAsPFJnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uhzGExkuEeugnPTAsPFJnw" name="driver" type="_p97SQBkuEeugnPTAsPFJnw" association="_uhyfABkuEeugnPTAsPFJnw"/>
+  </packagedElement>
+</uml:Package>
