@@ -223,4 +223,11 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_EZA9MBe_EeuxvcKDEk6LAw" name="driver" type="_gMv0wBe9EeuxvcKDEk6LAw" association="_EY_IABe_EeuxvcKDEk6LAw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_EZA9MRe_EeuxvcKDEk6LAw" name="drive to destination" type="_AxgrABe_EeuxvcKDEk6LAw" association="_EY_IABe_EeuxvcKDEk6LAw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M2qdoBktEeuwGKbHftMADg" memberEnd="_M2znkBktEeuwGKbHftMADg _M2znkRktEeuwGKbHftMADg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M2xLUBktEeuwGKbHftMADg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M2xyYBktEeuwGKbHftMADg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M2znkBktEeuwGKbHftMADg" name="driver without account" type="_4ObFEBe9EeuxvcKDEk6LAw" association="_M2qdoBktEeuwGKbHftMADg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M2znkRktEeuwGKbHftMADg" name="create account" type="_PnQUEBe7EeuXq-tJP09PJw" association="_M2qdoBktEeuwGKbHftMADg"/>
+  </packagedElement>
 </uml:Package>
