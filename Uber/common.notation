@@ -862,10 +862,12 @@
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_uhztIBkuEeugnPTAsPFJnw" type="Association_Edge" source="_p-bBgBkuEeugnPTAsPFJnw" target="_TU_BYBksEeugnPTAsPFJnw">
       <children xmi:type="notation:DecorationNode" xmi:id="_uhztIxkuEeugnPTAsPFJnw" type="Association_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJBkuEeugnPTAsPFJnw" y="40"/>
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zzudQBkvEeuwGKbHftMADg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJBkuEeugnPTAsPFJnw" x="-1" y="38"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_uhztJRkuEeugnPTAsPFJnw" type="Association_StereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJhkuEeugnPTAsPFJnw" y="-20"/>
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_z0RP0BkvEeuwGKbHftMADg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uhztJhkuEeugnPTAsPFJnw" x="1" y="-18"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_uhztIRkuEeugnPTAsPFJnw"/>
       <element xmi:type="uml:Association" href="common.uml#_uhyfABkuEeugnPTAsPFJnw"/>
