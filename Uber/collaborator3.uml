@@ -8,9 +8,33 @@
     <region xmi:type="uml:Region" xmi:id="_QViGEA2ZEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_pDtxQBfEEeuPdtFRHZD2IQ" name="Uber Scoot">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_Mhw-ABhkEeuqhqCrHvvM5g" name="Create Account"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_XN5JgBhkEeuqhqCrHvvM5g" name="Login"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_Zw8VEBhkEeuqhqCrHvvM5g" name="Recharge Scoot"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Mhw-ABhkEeuqhqCrHvvM5g" name="Create Account">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0eVE0BkAEeuGa7of6HhcLA">
+        <body>Creates a new user in the system.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XN5JgBhkEeuqhqCrHvvM5g" name="Login">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_xTDtkBj-EeuGa7of6HhcLA">
+        <body>The user logs into his account with the credentials used upon account creation. </body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Zw8VEBhkEeuqhqCrHvvM5g" name="Recharge Scoot">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DnYuoBkBEeuGa7of6HhcLA">
+        <body>Name: Recharge Scoot&#xD;
+Description: This UC describes the actions preformed by an Uber Worker to charge the system products.&#xD;
+Actor:&#xD;
+	Main: Worker&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-conditions. There are products to be recharged&#xD;
+Main flow:&#xD;
+	1. The Worker goes to the product to be recharged&#xD;
+	2. The Worker picks up the product and put it chargig in the charging station.&#xD;
+	3. When its full charge, the Worker leaves the product in a designated area.&#xD;
+	6. The UC ends.&#xD;
+Alternative flows: &lt;none>&#xD;
+Post-conditions: &lt;none></body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_eXNVkBhkEeuqhqCrHvvM5g" name="Scan QR code">
       <ownedComment xmi:type="uml:Comment" xmi:id="_wc-UMBh8Eeus68sb1ikOOg">
         <body>Name: Scan QR&#xD;
@@ -75,14 +99,62 @@ Main Flow:&#xD;
 </body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_nIiBQBhkEeuqhqCrHvvM5g" name="Payment"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_tJdo8BhkEeuqhqCrHvvM5g" name="End Ride"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_xT63MBhkEeuqhqCrHvvM5g" name="Photograph Parking"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nIiBQBhkEeuqhqCrHvvM5g" name="Payment">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9VK0kBj-EeuGa7of6HhcLA">
+        <body>During the usage of the product, the user will pay an amount every minute.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tJdo8BhkEeuqhqCrHvvM5g" name="End Ride">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_k62lUBj_EeuGa7of6HhcLA">
+        <body>The user ends the ride on the app, and the payment per minute stops, </body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_xT63MBhkEeuqhqCrHvvM5g" name="Photograph Parking">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_s8FbYBkAEeuGa7of6HhcLA">
+        <body>The system asks for a photograph of the parking of the product.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_36m3UBhkEeuqhqCrHvvM5g" name="«include»" client="_tJdo8BhkEeuqhqCrHvvM5g" supplier="_xT63MBhkEeuqhqCrHvvM5g"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_Cd8TMBhlEeuqhqCrHvvM5g" name="Validate Password"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Cd8TMBhlEeuqhqCrHvvM5g" name="Validate Password">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_-v8ekBkAEeuGa7of6HhcLA">
+        <body>Checks if the password is valid and stores it in the system.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_FBi4YBhlEeuqhqCrHvvM5g" name="«include»" client="_Mhw-ABhkEeuqhqCrHvvM5g" supplier="_Cd8TMBhlEeuqhqCrHvvM5g"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_N2aAQBhlEeuqhqCrHvvM5g" name="Select Payment Method"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_h6oA4BiDEeuqIsKbvW_1jA" name="Create complaint"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_N2aAQBhlEeuqhqCrHvvM5g" name="Select Payment Method">
+      <ownedComment xmi:type="uml:Comment" xmi:id="__zvasBj8EeuGa7of6HhcLA">
+        <body>Name: Select Payment Method&#xD;
+Description: This UC checks if the payment method is valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. User has to be logged in.&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+2. Payment Method is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: payment method is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Payment method is not valid or no longer valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+3. Payment method is not valid and asks the user for a different payment method.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about payment method.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_h6oA4BiDEeuqIsKbvW_1jA" name="Create complaint">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_3cUK0Bj-EeuGa7of6HhcLA">
+        <body>The user creates a complaint on the app and is stored in the system. </body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_ohXEUBiDEeuqIsKbvW_1jA" name="Solve complaints">
       <ownedComment xmi:type="uml:Comment" xmi:id="_zOyNIBh_Eeus68sb1ikOOg">
         <body>Name: Solve Complaints&#xD;
