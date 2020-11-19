@@ -191,85 +191,6 @@ Flow:&#xD;
         </include>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_DexZ0BkwEeuwGKbHftMADg">
-        <body>The user without account is the actor that wants to use the system but doesn't have an account yet.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="__4O1IBkoEeugnPTAsPFJnw" name="Create Account">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_hMN-UBkpEeugnPTAsPFJnw">
-        <body>Name: Create User Account&#xD;
-Description: This UC creates a new user account in the system.&#xD;
-Actors:&#xD;
-    Main: User without account&#xD;
-    Secondary: &lt;none>&#xD;
-Pre-Condition: The app has to be installed on the phone. Password has to be valid.&#xD;
-Main flow:&#xD;
-1. This UC starts when the the app is opened for the first time.&#xD;
-2. The user is asked to create an account.&#xD;
-3. The user writes his email address, his name, his password and his phone number.&#xD;
-4. Include &lt;Validate Password>&#xD;
-5. The UC ends.&#xD;
-&#xD;
-Alternative flows: Password is not valid.&#xD;
-&#xD;
-Post-Conditions: The system registers the user account.</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_XOnswBkpEeugnPTAsPFJnw" addition="_OIGNIBkpEeugnPTAsPFJnw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_OIGNIBkpEeugnPTAsPFJnw" name="Validate Password">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_b8VZEBkpEeugnPTAsPFJnw">
-        <body>Name: Validate Password&#xD;
-Description: This UC checks if the password is valid.&#xD;
-Actors:&#xD;
-    Main: User without account&#xD;
-    Secondary: &lt;none>&#xD;
-Pre-Condition: &#xD;
-Main flow:&#xD;
-1. The system checks if password's lenght is within the threshold.&#xD;
-2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
-3. Password is registered as valid and stored in the system.&#xD;
-4.The UC ends. &#xD;
-&#xD;
-Alternative flows: Password is not valid.&#xD;
-&#xD;
------------------------------&#xD;
-&#xD;
-Description: Password doesn't fit the conditions to be valid.&#xD;
-Actors:&#xD;
-    Main: User without account&#xD;
-    Secondary: &lt;none>&#xD;
-Main flow:&#xD;
-1. The system checks if password's lenght is within the threshold.&#xD;
-2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
-3. Password is not valid and asks the client to repeat.&#xD;
-4. The UC ends.&#xD;
-&#xD;
-Post-Conditions: The systems informs the user about password's validation</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_ChJT8BkwEeuwGKbHftMADg">
-        <body>The driver without account is the actor of a driver that doesn't have a driver account on the system.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_GLvlIBkqEeugnPTAsPFJnw" name="Register Car">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Aw6scBkwEeuwGKbHftMADg">
-        <body>The driver registers the car he will use to transport users, when he uses the app for the first time.</body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_Jm-3wBk8EeuwGKbHftMADg" addition="_3R_l0BktEeugnPTAsPFJnw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_-ucQoBkqEeugnPTAsPFJnw" name="Uber Eats Employee">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_gT2mYBk-EeuwGKbHftMADg">
-        <body>The Uber Eats Employee is the actor that delivers the food to the user</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_IaBlIBkrEeugnPTAsPFJnw" name="Restaurant Employee">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_p6qIkBk-EeuwGKbHftMADg">
-        <body>The Restaurant Employee is the actor who receives and prepares the order&#xD;
-</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User">
       <ownedComment xmi:type="uml:Comment" xmi:id="_FCMUYBkwEeuwGKbHftMADg">
         <body>The user is the actor who uses the system.</body>
@@ -391,76 +312,18 @@ Post-conditions: &lt;none></body>
         </ownedComment>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_HbEu8Bk-EeuwGKbHftMADg">
-        <body>The user logs into his account with the credentials used upon account creation. </body>
-      </ownedComment>
-      <include xmi:type="uml:Include" xmi:id="_LNzM8BkuEeugnPTAsPFJnw" addition="_HewIUBkuEeugnPTAsPFJnw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_uzAcwBksEeugnPTAsPFJnw" name="Select Payment Method">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_18fGQBk_EeuWj5_JrjzH4g">
-        <body>Name: Select Payment Method&#xD;
-Description: This UC checks if the payment method is valid.&#xD;
-Actors:&#xD;
-	Main: User&#xD;
-	Secondary: &lt;none>&#xD;
-Pre-Condition: The app has to be installed on the phone. User has to be logged in.&#xD;
-Main flow:&#xD;
-1. The system checks if payment method is valid.&#xD;
-2. Payment Method is registered as valid and stored in the system.&#xD;
-4.The UC ends. &#xD;
-&#xD;
-Alternative flows: payment method is not valid.&#xD;
-&#xD;
------------------------------&#xD;
-&#xD;
-Description: Payment method is not valid or no longer valid.&#xD;
-Actors:&#xD;
-	Main: User&#xD;
-	Secondary: &lt;none>&#xD;
-Main flow:&#xD;
-1. The system checks if payment method is valid.&#xD;
-3. Payment method is not valid and asks the user for a different payment method.&#xD;
-4. The UC ends.&#xD;
-&#xD;
-Post-Conditions: The systems informs the user about payment method.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_JeckoBktEeugnPTAsPFJnw" name="Uber Scoot/Bike Worker">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Yv8wEBk-EeuwGKbHftMADg">
-        <body>The Uber Scoot/Bike worker is the actor whom recharges the batery of the scoots and restocks the scoots and bike</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_Nx4IsBktEeugnPTAsPFJnw" name="Admin">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Jc_t8Bk_EeuwGKbHftMADg">
-        <body>The Admin is the actor who provides support to the User suppport</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_enfyQBk-EeuwGKbHftMADg">
-        <body>The Time is the actor the represents the time passing</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_es9JwBktEeugnPTAsPFJnw" name="Ride">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_tBK2QBktEeugnPTAsPFJnw" name="Setup Ride">
         <ownedComment xmi:type="uml:Comment" xmi:id="_JM5aQBkwEeuwGKbHftMADg">
           <body>The user chooses the pickup location, the destination, what type of uber car is available and the payment method used to pay for the ride.</body>
         </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_u5uTUBktEeugnPTAsPFJnw" name="Enter Car">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_PrxiMBkwEeuwGKbHftMADg">
-          <body>The user, after waiting for the driver arrival, checks if the car and driver match the one assigned to him and then enters the car.</body>
-        </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_xEC10BktEeugnPTAsPFJnw" name="Exit Car">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_QcU1YBkwEeuwGKbHftMADg">
-          <body>The user exits the car after arriving at the destination.</body>
-        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_nXSZoCplEeuwD96ifJLZLA" addition="_etkYUBkuEeugnPTAsPFJnw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_yrn3oBktEeugnPTAsPFJnw" name="Rate Driver">
         <ownedComment xmi:type="uml:Comment" xmi:id="_RUcwMBkwEeuwGKbHftMADg">
           <body>The user rates the driver, up to five stars.</body>
         </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_yjELACpkEeuwD96ifJLZLA" extendedCase="_sH9v0CpkEeuwD96ifJLZLA" extensionLocation="_yjFZICpkEeuwD96ifJLZLA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_etkYUBkuEeugnPTAsPFJnw" name="Respond to Ride Request">
         <ownedComment xmi:type="uml:Comment" xmi:id="_SmgN8BkwEeuwGKbHftMADg">
@@ -477,21 +340,12 @@ Post-Conditions: The systems informs the user about payment method.</body>
           <body>The driver, drives to the destination the user chose.</body>
         </ownedComment>
       </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_3R_l0BktEeugnPTAsPFJnw" name="Check Car Registration Conditions">
-      <ownedComment xmi:type="uml:Comment" xmi:id="__m1e8BkvEeuwGKbHftMADg">
-        <body>This UC checks if the car that the drivers wants to use, matches a certaain amount of conditions.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_HewIUBkuEeugnPTAsPFJnw" name="Check Credentials">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_JCbHQBk-EeuwGKbHftMADg">
-        <body>This UC checks if the credentials used to login match an account in the system.</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_p97SQBkuEeugnPTAsPFJnw" name="Driver">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_LOjAkBk-EeuwGKbHftMADg">
-        <body>The driver is the actor that gives a ride to the users.</body>
-      </ownedComment>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_sH9v0CpkEeuwD96ifJLZLA" name="Ride">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lmQg4CplEeuwD96ifJLZLA">
+          <body>The user checks if the car and driver corresponds to the ones assigned to him, get in the car and when he arrives at the destination leaves the car. During the ride, or at the end, the user can rate the driver</body>
+        </ownedComment>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yjFZICpkEeuwD96ifJLZLA" name="Rate driver"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_xIuFABkuEeugnPTAsPFJnw" name="Freight">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1FT2YBkuEeugnPTAsPFJnw" name="Input load details">
@@ -519,12 +373,6 @@ Post-Conditions: The systems informs the user about payment method.</body>
         <ownedComment xmi:type="uml:Comment" xmi:id="_CIXRcBk5Eeu3ctnlqQovpw">
           <body>You can post the dates you can do deliveries and receive an alert if any load is in that date</body>
         </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_BtI5kBkvEeugnPTAsPFJnw" name="Pickup delivery">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_7a6iABk4Eeu3ctnlqQovpw">
-          <body>Pickup the delivery to start the trip</body>
-        </ownedComment>
-        <include xmi:type="uml:Include" xmi:id="_NQI-gBk2EeulX5DAYB4Giw" addition="_I95tQBk2EeulX5DAYB4Giw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_DWPlYBkvEeugnPTAsPFJnw" name="Deliver load">
         <ownedComment xmi:type="uml:Comment" xmi:id="_48L1wBk4Eeu3ctnlqQovpw">
@@ -606,15 +454,109 @@ Post-Conditions: Driver found a load to book&#xD;
           <body>Receive the confirmation via email of the booking</body>
         </ownedComment>
       </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_BtI5kBkvEeugnPTAsPFJnw" name="Pickup delivery">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7a6iABk4Eeu3ctnlqQovpw">
+          <body>Pickup the delivery to start the trip</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_NQI-gBk2EeulX5DAYB4Giw" addition="_I95tQBk2EeulX5DAYB4Giw"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_QBz5EBkvEeugnPTAsPFJnw" name="Receiver">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Nv7iwBk_EeuwGKbHftMADg">
-        <body>The Receiver is the actor who receives the load</body>
-      </ownedComment>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_FR384Bk1EeulX5DAYB4Giw" name="Solve Problem">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_e35p8Bk3Eeu1zppl6aty6A">
-        <body>Name: Solve Complaints&#xD;
+    <packagedElement xmi:type="uml:Package" xmi:id="_5zYhgCplEeuwD96ifJLZLA" name="Common">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_GLvlIBkqEeugnPTAsPFJnw" name="Register Car">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Aw6scBkwEeuwGKbHftMADg">
+          <body>The driver registers the car he will use to transport users, when he uses the app for the first time.</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_Jm-3wBk8EeuwGKbHftMADg" addition="_3R_l0BktEeugnPTAsPFJnw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_3R_l0BktEeugnPTAsPFJnw" name="Check Car Registration Conditions">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__m1e8BkvEeuwGKbHftMADg">
+          <body>This UC checks if the car that the drivers wants to use, matches a certaain amount of conditions.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="__4O1IBkoEeugnPTAsPFJnw" name="Create Account">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_hMN-UBkpEeugnPTAsPFJnw">
+          <body>Name: Create User Account&#xD;
+Description: This UC creates a new user account in the system.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. Password has to be valid.&#xD;
+Main flow:&#xD;
+1. This UC starts when the the app is opened for the first time.&#xD;
+2. The user is asked to create an account.&#xD;
+3. The user writes his email address, his name, his password and his phone number.&#xD;
+4. Include &lt;Validate Password>&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+Post-Conditions: The system registers the user account.</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_XOnswBkpEeugnPTAsPFJnw" addition="_OIGNIBkpEeugnPTAsPFJnw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_OIGNIBkpEeugnPTAsPFJnw" name="Validate Password">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_b8VZEBkpEeugnPTAsPFJnw">
+          <body>Name: Validate Password&#xD;
+Description: This UC checks if the password is valid.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Pre-Condition: &#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: Password is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Password doesn't fit the conditions to be valid.&#xD;
+Actors:&#xD;
+    Main: User without account&#xD;
+    Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if password's lenght is within the threshold.&#xD;
+2. The system checks if password's characters are a mix of upper and lower case characters, special characters and numbers.&#xD;
+3. Password is not valid and asks the client to repeat.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about password's validation</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_uzAcwBksEeugnPTAsPFJnw" name="Select Payment Method">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_18fGQBk_EeuWj5_JrjzH4g">
+          <body>Name: Select Payment Method&#xD;
+Description: This UC checks if the payment method is valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Pre-Condition: The app has to be installed on the phone. User has to be logged in.&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+2. Payment Method is registered as valid and stored in the system.&#xD;
+4.The UC ends. &#xD;
+&#xD;
+Alternative flows: payment method is not valid.&#xD;
+&#xD;
+-----------------------------&#xD;
+&#xD;
+Description: Payment method is not valid or no longer valid.&#xD;
+Actors:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+Main flow:&#xD;
+1. The system checks if payment method is valid.&#xD;
+3. Payment method is not valid and asks the user for a different payment method.&#xD;
+4. The UC ends.&#xD;
+&#xD;
+Post-Conditions: The systems informs the user about payment method.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FR384Bk1EeulX5DAYB4Giw" name="Solve Problem">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_e35p8Bk3Eeu1zppl6aty6A">
+          <body>Name: Solve Complaints&#xD;
 Description: This UC describes the actions preformed by an Uber Admin to solve the complaints created by a User&#xD;
 Actor:&#xD;
 	Main: Admin&#xD;
@@ -629,22 +571,20 @@ Main flow:&#xD;
 	6. The UC ends.&#xD;
 Alternative flows: &lt;none>&#xD;
 Post-conditions: &lt;none></body>
-      </ownedComment>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_HbEu8Bk-EeuwGKbHftMADg">
+          <body>The user logs into his account with the credentials used upon account creation. </body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_LNzM8BkuEeugnPTAsPFJnw" addition="_HewIUBkuEeugnPTAsPFJnw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HewIUBkuEeugnPTAsPFJnw" name="Check Credentials">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JCbHQBk-EeuwGKbHftMADg">
+          <body>This UC checks if the credentials used to login match an account in the system.</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_IJPCABkpEeugnPTAsPFJnw" memberEnd="_IJUhkBkpEeugnPTAsPFJnw _IJUhkRkpEeugnPTAsPFJnw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IJQQIBkpEeugnPTAsPFJnw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IJQQIRkpEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_IJUhkBkpEeugnPTAsPFJnw" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_IJPCABkpEeugnPTAsPFJnw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_IJUhkRkpEeugnPTAsPFJnw" name="client" type="_9OsnEBkoEeugnPTAsPFJnw" association="_IJPCABkpEeugnPTAsPFJnw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_on_MUBkpEeugnPTAsPFJnw" memberEnd="_ooAacRkpEeugnPTAsPFJnw _ooAachkpEeugnPTAsPFJnw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_on_zYBkpEeugnPTAsPFJnw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ooAacBkpEeugnPTAsPFJnw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ooAacRkpEeugnPTAsPFJnw" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_on_MUBkpEeugnPTAsPFJnw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ooAachkpEeugnPTAsPFJnw" name="driver without account" type="_lc6-gBkpEeugnPTAsPFJnw" association="_on_MUBkpEeugnPTAsPFJnw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_VnBAUBkqEeugnPTAsPFJnw" memberEnd="_VnBnYhkqEeugnPTAsPFJnw _VnBnYxkqEeugnPTAsPFJnw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnBnYBkqEeugnPTAsPFJnw" source="org.eclipse.papyrus">
@@ -828,26 +768,12 @@ Post-conditions: &lt;none></body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_q9BTkxk1EeulX5DAYB4Giw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_q9BTkBk1EeulX5DAYB4Giw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_q9BTlBk1EeulX5DAYB4Giw" name="setup ride" type="_tBK2QBktEeugnPTAsPFJnw" association="_q9BTkBk1EeulX5DAYB4Giw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_r3Mc0Bk1EeulX5DAYB4Giw" memberEnd="_r3Mc0xk1EeulX5DAYB4Giw _r3Mc1Bk1EeulX5DAYB4Giw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r3Mc0Rk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r3Mc0hk1EeulX5DAYB4Giw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_r3Mc0xk1EeulX5DAYB4Giw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_r3Mc0Bk1EeulX5DAYB4Giw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_r3Mc1Bk1EeulX5DAYB4Giw" name="enter car" type="_u5uTUBktEeugnPTAsPFJnw" association="_r3Mc0Bk1EeulX5DAYB4Giw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_sk20EBk1EeulX5DAYB4Giw" memberEnd="_sk20Exk1EeulX5DAYB4Giw _sk3bIBk1EeulX5DAYB4Giw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sk20ERk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sk20Ehk1EeulX5DAYB4Giw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_sk20Exk1EeulX5DAYB4Giw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_sk20EBk1EeulX5DAYB4Giw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_sk3bIBk1EeulX5DAYB4Giw" name="exit car" type="_xEC10BktEeugnPTAsPFJnw" association="_sk20EBk1EeulX5DAYB4Giw"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_tHm70Bk1EeulX5DAYB4Giw" memberEnd="_tHpYEBk1EeulX5DAYB4Giw _tHp_IBk1EeulX5DAYB4Giw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tHoJ8Bk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tHoxABk1EeulX5DAYB4Giw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_tHpYEBk1EeulX5DAYB4Giw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_tHm70Bk1EeulX5DAYB4Giw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_tHp_IBk1EeulX5DAYB4Giw" name="rate driver" type="_yrn3oBktEeugnPTAsPFJnw" association="_tHm70Bk1EeulX5DAYB4Giw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tHp_IBk1EeulX5DAYB4Giw" name="rate driver" type="_sH9v0CpkEeuwD96ifJLZLA" association="_tHm70Bk1EeulX5DAYB4Giw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_4ge4kBk1EeulX5DAYB4Giw" memberEnd="_4gk_MRk1EeulX5DAYB4Giw _4gk_Mhk1EeulX5DAYB4Giw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4ge4kRk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
@@ -905,11 +831,72 @@ Post-conditions: &lt;none></body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_X5X0wRk7EeuwGKbHftMADg" name="driver" type="_p97SQBkuEeugnPTAsPFJnw" association="_X5WmoBk7EeuwGKbHftMADg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_X5X0whk7EeuwGKbHftMADg" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_X5WmoBk7EeuwGKbHftMADg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_I6a3QBk9EeuwGKbHftMADg" memberEnd="_I6cFYhk9EeuwGKbHftMADg _I6cscBk9EeuwGKbHftMADg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I6cFYBk9EeuwGKbHftMADg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I6cFYRk9EeuwGKbHftMADg" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_DexZ0BkwEeuwGKbHftMADg">
+      <body>The user without account is the actor that wants to use the system but doesn't have an account yet.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_1vbj4CplEeuwD96ifJLZLA" name="Person"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_ChJT8BkwEeuwGKbHftMADg">
+      <body>The driver without account is the actor of a driver that doesn't have a driver account on the system.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Nx4IsBktEeugnPTAsPFJnw" name="Admin">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Jc_t8Bk_EeuwGKbHftMADg">
+      <body>The Admin is the actor who provides support to the User suppport</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ETBwMCpmEeuwD96ifJLZLA" memberEnd="_ETK6ICpmEeuwD96ifJLZLA _ETLhMCpmEeuwD96ifJLZLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ETDlYCpmEeuwD96ifJLZLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ETDlYSpmEeuwD96ifJLZLA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_I6cFYhk9EeuwGKbHftMADg" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_I6a3QBk9EeuwGKbHftMADg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_I6cscBk9EeuwGKbHftMADg" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_I6a3QBk9EeuwGKbHftMADg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ETK6ICpmEeuwD96ifJLZLA" name="actor39" type="_1vbj4CplEeuwD96ifJLZLA" association="_ETBwMCpmEeuwD96ifJLZLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ETLhMCpmEeuwD96ifJLZLA" name="user without account" type="_9OsnEBkoEeugnPTAsPFJnw" association="_ETBwMCpmEeuwD96ifJLZLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GQzrgCpmEeuwD96ifJLZLA" memberEnd="_GQ05oSpmEeuwD96ifJLZLA _GQ1gsCpmEeuwD96ifJLZLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GQ0SkCpmEeuwD96ifJLZLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GQ05oCpmEeuwD96ifJLZLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GQ05oSpmEeuwD96ifJLZLA" name="actor39" type="_1vbj4CplEeuwD96ifJLZLA" association="_GQzrgCpmEeuwD96ifJLZLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GQ1gsCpmEeuwD96ifJLZLA" name="driver without account" type="_lc6-gBkpEeugnPTAsPFJnw" association="_GQzrgCpmEeuwD96ifJLZLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-ucQoBkqEeugnPTAsPFJnw" name="Uber Eats Employee">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_gT2mYBk-EeuwGKbHftMADg">
+      <body>The Uber Eats Employee is the actor that delivers the food to the user</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_IaBlIBkrEeugnPTAsPFJnw" name="Restaurant Employee">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_p6qIkBk-EeuwGKbHftMADg">
+      <body>The Restaurant Employee is the actor who receives and prepares the order&#xD;
+</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_JeckoBktEeugnPTAsPFJnw" name="Uber Scoot/Bike Worker">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Yv8wEBk-EeuwGKbHftMADg">
+      <body>The Uber Scoot/Bike worker is the actor whom recharges the batery of the scoots and restocks the scoots and bike</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_enfyQBk-EeuwGKbHftMADg">
+      <body>The Time is the actor the represents the time passing</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_QBz5EBkvEeugnPTAsPFJnw" name="Receiver">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Nv7iwBk_EeuwGKbHftMADg">
+      <body>The Receiver is the actor who receives the load</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_p97SQBkuEeugnPTAsPFJnw" name="Driver">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_LOjAkBk-EeuwGKbHftMADg">
+      <body>The driver is the actor that gives a ride to the users.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Gn6HcCpnEeuwD96ifJLZLA" memberEnd="_Gn6ugipnEeuwD96ifJLZLA _Gn6ugypnEeuwD96ifJLZLA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Gn6ugCpnEeuwD96ifJLZLA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Gn6ugSpnEeuwD96ifJLZLA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Gn6ugipnEeuwD96ifJLZLA" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_Gn6HcCpnEeuwD96ifJLZLA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Gn6ugypnEeuwD96ifJLZLA" name="person" type="_1vbj4CplEeuwD96ifJLZLA" association="_Gn6HcCpnEeuwD96ifJLZLA"/>
   </packagedElement>
 </uml:Package>
