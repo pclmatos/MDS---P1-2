@@ -19,6 +19,16 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iPyNTyt2EeunZpiBB4Kc8g"/>
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_iPyNUCt2EeunZpiBB4Kc8g" type="Activity_ActivityNodeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_88ti4Ct2EeunZpiBB4Kc8g" type="InitialNode_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_88ti4it2EeunZpiBB4Kc8g" type="InitialNode_FloatingNameLabel">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_88ti4yt2EeunZpiBB4Kc8g" y="15"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_88uJ8Ct2EeunZpiBB4Kc8g" type="InitialNode_StereotypeLabel">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_88uJ8St2EeunZpiBB4Kc8g" y="15"/>
+        </children>
+        <element xmi:type="uml:InitialNode" href="collaborator2.uml#_88pRcCt2EeunZpiBB4Kc8g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_88ti4St2EeunZpiBB4Kc8g" x="36" y="133"/>
+      </children>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iPyNUSt2EeunZpiBB4Kc8g"/>
     </children>
     <element xmi:type="uml:Activity" href="collaborator2.uml#_fsM2MCt2EeunZpiBB4Kc8g"/>
