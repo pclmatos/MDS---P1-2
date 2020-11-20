@@ -6,4 +6,15 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="Activity5" node="_-J1SwCt1EeutJ-OfswSYjg _YMDCACt3EeutJ-OfswSYjg _bGR-gCt3EeutJ-OfswSYjg _XP_0ACt4EeutJ-OfswSYjg _X5OhwCt5EeutJ-OfswSYjg">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YMzP8Ct3EeutJ-OfswSYjg" target="_YMDCACt3EeutJ-OfswSYjg" source="_-J1SwCt1EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bGzi8Ct3EeutJ-OfswSYjg" target="_bGR-gCt3EeutJ-OfswSYjg" source="_YMDCACt3EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XRGAMCt4EeutJ-OfswSYjg" name="[valid]" target="_XP_0ACt4EeutJ-OfswSYjg" source="_bGR-gCt3EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_X50XoCt5EeutJ-OfswSYjg" name="[associated]" target="_X5OhwCt5EeutJ-OfswSYjg" source="_XP_0ACt4EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_-J1SwCt1EeutJ-OfswSYjg" name="Start Ride" outgoing="_YMzP8Ct3EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YMDCACt3EeutJ-OfswSYjg" name="Scan QR Code" incoming="_YMzP8Ct3EeutJ-OfswSYjg" outgoing="_bGzi8Ct3EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_bGR-gCt3EeutJ-OfswSYjg" name="Check if QR Code is valid" incoming="_bGzi8Ct3EeutJ-OfswSYjg" outgoing="_XRGAMCt4EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_XP_0ACt4EeutJ-OfswSYjg" name="Check if code is associated to Scoot or Bike" incoming="_XRGAMCt4EeutJ-OfswSYjg" outgoing="_X50XoCt5EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_X5OhwCt5EeutJ-OfswSYjg" name="Unlock Scoot/Bike" incoming="_X50XoCt5EeutJ-OfswSYjg"/>
+  </packagedElement>
 </uml:Package>
