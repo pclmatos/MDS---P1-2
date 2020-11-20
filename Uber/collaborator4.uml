@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
-  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA" group="_GTRjUCqrEeuwD96ifJLZLA _JY860CqrEeuwD96ifJLZLA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA _1916ACt7EeuGcpIETXw3uQ" group="_GTRjUCqrEeuwD96ifJLZLA _JY860CqrEeuwD96ifJLZLA">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_iZKkACt8EeuGcpIETXw3uQ" name="Constraint31" constrainedElement="_1916ACt7EeuGcpIETXw3uQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iZLLECt8EeuGcpIETXw3uQ" name="constraintSpec">
+        <language>OCL</language>
+        <body>user must have a payment method selected&#xD;
+</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_sVFvsCt-EeuGcpIETXw3uQ" name="Constraint32" constrainedElement="_VN-oECqrEeuwD96ifJLZLA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_sVGWwCt-EeuGcpIETXw3uQ" name="constraintSpec">
+        <language>OCL</language>
+        <body>user mas be logged in&#xD;
+</body>
+      </specification>
+    </ownedRule>
     <edge xmi:type="uml:ControlFlow" xmi:id="_gU6gQCqrEeuwD96ifJLZLA" inPartition="_GTRjUCqrEeuwD96ifJLZLA" target="_VN-oECqrEeuwD96ifJLZLA" source="_MNiiUCqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_A3RQ0CqvEeuwD96ifJLZLA" target="_uvD1oCqrEeuwD96ifJLZLA" source="_VN-oECqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_2gwTgCqvEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_vq1kkCqvEeuwD96ifJLZLA" source="_uvD1oCqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_3pKtECqvEeuwD96ifJLZLA" name="[else]" target="_VN-oECqrEeuwD96ifJLZLA" source="_vq1kkCqvEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_SmtRkCqwEeuwD96ifJLZLA" name="[locations are valid]" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_MkCkgCqwEeuwD96ifJLZLA" source="_vq1kkCqvEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_OX1A4CqxEeuwD96ifJLZLA" target="_ZBQTICqwEeuwD96ifJLZLA" source="_MkCkgCqwEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_lShlkCqyEeuwD96ifJLZLA" target="_bvPRcCqyEeuwD96ifJLZLA" source="_ZBQTICqwEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_tqq8QCqyEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_n68ZUCqyEeuwD96ifJLZLA" source="_bvPRcCqyEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_wWtrwCqyEeuwD96ifJLZLA" name="[else]" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_bvPRcCqyEeuwD96ifJLZLA" source="_n68ZUCqyEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_PgwF4CqzEeuwD96ifJLZLA" name="[found available driver]" target="_8ux0oCqyEeuwD96ifJLZLA" source="_n68ZUCqyEeuwD96ifJLZLA"/>
@@ -15,20 +28,23 @@
     <edge xmi:type="uml:ControlFlow" xmi:id="_srZ4YCtGEeuhjcpthdBAqA" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_nz_dgCtGEeuhjcpthdBAqA" source="_RMgAkCq0EeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_uMROMCtGEeuhjcpthdBAqA" name="[driver arrived]" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_b08l8Cq0EeuwD96ifJLZLA" source="_nz_dgCtGEeuhjcpthdBAqA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_FvlHgCtHEeuhjcpthdBAqA" name="[else]" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_RMgAkCq0EeuwD96ifJLZLA" source="_nz_dgCtGEeuhjcpthdBAqA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_DWmq4Ct8EeuGcpIETXw3uQ" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_bvPRcCqyEeuwD96ifJLZLA" source="_1916ACt7EeuGcpIETXw3uQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EJp4cCt8EeuGcpIETXw3uQ" target="_1916ACt7EeuGcpIETXw3uQ" source="_ZBQTICqwEeuwD96ifJLZLA"/>
     <group xmi:type="uml:ActivityPartition" xmi:id="_GTRjUCqrEeuwD96ifJLZLA" name="User" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA" edge="_gU6gQCqrEeuwD96ifJLZLA"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_JY860CqrEeuwD96ifJLZLA" name="System" node="_uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA" edge="_2gwTgCqvEeuwD96ifJLZLA _SmtRkCqwEeuwD96ifJLZLA _tqq8QCqyEeuwD96ifJLZLA _wWtrwCqyEeuwD96ifJLZLA _srZ4YCtGEeuhjcpthdBAqA _uMROMCtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JY860CqrEeuwD96ifJLZLA" name="System" node="_uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA _1916ACt7EeuGcpIETXw3uQ" edge="_2gwTgCqvEeuwD96ifJLZLA _SmtRkCqwEeuwD96ifJLZLA _tqq8QCqyEeuwD96ifJLZLA _wWtrwCqyEeuwD96ifJLZLA _srZ4YCtGEeuhjcpthdBAqA _uMROMCtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA _DWmq4Ct8EeuGcpIETXw3uQ"/>
     <node xmi:type="uml:InitialNode" xmi:id="_MNiiUCqrEeuwD96ifJLZLA" name="" outgoing="_gU6gQCqrEeuwD96ifJLZLA" inPartition="_GTRjUCqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_VN-oECqrEeuwD96ifJLZLA" name="Choose pickup locations and destination" incoming="_gU6gQCqrEeuwD96ifJLZLA _3pKtECqvEeuwD96ifJLZLA" outgoing="_A3RQ0CqvEeuwD96ifJLZLA" inPartition="_GTRjUCqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_uvD1oCqrEeuwD96ifJLZLA" name="Check if locations are valid" incoming="_A3RQ0CqvEeuwD96ifJLZLA" outgoing="_2gwTgCqvEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:MergeNode" xmi:id="_vq1kkCqvEeuwD96ifJLZLA" name="" incoming="_2gwTgCqvEeuwD96ifJLZLA" outgoing="_3pKtECqvEeuwD96ifJLZLA _SmtRkCqwEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_MkCkgCqwEeuwD96ifJLZLA" name="Prompt information about types of cars available, and the cost of the ride" incoming="_SmtRkCqwEeuwD96ifJLZLA" outgoing="_OX1A4CqxEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_ZBQTICqwEeuwD96ifJLZLA" name="Choose one available type of car" incoming="_OX1A4CqxEeuwD96ifJLZLA" outgoing="_lShlkCqyEeuwD96ifJLZLA" inPartition="_GTRjUCqrEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_bvPRcCqyEeuwD96ifJLZLA" name="Check if there is any available driver close to the pickup location" incoming="_lShlkCqyEeuwD96ifJLZLA _wWtrwCqyEeuwD96ifJLZLA" outgoing="_tqq8QCqyEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZBQTICqwEeuwD96ifJLZLA" name="Choose one available type of car" incoming="_OX1A4CqxEeuwD96ifJLZLA" outgoing="_EJp4cCt8EeuGcpIETXw3uQ" inPartition="_GTRjUCqrEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_bvPRcCqyEeuwD96ifJLZLA" name="Check if there is any available driver close to the pickup location" incoming="_wWtrwCqyEeuwD96ifJLZLA _DWmq4Ct8EeuGcpIETXw3uQ" outgoing="_tqq8QCqyEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:MergeNode" xmi:id="_n68ZUCqyEeuwD96ifJLZLA" name="" incoming="_tqq8QCqyEeuwD96ifJLZLA" outgoing="_wWtrwCqyEeuwD96ifJLZLA _PgwF4CqzEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_8ux0oCqyEeuwD96ifJLZLA" name="Get to pickup location" incoming="_PgwF4CqzEeuwD96ifJLZLA" outgoing="_bmWb8CtGEeuhjcpthdBAqA" inPartition="_GTRjUCqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_RMgAkCq0EeuwD96ifJLZLA" name="Update user about the driver whereabouts" incoming="_bmWb8CtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA" outgoing="_srZ4YCtGEeuhjcpthdBAqA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_b08l8Cq0EeuwD96ifJLZLA" name="" incoming="_uMROMCtGEeuhjcpthdBAqA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
     <node xmi:type="uml:MergeNode" xmi:id="_nz_dgCtGEeuhjcpthdBAqA" name="" incoming="_srZ4YCtGEeuhjcpthdBAqA" outgoing="_uMROMCtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_1916ACt7EeuGcpIETXw3uQ" name="Check if payment method has enough credit" incoming="_EJp4cCt8EeuGcpIETXw3uQ" outgoing="_DWmq4Ct8EeuGcpIETXw3uQ" inPartition="_JY860CqrEeuwD96ifJLZLA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_owSkwA2ZEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
