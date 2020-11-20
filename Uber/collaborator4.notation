@@ -241,7 +241,7 @@
     <edges xmi:type="notation:Connector" xmi:id="_3pUeECqvEeuwD96ifJLZLA" type="ControlFlow_Edge" source="_vq5O8CqvEeuwD96ifJLZLA" target="_VOCScCqrEeuwD96ifJLZLA">
       <children xmi:type="notation:DecorationNode" xmi:id="_3pUeEyqvEeuwD96ifJLZLA" type="ControlFlow_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_8ZfogCqvEeuwD96ifJLZLA" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_3pUeFCqvEeuwD96ifJLZLA" x="-46" y="377"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3pUeFCqvEeuwD96ifJLZLA" x="-41" y="376"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_3pUeFSqvEeuwD96ifJLZLA" type="ControlFlow_WeightLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_8ZlvICqvEeuwD96ifJLZLA" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -257,8 +257,8 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_3pUeESqvEeuwD96ifJLZLA"/>
       <element xmi:type="uml:ControlFlow" href="collaborator4.uml#_3pKtECqvEeuwD96ifJLZLA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3pUeEiqvEeuwD96ifJLZLA" points="[880, 255, -643984, -643984]$[420, 260, -643984, -643984]$[420, 200, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3pk8wCqvEeuwD96ifJLZLA" id="(0.0,0.4666666666666667)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3pUeEiqvEeuwD96ifJLZLA" points="[880, 255, -643984, -643984]$[420, 255, -643984, -643984]$[420, 205, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3pk8wCqvEeuwD96ifJLZLA" id="(0.0,0.5)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3pk8wSqvEeuwD96ifJLZLA" id="(0.2643171806167401,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_Sm5e0CqwEeuwD96ifJLZLA" type="ControlFlow_Edge" source="_vq5O8CqvEeuwD96ifJLZLA" target="_MkIEECqwEeuwD96ifJLZLA">
@@ -326,8 +326,8 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_lSoTQSqyEeuwD96ifJLZLA"/>
       <element xmi:type="uml:ControlFlow" href="collaborator4.uml#_lShlkCqyEeuwD96ifJLZLA"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSoTQiqyEeuwD96ifJLZLA" points="[376, 360, -643984, -643984]$[376, 400, -643984, -643984]$[920, 400, -643984, -643984]$[908, 420, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lS28wCqyEeuwD96ifJLZLA" id="(0.41304347826086957,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSoTQiqyEeuwD96ifJLZLA" points="[380, 365, -643984, -643984]$[380, 400, -643984, -643984]$[920, 400, -643984, -643984]$[920, 420, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lS28wCqyEeuwD96ifJLZLA" id="(0.43478260869565216,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lS28wSqyEeuwD96ifJLZLA" id="(0.5157593123209169,0.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_tq4-sCqyEeuwD96ifJLZLA" type="ControlFlow_Edge" source="_bvWmMCqyEeuwD96ifJLZLA" target="_n7EVICqyEeuwD96ifJLZLA">

@@ -191,11 +191,6 @@ Flow:&#xD;
         </include>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_FCMUYBkwEeuwGKbHftMADg">
-        <body>The user is the actor who uses the system.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_-59HoBkrEeugnPTAsPFJnw" name="Scoot/Bike">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_2YyiYBksEeugnPTAsPFJnw" name="Scan QR Code">
         <ownedComment xmi:type="uml:Comment" xmi:id="_6aBmYBkwEeuwGKbHftMADg">
@@ -898,5 +893,10 @@ Post-conditions: &lt;none></body>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Gn6ugipnEeuwD96ifJLZLA" name="create account" type="__4O1IBkoEeugnPTAsPFJnw" association="_Gn6HcCpnEeuwD96ifJLZLA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Gn6ugypnEeuwD96ifJLZLA" name="person" type="_1vbj4CplEeuwD96ifJLZLA" association="_Gn6HcCpnEeuwD96ifJLZLA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_oz2zMBkrEeugnPTAsPFJnw" name="User">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_FCMUYBkwEeuwGKbHftMADg">
+      <body>The user is the actor who uses the system.</body>
+    </ownedComment>
   </packagedElement>
 </uml:Package>
