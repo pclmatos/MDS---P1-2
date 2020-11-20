@@ -70,7 +70,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_nT4R4it5EeunZpiBB4Kc8g" y="15"/>
         </children>
         <element xmi:type="uml:OpaqueAction" href="collaborator2.uml#_nTq2gCt5EeunZpiBB4Kc8g"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nT4R4yt5EeunZpiBB4Kc8g" x="395" y="364"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nT4R4yt5EeunZpiBB4Kc8g" x="391" y="364"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_CXawsCt6EeunZpiBB4Kc8g" type="OpaqueAction_Shape">
         <children xmi:type="notation:DecorationNode" xmi:id="_CXbXwCt6EeunZpiBB4Kc8g" type="OpaqueAction_NameLabel"/>
