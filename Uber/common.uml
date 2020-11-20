@@ -672,13 +672,6 @@ Post-conditions: &lt;none></body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_S6JJYhk1EeulX5DAYB4Giw" name="uber scoot/bike worker" type="_JeckoBktEeugnPTAsPFJnw" association="_S6FfABk1EeulX5DAYB4Giw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_S6JJYxk1EeulX5DAYB4Giw" name="recharge scoot/bike" type="_civqEBkvEeugnPTAsPFJnw" association="_S6FfABk1EeulX5DAYB4Giw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_Tu6OMBk1EeulX5DAYB4Giw" memberEnd="_Tu6OMxk1EeulX5DAYB4Giw _Tu6ONBk1EeulX5DAYB4Giw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tu6OMRk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tu6OMhk1EeulX5DAYB4Giw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Tu6OMxk1EeulX5DAYB4Giw" name="payment" type="_XUOBoBktEeugnPTAsPFJnw" association="_Tu6OMBk1EeulX5DAYB4Giw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Tu6ONBk1EeulX5DAYB4Giw" name="time" type="_V7BaEBktEeugnPTAsPFJnw" association="_Tu6OMBk1EeulX5DAYB4Giw"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_VEKw8Bk1EeulX5DAYB4Giw" memberEnd="_VEL_ERk1EeulX5DAYB4Giw _VEL_Ehk1EeulX5DAYB4Giw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VELYABk1EeulX5DAYB4Giw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VEL_EBk1EeulX5DAYB4Giw" key="nature" value="UML_Nature"/>
@@ -870,11 +863,6 @@ Post-conditions: &lt;none></body>
   <packagedElement xmi:type="uml:Actor" xmi:id="_JeckoBktEeugnPTAsPFJnw" name="Uber Scoot/Bike Worker">
     <ownedComment xmi:type="uml:Comment" xmi:id="_Yv8wEBk-EeuwGKbHftMADg">
       <body>The Uber Scoot/Bike worker is the actor whom recharges the batery of the scoots and restocks the scoots and bike</body>
-    </ownedComment>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_V7BaEBktEeugnPTAsPFJnw" name="Time">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_enfyQBk-EeuwGKbHftMADg">
-      <body>The Time is the actor the represents the time passing</body>
     </ownedComment>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_QBz5EBkvEeugnPTAsPFJnw" name="Receiver">
