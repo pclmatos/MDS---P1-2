@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="collaborator5">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="ScanQR_AD">
   <packagedElement xmi:type="uml:Activity" xmi:id="_2KfgEA2ZEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_4eRgkA2ZEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_DIx7cA2aEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="Activity5" node="_-J1SwCt1EeutJ-OfswSYjg _YMDCACt3EeutJ-OfswSYjg _bGR-gCt3EeutJ-OfswSYjg _XP_0ACt4EeutJ-OfswSYjg _X5OhwCt5EeutJ-OfswSYjg">
-    <edge xmi:type="uml:ControlFlow" xmi:id="_YMzP8Ct3EeutJ-OfswSYjg" target="_YMDCACt3EeutJ-OfswSYjg" source="_-J1SwCt1EeutJ-OfswSYjg"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_bGzi8Ct3EeutJ-OfswSYjg" target="_bGR-gCt3EeutJ-OfswSYjg" source="_YMDCACt3EeutJ-OfswSYjg"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_XRGAMCt4EeutJ-OfswSYjg" name="[valid]" target="_XP_0ACt4EeutJ-OfswSYjg" source="_bGR-gCt3EeutJ-OfswSYjg"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_X50XoCt5EeutJ-OfswSYjg" name="[associated]" target="_X5OhwCt5EeutJ-OfswSYjg" source="_XP_0ACt4EeutJ-OfswSYjg"/>
-    <node xmi:type="uml:InitialNode" xmi:id="_-J1SwCt1EeutJ-OfswSYjg" name="Start Ride" outgoing="_YMzP8Ct3EeutJ-OfswSYjg"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_YMDCACt3EeutJ-OfswSYjg" name="Scan QR Code" incoming="_YMzP8Ct3EeutJ-OfswSYjg" outgoing="_bGzi8Ct3EeutJ-OfswSYjg"/>
-    <node xmi:type="uml:DecisionNode" xmi:id="_bGR-gCt3EeutJ-OfswSYjg" name="Check if QR Code is valid" incoming="_bGzi8Ct3EeutJ-OfswSYjg" outgoing="_XRGAMCt4EeutJ-OfswSYjg"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_XP_0ACt4EeutJ-OfswSYjg" name="Check if code is associated to Scoot or Bike" incoming="_XRGAMCt4EeutJ-OfswSYjg" outgoing="_X50XoCt5EeutJ-OfswSYjg"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_X5OhwCt5EeutJ-OfswSYjg" name="Unlock Scoot/Bike" incoming="_X50XoCt5EeutJ-OfswSYjg"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="ScanQR_AD" node="_4yruQCt9EeutJ-OfswSYjg __GZIACt9EeutJ-OfswSYjg _CJg6wCt-EeutJ-OfswSYjg _GJuA0Ct-EeutJ-OfswSYjg _Lu12QCt-EeutJ-OfswSYjg _QynSICt-EeutJ-OfswSYjg _YE7pMCt-EeutJ-OfswSYjg _i5L18Ct-EeutJ-OfswSYjg _m2jDYCt-EeutJ-OfswSYjg _-hfOsCt-EeutJ-OfswSYjg" group="_yzek4Ct9EeutJ-OfswSYjg _1Q2mQCt9EeutJ-OfswSYjg">
+    <edge xmi:type="uml:ControlFlow" xmi:id="__GnxgCt9EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg" target="__GZIACt9EeutJ-OfswSYjg" source="_4yruQCt9EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CJyAgCt-EeutJ-OfswSYjg" target="_CJg6wCt-EeutJ-OfswSYjg" source="__GZIACt9EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GKD_ECt-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_GJuA0Ct-EeutJ-OfswSYjg" source="_CJg6wCt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LvL0gCt-EeutJ-OfswSYjg" name="[else]" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_Lu12QCt-EeutJ-OfswSYjg" source="_GJuA0Ct-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QzBh0Ct-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_QynSICt-EeutJ-OfswSYjg" source="_Lu12QCt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YFV44Ct-EeutJ-OfswSYjg" name="[else]" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_YE7pMCt-EeutJ-OfswSYjg" source="_QynSICt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_i5xr0Ct-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_i5L18Ct-EeutJ-OfswSYjg" source="_YE7pMCt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_m3DZsCt-EeutJ-OfswSYjg" name="invalid" target="_m2jDYCt-EeutJ-OfswSYjg" source="_GJuA0Ct-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_q0vXQCt-EeutJ-OfswSYjg" name="invalid" target="_m2jDYCt-EeutJ-OfswSYjg" source="_QynSICt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-iD2cCt-EeutJ-OfswSYjg" target="_-hfOsCt-EeutJ-OfswSYjg" source="_m2jDYCt-EeutJ-OfswSYjg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CecMcCt_EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_i5L18Ct-EeutJ-OfswSYjg" source="_-hfOsCt-EeutJ-OfswSYjg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_yzek4Ct9EeutJ-OfswSYjg" name="User" node="_4yruQCt9EeutJ-OfswSYjg __GZIACt9EeutJ-OfswSYjg _m2jDYCt-EeutJ-OfswSYjg" edge="__GnxgCt9EeutJ-OfswSYjg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_1Q2mQCt9EeutJ-OfswSYjg" name="System" node="_CJg6wCt-EeutJ-OfswSYjg _GJuA0Ct-EeutJ-OfswSYjg _Lu12QCt-EeutJ-OfswSYjg _QynSICt-EeutJ-OfswSYjg _YE7pMCt-EeutJ-OfswSYjg _i5L18Ct-EeutJ-OfswSYjg _-hfOsCt-EeutJ-OfswSYjg" edge="_GKD_ECt-EeutJ-OfswSYjg _LvL0gCt-EeutJ-OfswSYjg _QzBh0Ct-EeutJ-OfswSYjg _YFV44Ct-EeutJ-OfswSYjg _i5xr0Ct-EeutJ-OfswSYjg _CecMcCt_EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_4yruQCt9EeutJ-OfswSYjg" outgoing="__GnxgCt9EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="__GZIACt9EeutJ-OfswSYjg" name="Scan QR Code" incoming="__GnxgCt9EeutJ-OfswSYjg" outgoing="_CJyAgCt-EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_CJg6wCt-EeutJ-OfswSYjg" name="Check if code is valid" incoming="_CJyAgCt-EeutJ-OfswSYjg" outgoing="_GKD_ECt-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_GJuA0Ct-EeutJ-OfswSYjg" name="" incoming="_GKD_ECt-EeutJ-OfswSYjg" outgoing="_LvL0gCt-EeutJ-OfswSYjg _m3DZsCt-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Lu12QCt-EeutJ-OfswSYjg" name="Check if code is associated to Bike/Scoot" incoming="_LvL0gCt-EeutJ-OfswSYjg" outgoing="_QzBh0Ct-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_QynSICt-EeutJ-OfswSYjg" name="" incoming="_QzBh0Ct-EeutJ-OfswSYjg" outgoing="_YFV44Ct-EeutJ-OfswSYjg _q0vXQCt-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YE7pMCt-EeutJ-OfswSYjg" name="Unlock Bike/Scoot" incoming="_YFV44Ct-EeutJ-OfswSYjg" outgoing="_i5xr0Ct-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_i5L18Ct-EeutJ-OfswSYjg" name="" incoming="_i5xr0Ct-EeutJ-OfswSYjg _CecMcCt_EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_m2jDYCt-EeutJ-OfswSYjg" name="Prompt User with message" incoming="_m3DZsCt-EeutJ-OfswSYjg _q0vXQCt-EeutJ-OfswSYjg" outgoing="_-iD2cCt-EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-hfOsCt-EeutJ-OfswSYjg" name="Reset" incoming="_-iD2cCt-EeutJ-OfswSYjg" outgoing="_CecMcCt_EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
   </packagedElement>
 </uml:Package>
