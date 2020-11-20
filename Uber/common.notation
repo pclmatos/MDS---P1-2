@@ -70,7 +70,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FmftlhkrEeugnPTAsPFJnw"/>
               </children>
               <element xmi:type="uml:UseCase" href="common.uml#_FmUHYBkrEeugnPTAsPFJnw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FmfGgRkrEeugnPTAsPFJnw" x="136" y="314" width="121" height="41"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FmfGgRkrEeugnPTAsPFJnw" x="174" y="354" width="121" height="41"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_Nf9kMBkrEeugnPTAsPFJnw" type="UseCase_Shape_CN">
               <children xmi:type="notation:DecorationNode" xmi:id="_Nf9kMhkrEeugnPTAsPFJnw" type="UseCase_NameLabel_CN"/>
@@ -169,7 +169,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AdBneBktEeugnPTAsPFJnw"/>
               </children>
               <element xmi:type="uml:UseCase" href="common.uml#_Acp0ABktEeugnPTAsPFJnw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AdBncRktEeugnPTAsPFJnw" x="208" y="234" height="41"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AdBncRktEeugnPTAsPFJnw" x="208" y="234" width="221" height="41"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_cjep4BkvEeugnPTAsPFJnw" type="UseCase_Shape_CN">
               <children xmi:type="notation:DecorationNode" xmi:id="_cjep4hkvEeugnPTAsPFJnw" type="UseCase_NameLabel_CN"/>
