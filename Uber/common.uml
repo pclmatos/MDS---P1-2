@@ -746,4 +746,18 @@ Post-conditions: &lt;none></body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fBzG8yt5Eeu_Df5IHcwvIQ" name="respond to order" type="_bDOYkCt5Eeu_Df5IHcwvIQ" association="_fBzG8Ct5Eeu_Df5IHcwvIQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fBzG9Ct5Eeu_Df5IHcwvIQ" name="uber eats employee" type="_-ucQoBkqEeugnPTAsPFJnw" association="_fBzG8Ct5Eeu_Df5IHcwvIQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q9wSgCt7Eeu_Df5IHcwvIQ" memberEnd="_Q9zV0it7Eeu_Df5IHcwvIQ _Q90j8Ct7Eeu_Df5IHcwvIQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q9zV0Ct7Eeu_Df5IHcwvIQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q9zV0St7Eeu_Df5IHcwvIQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Q9zV0it7Eeu_Df5IHcwvIQ" type="_oz2zMBkrEeugnPTAsPFJnw" association="_Q9wSgCt7Eeu_Df5IHcwvIQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Q90j8Ct7Eeu_Df5IHcwvIQ" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_Q9wSgCt7Eeu_Df5IHcwvIQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_e5WDoCt7Eeu_Df5IHcwvIQ" memberEnd="_e5ZG8St7Eeu_Df5IHcwvIQ _e5ZG8it7Eeu_Df5IHcwvIQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e5Yf4Ct7Eeu_Df5IHcwvIQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e5ZG8Ct7Eeu_Df5IHcwvIQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_e5ZG8St7Eeu_Df5IHcwvIQ" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_e5WDoCt7Eeu_Df5IHcwvIQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_e5ZG8it7Eeu_Df5IHcwvIQ" name="uber eats employee" type="_-ucQoBkqEeugnPTAsPFJnw" association="_e5WDoCt7Eeu_Df5IHcwvIQ"/>
+  </packagedElement>
 </uml:Package>
