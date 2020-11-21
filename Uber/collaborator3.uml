@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LC4vcA2TEeujq4q3EywG0A" name="collaborator3">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LC4vcA2TEeujq4q3EywG0A" name="collaborator3">
   <packagedElement xmi:type="uml:Package" xmi:id="_LWH0gA2TEeujq4q3EywG0A" name="Package3"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="__6WtEA2YEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_BshOQA2ZEeujq4q3EywG0A" name="Activity3"/>
@@ -167,11 +167,29 @@ Main flow:&#xD;
 	1. The Admin selects the complaint that needs to be solved&#xD;
 	2. The Admin reads the report written by the User&#xD;
 	3. The Admin evaluates the situation&#xD;
+	4. The System gives possible solution for the complaint&#xD;
 	4. The Admin chooses the action that must be performed to solve the situation&#xD;
 	5. The Admin marks the complaint as &quot;solved&quot;&#xD;
 	6. The UC ends.&#xD;
-Alternative flows: &lt;none>&#xD;
-Post-conditions: &lt;none></body>
+Alternative flows: The Admin doesn't found any solutions for the complaint&#xD;
+Post-conditions: &lt;none>&#xD;
+&#xD;
+-----------------&#xD;
+&#xD;
+Alternative Flow&#xD;
+Name: Solution was not found&#xD;
+Description: The Admin evaluated the complaint but no solution or help was possible&#xD;
+Actor:&#xD;
+	Main: Admin&#xD;
+	Secondary: &lt;none>&#xD;
+Main Flow:&#xD;
+	1. This UC starts after step 3 of the Main Flow&#xD;
+	2. The System doesn't find any solution to solve the problem or find it unsolvable&#xD;
+	3. A sorry message is sent by the system to the user&#xD;
+	4. The admin marks the complaint as &quot;solved&quot;&#xD;
+	5. The UC ends.&#xD;
+&#xD;
+</body>
       </ownedComment>
     </packagedElement>
   </packagedElement>
@@ -266,5 +284,36 @@ Post-conditions: &lt;none></body>
     <node xmi:type="uml:BroadcastSignalAction" xmi:id="_XhLN8CtUEeuDNK96ffKGQQ" name="Notifies  the designated area for the drop of product" incoming="_XhwcwCtUEeuDNK96ffKGQQ" outgoing="_fpDUACtUEeuDNK96ffKGQQ" inPartition="__9GnACtQEeuDNK96ffKGQQ"/>
     <node xmi:type="uml:BroadcastSignalAction" xmi:id="_foFDoCtUEeuDNK96ffKGQQ" name="Drops off the product" incoming="_fpDUACtUEeuDNK96ffKGQQ" outgoing="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_lEclsCtUEeuDNK96ffKGQQ" name="" incoming="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_zvgBoCwUEeu0M9aCU_zLaw" name="SolveComplaints" node="_yy16MCwWEeu0M9aCU_zLaw _VT3o0CwYEeu0M9aCU_zLaw _eiqToCwYEeu0M9aCU_zLaw _2QKDsCwYEeu0M9aCU_zLaw _D6BLoCwZEeu0M9aCU_zLaw _NrGEICwZEeu0M9aCU_zLaw _SVBcoCwZEeu0M9aCU_zLaw _mVjLsCwZEeu0M9aCU_zLaw _q6_QUCwaEeu0M9aCU_zLaw _tivVsCwaEeu0M9aCU_zLaw _6hj8kCwaEeu0M9aCU_zLaw _KpoMUCwbEeu0M9aCU_zLaw" group="_7Ra68CwUEeu0M9aCU_zLaw _8JlSACwUEeu0M9aCU_zLaw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VUNnECwYEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_VT3o0CwYEeu0M9aCU_zLaw" source="_yy16MCwWEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6OPp4CwYEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_2QKDsCwYEeu0M9aCU_zLaw" source="_VT3o0CwYEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8ViGgCwYEeu0M9aCU_zLaw" name="[there are complaints unsolved]" inPartition="_7Ra68CwUEeu0M9aCU_zLaw" target="_eiqToCwYEeu0M9aCU_zLaw" source="_2QKDsCwYEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_D6macCwZEeu0M9aCU_zLaw" name="[Else]" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_D6BLoCwZEeu0M9aCU_zLaw" source="_2QKDsCwYEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NrjXICwZEeu0M9aCU_zLaw" target="_NrGEICwZEeu0M9aCU_zLaw" source="_eiqToCwYEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SVmEYCwZEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_SVBcoCwZEeu0M9aCU_zLaw" source="_NrGEICwZEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mWGlUCwZEeu0M9aCU_zLaw" target="_mVjLsCwZEeu0M9aCU_zLaw" source="_SVBcoCwZEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_q7fmoCwaEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw" target="_q6_QUCwaEeu0M9aCU_zLaw" source="_mVjLsCwZEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tjPsACwaEeu0M9aCU_zLaw" name="[found possible solution]" target="_tivVsCwaEeu0M9aCU_zLaw" source="_q6_QUCwaEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6iOD4CwaEeu0M9aCU_zLaw" name="[else]" inPartition="_7Ra68CwUEeu0M9aCU_zLaw" target="_6hj8kCwaEeu0M9aCU_zLaw" source="_q6_QUCwaEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KqmcsCwbEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_KpoMUCwbEeu0M9aCU_zLaw" source="_tivVsCwaEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_N_bDcCwbEeu0M9aCU_zLaw" target="_KpoMUCwbEeu0M9aCU_zLaw" source="_6hj8kCwaEeu0M9aCU_zLaw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OrNycCwbEeu0M9aCU_zLaw" name="[complaint solved]" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_D6BLoCwZEeu0M9aCU_zLaw" source="_KpoMUCwbEeu0M9aCU_zLaw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_7Ra68CwUEeu0M9aCU_zLaw" name="System" node="_eiqToCwYEeu0M9aCU_zLaw _mVjLsCwZEeu0M9aCU_zLaw _q6_QUCwaEeu0M9aCU_zLaw _6hj8kCwaEeu0M9aCU_zLaw" edge="_8ViGgCwYEeu0M9aCU_zLaw _q7fmoCwaEeu0M9aCU_zLaw _6iOD4CwaEeu0M9aCU_zLaw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_8JlSACwUEeu0M9aCU_zLaw" name="Admin" node="_VT3o0CwYEeu0M9aCU_zLaw _yy16MCwWEeu0M9aCU_zLaw _2QKDsCwYEeu0M9aCU_zLaw _D6BLoCwZEeu0M9aCU_zLaw _NrGEICwZEeu0M9aCU_zLaw _SVBcoCwZEeu0M9aCU_zLaw _tivVsCwaEeu0M9aCU_zLaw _KpoMUCwbEeu0M9aCU_zLaw" edge="_VUNnECwYEeu0M9aCU_zLaw _6OPp4CwYEeu0M9aCU_zLaw _D6macCwZEeu0M9aCU_zLaw _SVmEYCwZEeu0M9aCU_zLaw _KqmcsCwbEeu0M9aCU_zLaw _OrNycCwbEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_yy16MCwWEeu0M9aCU_zLaw" name="" outgoing="_VUNnECwYEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_VT3o0CwYEeu0M9aCU_zLaw" name="Checks for new complaints" incoming="_VUNnECwYEeu0M9aCU_zLaw" outgoing="_6OPp4CwYEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_eiqToCwYEeu0M9aCU_zLaw" name="Gives a list of all user complaints made and unsolved" incoming="_8ViGgCwYEeu0M9aCU_zLaw" outgoing="_NrjXICwZEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_2QKDsCwYEeu0M9aCU_zLaw" incoming="_6OPp4CwYEeu0M9aCU_zLaw" outgoing="_8ViGgCwYEeu0M9aCU_zLaw _D6macCwZEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw">
+      <name xsi:nil="true"/>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_D6BLoCwZEeu0M9aCU_zLaw" name="" incoming="_D6macCwZEeu0M9aCU_zLaw _OrNycCwbEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_NrGEICwZEeu0M9aCU_zLaw" name="Chooses one complaint to solve" incoming="_NrjXICwZEeu0M9aCU_zLaw" outgoing="_SVmEYCwZEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_SVBcoCwZEeu0M9aCU_zLaw" name="Evaluates the solution" incoming="_SVmEYCwZEeu0M9aCU_zLaw" outgoing="_mWGlUCwZEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_mVjLsCwZEeu0M9aCU_zLaw" name="Gives possible solutions methods" incoming="_mWGlUCwZEeu0M9aCU_zLaw" outgoing="_q7fmoCwaEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_q6_QUCwaEeu0M9aCU_zLaw" name="" incoming="_q7fmoCwaEeu0M9aCU_zLaw" outgoing="_tjPsACwaEeu0M9aCU_zLaw _6iOD4CwaEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_tivVsCwaEeu0M9aCU_zLaw" name="Performes the given solution by the System" incoming="_tjPsACwaEeu0M9aCU_zLaw" outgoing="_KqmcsCwbEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddVariableValueAction" xmi:id="_6hj8kCwaEeu0M9aCU_zLaw" name="Sends sorry message to the user" incoming="_6iOD4CwaEeu0M9aCU_zLaw" outgoing="_N_bDcCwbEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw"/>
+    <node xmi:type="uml:AddStructuralFeatureValueAction" xmi:id="_KpoMUCwbEeu0M9aCU_zLaw" name="Marks the complaint as &quot;solved&quot;" incoming="_KqmcsCwbEeu0M9aCU_zLaw _N_bDcCwbEeu0M9aCU_zLaw" outgoing="_OrNycCwbEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
   </packagedElement>
 </uml:Package>
