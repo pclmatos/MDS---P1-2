@@ -660,7 +660,7 @@ Post-conditions: &lt;none></body>
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X5XNsBk7EeuwGKbHftMADg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X5X0wBk7EeuwGKbHftMADg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_X5X0wRk7EeuwGKbHftMADg" name="driver" type="_p97SQBkuEeugnPTAsPFJnw" association="_X5WmoBk7EeuwGKbHftMADg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_X5X0wRk7EeuwGKbHftMADg" name="driver" type="_u1RogCwCEeucVbdh1vVRAw" association="_X5WmoBk7EeuwGKbHftMADg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_X5X0whk7EeuwGKbHftMADg" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_X5WmoBk7EeuwGKbHftMADg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_9OsnEBkoEeugnPTAsPFJnw" name="User Without Account">
@@ -668,7 +668,7 @@ Post-conditions: &lt;none></body>
       <body>The user without account is the actor that wants to use the system but doesn't have an account yet.</body>
     </ownedComment>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_1vbj4CplEeuwD96ifJLZLA" name="Person"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_1vbj4CplEeuwD96ifJLZLA" name="Person Without Account"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_lc6-gBkpEeugnPTAsPFJnw" name="Driver Without Account">
     <ownedComment xmi:type="uml:Comment" xmi:id="_ChJT8BkwEeuwGKbHftMADg">
       <body>The driver without account is the actor of a driver that doesn't have a driver account on the system.</body>
@@ -746,18 +746,55 @@ Post-conditions: &lt;none></body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fBzG8yt5Eeu_Df5IHcwvIQ" name="respond to order" type="_bDOYkCt5Eeu_Df5IHcwvIQ" association="_fBzG8Ct5Eeu_Df5IHcwvIQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fBzG9Ct5Eeu_Df5IHcwvIQ" name="uber eats employee" type="_-ucQoBkqEeugnPTAsPFJnw" association="_fBzG8Ct5Eeu_Df5IHcwvIQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_Q9wSgCt7Eeu_Df5IHcwvIQ" memberEnd="_Q9zV0it7Eeu_Df5IHcwvIQ _Q90j8Ct7Eeu_Df5IHcwvIQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q9zV0Ct7Eeu_Df5IHcwvIQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q9zV0St7Eeu_Df5IHcwvIQ" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_g6fvsCwCEeucVbdh1vVRAw" name="Time"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iajNMCwCEeucVbdh1vVRAw" memberEnd="_iaj0QiwCEeucVbdh1vVRAw _iaj0QywCEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iaj0QCwCEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iaj0QSwCEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Q9zV0it7Eeu_Df5IHcwvIQ" type="_oz2zMBkrEeugnPTAsPFJnw" association="_Q9wSgCt7Eeu_Df5IHcwvIQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Q90j8Ct7Eeu_Df5IHcwvIQ" name="login" type="_TUqRQBksEeugnPTAsPFJnw" association="_Q9wSgCt7Eeu_Df5IHcwvIQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iaj0QiwCEeucVbdh1vVRAw" name="pay" type="_1Uv2gCt3Eeu_Df5IHcwvIQ" association="_iajNMCwCEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iaj0QywCEeucVbdh1vVRAw" name="time" type="_g6fvsCwCEeucVbdh1vVRAw" association="_iajNMCwCEeucVbdh1vVRAw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_e5WDoCt7Eeu_Df5IHcwvIQ" memberEnd="_e5ZG8St7Eeu_Df5IHcwvIQ _e5ZG8it7Eeu_Df5IHcwvIQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e5Yf4Ct7Eeu_Df5IHcwvIQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e5ZG8Ct7Eeu_Df5IHcwvIQ" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_u1RogCwCEeucVbdh1vVRAw" name="Person"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w_caACwCEeucVbdh1vVRAw" memberEnd="_w_doIiwCEeucVbdh1vVRAw _w_ePMCwCEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w_doICwCEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w_doISwCEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_e5ZG8St7Eeu_Df5IHcwvIQ" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_e5WDoCt7Eeu_Df5IHcwvIQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_e5ZG8it7Eeu_Df5IHcwvIQ" name="uber eats employee" type="_-ucQoBkqEeugnPTAsPFJnw" association="_e5WDoCt7Eeu_Df5IHcwvIQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w_doIiwCEeucVbdh1vVRAw" name="user" type="_oz2zMBkrEeugnPTAsPFJnw" association="_w_caACwCEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w_ePMCwCEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_w_caACwCEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_01bNECwCEeucVbdh1vVRAw" memberEnd="_01cbMiwCEeucVbdh1vVRAw _01cbMywCEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_01cbMCwCEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01cbMSwCEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_01cbMiwCEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_01bNECwCEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_01cbMywCEeucVbdh1vVRAw" name="uber eats employee" type="_fBzG8Ct5Eeu_Df5IHcwvIQ" association="_01bNECwCEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AQ38sCwDEeucVbdh1vVRAw" memberEnd="_AQ5K0CwDEeucVbdh1vVRAw _AQ5K0SwDEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQ4jwCwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AQ4jwSwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AQ5K0CwDEeucVbdh1vVRAw" name="uber scoot/bike worker" type="_JeckoBktEeugnPTAsPFJnw" association="_AQ38sCwDEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AQ5K0SwDEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_AQ38sCwDEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Hi6m8CwDEeucVbdh1vVRAw" memberEnd="_Hi7OAiwDEeucVbdh1vVRAw _Hi7OAywDEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hi7OACwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hi7OASwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hi7OAiwDEeucVbdh1vVRAw" type="_u1RogCwCEeucVbdh1vVRAw" association="_Hi6m8CwDEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hi7OAywDEeucVbdh1vVRAw" name="receiver" type="_QBz5EBkvEeugnPTAsPFJnw" association="_Hi6m8CwDEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RN4QYCwDEeucVbdh1vVRAw" memberEnd="_RN43ciwDEeucVbdh1vVRAw _RN43cywDEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RN43cCwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RN43cSwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RN43ciwDEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_RN4QYCwDEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RN43cywDEeucVbdh1vVRAw" type="_p97SQBkuEeugnPTAsPFJnw" association="_RN4QYCwDEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t0xYUCwDEeucVbdh1vVRAw" memberEnd="_t0ymcSwDEeucVbdh1vVRAw _t0ymciwDEeucVbdh1vVRAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t0x_YCwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t0ymcCwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t0ymcSwDEeucVbdh1vVRAw" name="pay" type="_1Uv2gCt3Eeu_Df5IHcwvIQ" association="_t0xYUCwDEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t0ymciwDEeucVbdh1vVRAw" type="_oz2zMBkrEeugnPTAsPFJnw" association="_t0xYUCwDEeucVbdh1vVRAw"/>
   </packagedElement>
 </uml:Package>
