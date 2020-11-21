@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
-  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA _1916ACt7EeuGcpIETXw3uQ" group="_GTRjUCqrEeuwD96ifJLZLA _JY860CqrEeuwD96ifJLZLA">
-    <ownedRule xmi:type="uml:Constraint" xmi:id="_iZKkACt8EeuGcpIETXw3uQ" name="Constraint31" constrainedElement="_1916ACt7EeuGcpIETXw3uQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iZLLECt8EeuGcpIETXw3uQ" name="constraintSpec">
-        <language>OCL</language>
-        <body>user must have a payment method selected&#xD;
-</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:type="uml:Constraint" xmi:id="_sVFvsCt-EeuGcpIETXw3uQ" name="Constraint32" constrainedElement="_VN-oECqrEeuwD96ifJLZLA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_sVGWwCt-EeuGcpIETXw3uQ" name="constraintSpec">
-        <language>OCL</language>
-        <body>user mas be logged in&#xD;
-</body>
-      </specification>
-    </ownedRule>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA _1916ACt7EeuGcpIETXw3uQ" group="_JY860CqrEeuwD96ifJLZLA _GTRjUCqrEeuwD96ifJLZLA">
     <edge xmi:type="uml:ControlFlow" xmi:id="_gU6gQCqrEeuwD96ifJLZLA" inPartition="_GTRjUCqrEeuwD96ifJLZLA" target="_VN-oECqrEeuwD96ifJLZLA" source="_MNiiUCqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_A3RQ0CqvEeuwD96ifJLZLA" target="_uvD1oCqrEeuwD96ifJLZLA" source="_VN-oECqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_2gwTgCqvEeuwD96ifJLZLA" inPartition="_JY860CqrEeuwD96ifJLZLA" target="_vq1kkCqvEeuwD96ifJLZLA" source="_uvD1oCqrEeuwD96ifJLZLA"/>
