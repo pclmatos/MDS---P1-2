@@ -25,7 +25,34 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_NKY2sCwMEeucVbdh1vVRAw" name="Order Delivered" incoming="_OdtfwCwMEeucVbdh1vVRAw" outgoing="_QI-uwCwMEeucVbdh1vVRAw"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_N5A3QCwMEeucVbdh1vVRAw" incoming="_QI-uwCwMEeucVbdh1vVRAw _RT5pwCwMEeucVbdh1vVRAw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Activity2"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_th4oUA2VEeujq4q3EywG0A" name="Activity2" node="_W3TygCwNEeucVbdh1vVRAw _YT7hgCwNEeucVbdh1vVRAw _cUwSoCwNEeucVbdh1vVRAw _heDHsCwNEeucVbdh1vVRAw _jSybwCwNEeucVbdh1vVRAw _4ztmkCwNEeucVbdh1vVRAw _IneaQCwOEeucVbdh1vVRAw _QUiMkCwOEeucVbdh1vVRAw _R2yCcCwOEeucVbdh1vVRAw _XzB-cCwOEeucVbdh1vVRAw _mrx7YCwOEeucVbdh1vVRAw" group="_P__8cCwNEeucVbdh1vVRAw _T7COoCwNEeucVbdh1vVRAw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bQSk8CwNEeucVbdh1vVRAw" inPartition="_P__8cCwNEeucVbdh1vVRAw" target="_YT7hgCwNEeucVbdh1vVRAw" source="_W3TygCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eEFiQCwNEeucVbdh1vVRAw" target="_cUwSoCwNEeucVbdh1vVRAw" source="_YT7hgCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_heZtACwNEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_heDHsCwNEeucVbdh1vVRAw" source="_cUwSoCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_poOT0CwNEeucVbdh1vVRAw" name="[payment mode not selected]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_jSybwCwNEeucVbdh1vVRAw" source="_heDHsCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ycgz8CwNEeucVbdh1vVRAw" target="_YT7hgCwNEeucVbdh1vVRAw" source="_jSybwCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_40GBECwNEeucVbdh1vVRAw" name="[else]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_mrx7YCwOEeucVbdh1vVRAw" source="_heDHsCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AWqaoCwOEeucVbdh1vVRAw" name="[card not valid]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_mrx7YCwOEeucVbdh1vVRAw" source="_4ztmkCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LeNW0CwOEeucVbdh1vVRAw" name="[else]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_IneaQCwOEeucVbdh1vVRAw" source="_4ztmkCwNEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QU9DUCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_QUiMkCwOEeucVbdh1vVRAw" source="_IneaQCwOEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_W526wCwOEeucVbdh1vVRAw" name="[else]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_R2yCcCwOEeucVbdh1vVRAw" source="_QUiMkCwOEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_XzgfkCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_XzB-cCwOEeucVbdh1vVRAw" source="_R2yCcCwOEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qKYJMCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_4ztmkCwNEeucVbdh1vVRAw" source="_mrx7YCwOEeucVbdh1vVRAw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1IKFYCwOEeucVbdh1vVRAw" name="[card does not have enough money]" inPartition="_T7COoCwNEeucVbdh1vVRAw" target="_mrx7YCwOEeucVbdh1vVRAw" source="_QUiMkCwOEeucVbdh1vVRAw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_P__8cCwNEeucVbdh1vVRAw" name="User" node="_W3TygCwNEeucVbdh1vVRAw _YT7hgCwNEeucVbdh1vVRAw" edge="_bQSk8CwNEeucVbdh1vVRAw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_T7COoCwNEeucVbdh1vVRAw" name="Bank Entity" node="_cUwSoCwNEeucVbdh1vVRAw _heDHsCwNEeucVbdh1vVRAw _jSybwCwNEeucVbdh1vVRAw _4ztmkCwNEeucVbdh1vVRAw _IneaQCwOEeucVbdh1vVRAw _QUiMkCwOEeucVbdh1vVRAw _R2yCcCwOEeucVbdh1vVRAw _XzB-cCwOEeucVbdh1vVRAw _mrx7YCwOEeucVbdh1vVRAw" edge="_heZtACwNEeucVbdh1vVRAw _poOT0CwNEeucVbdh1vVRAw _LeNW0CwOEeucVbdh1vVRAw _QU9DUCwOEeucVbdh1vVRAw _W526wCwOEeucVbdh1vVRAw _XzgfkCwOEeucVbdh1vVRAw _40GBECwNEeucVbdh1vVRAw _qKYJMCwOEeucVbdh1vVRAw _AWqaoCwOEeucVbdh1vVRAw _1IKFYCwOEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_W3TygCwNEeucVbdh1vVRAw" name="" outgoing="_bQSk8CwNEeucVbdh1vVRAw" inPartition="_P__8cCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YT7hgCwNEeucVbdh1vVRAw" name="Pay" incoming="_bQSk8CwNEeucVbdh1vVRAw _ycgz8CwNEeucVbdh1vVRAw" outgoing="_eEFiQCwNEeucVbdh1vVRAw" inPartition="_P__8cCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_cUwSoCwNEeucVbdh1vVRAw" name="Select Payment" incoming="_eEFiQCwNEeucVbdh1vVRAw" outgoing="_heZtACwNEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_heDHsCwNEeucVbdh1vVRAw" name="" incoming="_heZtACwNEeucVbdh1vVRAw" outgoing="_poOT0CwNEeucVbdh1vVRAw _40GBECwNEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_jSybwCwNEeucVbdh1vVRAw" name="Prompt Message To User" incoming="_poOT0CwNEeucVbdh1vVRAw" outgoing="_ycgz8CwNEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_4ztmkCwNEeucVbdh1vVRAw" name="" incoming="_qKYJMCwOEeucVbdh1vVRAw" outgoing="_AWqaoCwOEeucVbdh1vVRAw _LeNW0CwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IneaQCwOEeucVbdh1vVRAw" name="Take Money From Card" incoming="_LeNW0CwOEeucVbdh1vVRAw" outgoing="_QU9DUCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_QUiMkCwOEeucVbdh1vVRAw" name="" incoming="_QU9DUCwOEeucVbdh1vVRAw" outgoing="_W526wCwOEeucVbdh1vVRAw _1IKFYCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_R2yCcCwOEeucVbdh1vVRAw" name="Finish Payment" incoming="_W526wCwOEeucVbdh1vVRAw" outgoing="_XzgfkCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_XzB-cCwOEeucVbdh1vVRAw" name="" incoming="_XzgfkCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mrx7YCwOEeucVbdh1vVRAw" name="Select Card" incoming="_40GBECwNEeucVbdh1vVRAw _AWqaoCwOEeucVbdh1vVRAw _1IKFYCwOEeucVbdh1vVRAw" outgoing="_qKYJMCwOEeucVbdh1vVRAw" inPartition="_T7COoCwNEeucVbdh1vVRAw"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
