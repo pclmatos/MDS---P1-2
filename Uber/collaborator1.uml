@@ -298,4 +298,15 @@ Flow:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_tIOUABh-Eeu8ms_OI6OgPg" name="restaurant" type="_ibCYkBh-Eeu8ms_OI6OgPg" association="_tINs8Bh-Eeu8ms_OI6OgPg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_tIOUARh-Eeu8ms_OI6OgPg" name="deliver food" type="_pka2EBh-Eeu8ms_OI6OgPg" association="_tINs8Bh-Eeu8ms_OI6OgPg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WXa54Cv_EeucVbdh1vVRAw" name="User">
+    <generalization xmi:type="uml:Generalization" xmi:id="_k34AsCwBEeucVbdh1vVRAw" general="_VOtv8CwAEeucVbdh1vVRAw"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_NGCYoCwAEeucVbdh1vVRAw" name="paymentMethod()"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VOtv8CwAEeucVbdh1vVRAw" name="Person">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_7W_kACv_EeucVbdh1vVRAw" name="name"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_9XomECv_EeucVbdh1vVRAw" name="birth date"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_t6hiYCwAEeucVbdh1vVRAw" name="Driver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_l8h7oCwBEeucVbdh1vVRAw" general="_VOtv8CwAEeucVbdh1vVRAw"/>
+  </packagedElement>
 </uml:Package>
