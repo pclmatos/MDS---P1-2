@@ -6,7 +6,7 @@
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
     <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="ScanQR_AD" node="_4yruQCt9EeutJ-OfswSYjg __GZIACt9EeutJ-OfswSYjg _CJg6wCt-EeutJ-OfswSYjg _GJuA0Ct-EeutJ-OfswSYjg _Lu12QCt-EeutJ-OfswSYjg _QynSICt-EeutJ-OfswSYjg _YE7pMCt-EeutJ-OfswSYjg _i5L18Ct-EeutJ-OfswSYjg _m2jDYCt-EeutJ-OfswSYjg _-hfOsCt-EeutJ-OfswSYjg" group="_yzek4Ct9EeutJ-OfswSYjg _1Q2mQCt9EeutJ-OfswSYjg">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="Scan QR Code" node="_4yruQCt9EeutJ-OfswSYjg __GZIACt9EeutJ-OfswSYjg _CJg6wCt-EeutJ-OfswSYjg _GJuA0Ct-EeutJ-OfswSYjg _Lu12QCt-EeutJ-OfswSYjg _QynSICt-EeutJ-OfswSYjg _YE7pMCt-EeutJ-OfswSYjg _i5L18Ct-EeutJ-OfswSYjg _m2jDYCt-EeutJ-OfswSYjg _-hfOsCt-EeutJ-OfswSYjg" group="_yzek4Ct9EeutJ-OfswSYjg _1Q2mQCt9EeutJ-OfswSYjg">
     <edge xmi:type="uml:ControlFlow" xmi:id="__GnxgCt9EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg" target="__GZIACt9EeutJ-OfswSYjg" source="_4yruQCt9EeutJ-OfswSYjg"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_CJyAgCt-EeutJ-OfswSYjg" target="_CJg6wCt-EeutJ-OfswSYjg" source="__GZIACt9EeutJ-OfswSYjg"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_GKD_ECt-EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg" target="_GJuA0Ct-EeutJ-OfswSYjg" source="_CJg6wCt-EeutJ-OfswSYjg"/>
