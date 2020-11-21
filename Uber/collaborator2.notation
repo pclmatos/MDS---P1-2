@@ -307,10 +307,10 @@
     <element xmi:type="uml:ControlFlow" href="collaborator2.uml#_DZq5oCwDEeuiM7ALEAk1Kw"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DZ9NgiwDEeuiM7ALEAk1Kw" points="[214, 565, -643984, -643984]$[5, 36, -643984, -643984]"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_NZNE4CwDEeuiM7ALEAk1Kw" type="ControlFlow_Edge" source="_9PB8UCwCEeuiM7ALEAk1Kw" target="_nT3q0Ct5EeunZpiBB4Kc8g">
+  <edges xmi:type="notation:Connector" xmi:id="_NZNE4CwDEeuiM7ALEAk1Kw" type="ControlFlow_Edge" source="_9PB8UCwCEeuiM7ALEAk1Kw" target="_XP8UMCt5EeunZpiBB4Kc8g">
     <children xmi:type="notation:DecorationNode" xmi:id="_NZOTACwDEeuiM7ALEAk1Kw" type="ControlFlow_NameLabel">
       <styles xmi:type="notation:BooleanValueStyle" xmi:id="_PcekMCwDEeuiM7ALEAk1Kw" name="IS_UPDATED_POSITION" booleanValue="true"/>
-      <layoutConstraint xmi:type="notation:Location" xmi:id="_NZOTASwDEeuiM7ALEAk1Kw" x="-50" y="18"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NZOTASwDEeuiM7ALEAk1Kw" x="-246" y="310"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_NZOTAiwDEeuiM7ALEAk1Kw" type="ControlFlow_WeightLabel">
       <styles xmi:type="notation:BooleanValueStyle" xmi:id="_PcyGMCwDEeuiM7ALEAk1Kw" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -326,9 +326,9 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_NZNE4SwDEeuiM7ALEAk1Kw"/>
     <element xmi:type="uml:ControlFlow" href="collaborator2.uml#_NYqSUCwDEeuiM7ALEAk1Kw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NZNE4iwDEeuiM7ALEAk1Kw" points="[240, 581, -643984, -643984]$[360, 581, -643984, -643984]$[507, 440, -643984, -643984]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NZ7doCwDEeuiM7ALEAk1Kw" id="(0.975609756097561,0.5121951219512195)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NZ7doSwDEeuiM7ALEAk1Kw" id="(0.24705882352941178,1.0)"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NZNE4iwDEeuiM7ALEAk1Kw" points="[200, 580, -643984, -643984]$[20, 581, -643984, -643984]$[40, 260, -643984, -643984]$[340, 260, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NZ7doCwDEeuiM7ALEAk1Kw" id="(0.0,0.4878048780487805)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NZ7doSwDEeuiM7ALEAk1Kw" id="(0.0,0.4878048780487805)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_htBjYCwDEeuiM7ALEAk1Kw" type="ControlFlow_Edge" source="_nT3q0Ct5EeunZpiBB4Kc8g" target="_hrmnECwDEeuiM7ALEAk1Kw">
     <children xmi:type="notation:DecorationNode" xmi:id="_htCKcCwDEeuiM7ALEAk1Kw" type="ControlFlow_NameLabel">
