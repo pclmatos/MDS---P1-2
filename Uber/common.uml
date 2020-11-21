@@ -471,7 +471,84 @@ Post-conditions: &lt;none></body>
           <body>This UC checks if the credentials used to login match an account in the system.</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_1Uv2gCt3Eeu_Df5IHcwvIQ" name="Pay"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1Uv2gCt3Eeu_Df5IHcwvIQ" name="Pay">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_f2OdACwHEeucVbdh1vVRAw">
+          <body>Name: Pay&#xD;
+Description: This UC pays the service that the User used/made.&#xD;
+Actors: &#xD;
+	Main: Bank Entity&#xD;
+	Secondary: Time and User&#xD;
+&#xD;
+Pre conditions: The User must have a payment mode selected. The user must be logged in.&#xD;
+&#xD;
+Main Flow:&#xD;
+1. The UC starts when a service that the User made comes to an end.&#xD;
+2. Include Select Payment.&#xD;
+3. The system checks if there is any promotion code.&#xD;
+4. The system checks if the card has enough credit.&#xD;
+5. The UC ends.&#xD;
+&#xD;
+Alternative Flows: User does not have a payment mode selected. The card is not valid. Not have enough credit.&#xD;
+&#xD;
+Post Conditions: The money is taken form the account.&#xD;
+&#xD;
+------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: User does not have a payment mode selected&#xD;
+Description: The User did not select any payment mode so the system cannot finish the service requested.&#xD;
+Actor:&#xD;
+	Main:  User&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: There is no card registered in the system.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs that there is no card in the system.&#xD;
+3. The system shows a message asking the User to add a card to pay the service.&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: The payment card must be valid.&#xD;
+Description: The payment card must be valid.&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card is not valid because it expired, or the bank blocked the app. &#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 2 of the main flow. &#xD;
+2. The system informs that the payment card is not valid.&#xD;
+3. The systems asks the User to insert another card.&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+&#xD;
+----------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Not enough credit&#xD;
+Description: The payment card does not have the minimum amount for the service to be made.&#xD;
+Actor:&#xD;
+	Main: User&#xD;
+	Secondary: &lt;none>&#xD;
+&#xD;
+Pre- conditions: The payment card does not have the minimum amount.&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 3 of the main flow. &#xD;
+2. The system informs that the payment card does not have minimum credit to place the order.&#xD;
+3. The systems asks the User to insert another card.&#xD;
+4. The main UC ends.&#xD;
+&#xD;
+Post - conditions: &lt;none>&#xD;
+</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_kENyUCwFEeucVbdh1vVRAw" addition="_uzAcwBksEeugnPTAsPFJnw"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_VnBAUBkqEeugnPTAsPFJnw" memberEnd="_VnBnYhkqEeugnPTAsPFJnw _VnBnYxkqEeugnPTAsPFJnw">
