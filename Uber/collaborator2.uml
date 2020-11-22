@@ -3,40 +3,54 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_eyRkkCt2EeunZpiBB4Kc8g">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_fsM2MCt2EeunZpiBB4Kc8g" name="Activity2" node="_88pRcCt2EeunZpiBB4Kc8g _Lv5_gCt5EeunZpiBB4Kc8g _XP1mgCt5EeunZpiBB4Kc8g _faFEECt5EeunZpiBB4Kc8g _nTq2gCt5EeunZpiBB4Kc8g _CXRmwCt6EeunZpiBB4Kc8g _9OslICwCEeuiM7ALEAk1Kw _DYsCMCwDEeuiM7ALEAk1Kw _hrM-cCwDEeuiM7ALEAk1Kw _ilbVkCwEEeuiM7ALEAk1Kw">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_fsM2MCt2EeunZpiBB4Kc8g" name="Activity2" node="_Lv5_gCt5EeunZpiBB4Kc8g _XP1mgCt5EeunZpiBB4Kc8g _faFEECt5EeunZpiBB4Kc8g _nTq2gCt5EeunZpiBB4Kc8g _CXRmwCt6EeunZpiBB4Kc8g _9OslICwCEeuiM7ALEAk1Kw _hrM-cCwDEeuiM7ALEAk1Kw _ilbVkCwEEeuiM7ALEAk1Kw _uQvTQCxeEeuiM7ALEAk1Kw _COQxoCxfEeuiM7ALEAk1Kw _LMvIgCxfEeuiM7ALEAk1Kw _R0uTsCxgEeuiM7ALEAk1Kw _2Zml4CxgEeuiM7ALEAk1Kw" group="_4ssYkCwNEeuiM7ALEAk1Kw _DXdOICw6EeuiM7ALEAk1Kw">
     <ownedRule xmi:type="uml:Constraint" xmi:id="_OYBRQCt5EeunZpiBB4Kc8g" name="Constraint4" constrainedElement="_Lv5_gCt5EeunZpiBB4Kc8g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_OYCfYCt5EeunZpiBB4Kc8g" name="constraintSpec">
         <language>OCL</language>
         <body>Needs to have app instaled</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:type="uml:Constraint" xmi:id="_aGEOgCwCEeuiM7ALEAk1Kw" name="Constraint13" constrainedElement="_nTq2gCt5EeunZpiBB4Kc8g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aGnoICwCEeuiM7ALEAk1Kw" name="constraintSpec">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_LhHAYCw7EeuiM7ALEAk1Kw" name="Constraint26" constrainedElement="_nTq2gCt5EeunZpiBB4Kc8g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LhHncCw7EeuiM7ALEAk1Kw" name="constraintSpec">
         <language>OCL</language>
         <body>There is at least one load in the app</body>
       </specification>
     </ownedRule>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_LwMTYCt5EeunZpiBB4Kc8g" target="_Lv5_gCt5EeunZpiBB4Kc8g" source="_88pRcCt2EeunZpiBB4Kc8g"/>
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_0yWwsCxfEeuiM7ALEAk1Kw" name="Constraint30" constrainedElement="_COQxoCxfEeuiM7ALEAk1Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0yZM8CxfEeuiM7ALEAk1Kw" name="constraintSpec">
+        <language>OCL</language>
+        <body>The information corresponds to a user</body>
+      </specification>
+    </ownedRule>
     <edge xmi:type="uml:ControlFlow" xmi:id="_XQS5gCt5EeunZpiBB4Kc8g" target="_XP1mgCt5EeunZpiBB4Kc8g" source="_Lv5_gCt5EeunZpiBB4Kc8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_fajlMCt5EeunZpiBB4Kc8g" name="Has criterias to set" target="_faFEECt5EeunZpiBB4Kc8g" source="_XP1mgCt5EeunZpiBB4Kc8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_nUTvsCt5EeunZpiBB4Kc8g" name="else" target="_nTq2gCt5EeunZpiBB4Kc8g" source="_XP1mgCt5EeunZpiBB4Kc8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_CXwH4Ct6EeunZpiBB4Kc8g" target="_CXRmwCt6EeunZpiBB4Kc8g" source="_faFEECt5EeunZpiBB4Kc8g"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_9P1NkCwCEeuiM7ALEAk1Kw" target="_9OslICwCEeuiM7ALEAk1Kw" source="_CXRmwCt6EeunZpiBB4Kc8g"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_DZq5oCwDEeuiM7ALEAk1Kw" name="Found a load to book" target="_DYsCMCwDEeuiM7ALEAk1Kw" source="_9OslICwCEeuiM7ALEAk1Kw"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_NYqSUCwDEeuiM7ALEAk1Kw" name="else" target="_nTq2gCt5EeunZpiBB4Kc8g" source="_9OslICwCEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NYqSUCwDEeuiM7ALEAk1Kw" name="else" target="_XP1mgCt5EeunZpiBB4Kc8g" source="_9OslICwCEeuiM7ALEAk1Kw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_hsuocCwDEeuiM7ALEAk1Kw" target="_hrM-cCwDEeuiM7ALEAk1Kw" source="_nTq2gCt5EeunZpiBB4Kc8g"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_cQZGICwEEeuiM7ALEAk1Kw" name="Found a load to book" target="_DYsCMCwDEeuiM7ALEAk1Kw" source="_hrM-cCwDEeuiM7ALEAk1Kw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_imdQUCwEEeuiM7ALEAk1Kw" name="else" target="_ilbVkCwEEeuiM7ALEAk1Kw" source="_hrM-cCwDEeuiM7ALEAk1Kw"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_lZJIcCwGEeuiM7ALEAk1Kw" target="_DYsCMCwDEeuiM7ALEAk1Kw" source="_ilbVkCwEEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:InitialNode" xmi:id="_88pRcCt2EeunZpiBB4Kc8g" name="" outgoing="_LwMTYCt5EeunZpiBB4Kc8g"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_Lv5_gCt5EeunZpiBB4Kc8g" name="Enters the app" incoming="_LwMTYCt5EeunZpiBB4Kc8g" outgoing="_XQS5gCt5EeunZpiBB4Kc8g"/>
-    <node xmi:type="uml:DecisionNode" xmi:id="_XP1mgCt5EeunZpiBB4Kc8g" name="" incoming="_XQS5gCt5EeunZpiBB4Kc8g" outgoing="_fajlMCt5EeunZpiBB4Kc8g _nUTvsCt5EeunZpiBB4Kc8g"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_faFEECt5EeunZpiBB4Kc8g" name="Sets the criterias he's looking for" incoming="_fajlMCt5EeunZpiBB4Kc8g" outgoing="_CXwH4Ct6EeunZpiBB4Kc8g"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_nTq2gCt5EeunZpiBB4Kc8g" name="Looks through all the loads available" incoming="_nUTvsCt5EeunZpiBB4Kc8g _NYqSUCwDEeuiM7ALEAk1Kw" outgoing="_hsuocCwDEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_CXRmwCt6EeunZpiBB4Kc8g" name="Looks for the loads with the required criterias" incoming="_CXwH4Ct6EeunZpiBB4Kc8g" outgoing="_9P1NkCwCEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:DecisionNode" xmi:id="_9OslICwCEeuiM7ALEAk1Kw" name="" incoming="_9P1NkCwCEeuiM7ALEAk1Kw" outgoing="_DZq5oCwDEeuiM7ALEAk1Kw _NYqSUCwDEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:ActivityFinalNode" xmi:id="_DYsCMCwDEeuiM7ALEAk1Kw" name="" incoming="_DZq5oCwDEeuiM7ALEAk1Kw _cQZGICwEEeuiM7ALEAk1Kw _lZJIcCwGEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:DecisionNode" xmi:id="_hrM-cCwDEeuiM7ALEAk1Kw" name="" incoming="_hsuocCwDEeuiM7ALEAk1Kw" outgoing="_cQZGICwEEeuiM7ALEAk1Kw _imdQUCwEEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_ilbVkCwEEeuiM7ALEAk1Kw" name="Informs that the user has looked through all loads" incoming="_imdQUCwEEeuiM7ALEAk1Kw" outgoing="_lZJIcCwGEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MkOf4CxfEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw" target="_COQxoCxfEeuiM7ALEAk1Kw" source="_LMvIgCxfEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_N6P3oCxfEeuiM7ALEAk1Kw" target="_Lv5_gCt5EeunZpiBB4Kc8g" source="_COQxoCxfEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_R1koQCxgEeuiM7ALEAk1Kw" name="Found a load to book" inPartition="_DXdOICw6EeuiM7ALEAk1Kw" target="_R0uTsCxgEeuiM7ALEAk1Kw" source="_9OslICwCEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_d1jBQCxgEeuiM7ALEAk1Kw" name="Found a load to book" inPartition="_DXdOICw6EeuiM7ALEAk1Kw" target="_R0uTsCxgEeuiM7ALEAk1Kw" source="_hrM-cCwDEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kPjQQCxgEeuiM7ALEAk1Kw" target="_uQvTQCxeEeuiM7ALEAk1Kw" source="_R0uTsCxgEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2auAMCxgEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw" target="_2Zml4CxgEeuiM7ALEAk1Kw" source="_ilbVkCwEEeuiM7ALEAk1Kw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4TJhcCxgEeuiM7ALEAk1Kw" target="_2Zml4CxgEeuiM7ALEAk1Kw" source="_uQvTQCxeEeuiM7ALEAk1Kw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_4ssYkCwNEeuiM7ALEAk1Kw" name="Driver" node="_faFEECt5EeunZpiBB4Kc8g _COQxoCxfEeuiM7ALEAk1Kw _LMvIgCxfEeuiM7ALEAk1Kw _ilbVkCwEEeuiM7ALEAk1Kw _2Zml4CxgEeuiM7ALEAk1Kw" edge="_MkOf4CxfEeuiM7ALEAk1Kw _2auAMCxgEeuiM7ALEAk1Kw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_DXdOICw6EeuiM7ALEAk1Kw" name="System" node="_nTq2gCt5EeunZpiBB4Kc8g _XP1mgCt5EeunZpiBB4Kc8g _CXRmwCt6EeunZpiBB4Kc8g _hrM-cCwDEeuiM7ALEAk1Kw _9OslICwCEeuiM7ALEAk1Kw _Lv5_gCt5EeunZpiBB4Kc8g _R0uTsCxgEeuiM7ALEAk1Kw _uQvTQCxeEeuiM7ALEAk1Kw" edge="_R1koQCxgEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Lv5_gCt5EeunZpiBB4Kc8g" name="Enters the app" incoming="_N6P3oCxfEeuiM7ALEAk1Kw" outgoing="_XQS5gCt5EeunZpiBB4Kc8g" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_XP1mgCt5EeunZpiBB4Kc8g" name="" incoming="_XQS5gCt5EeunZpiBB4Kc8g _NYqSUCwDEeuiM7ALEAk1Kw" outgoing="_fajlMCt5EeunZpiBB4Kc8g _nUTvsCt5EeunZpiBB4Kc8g" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_faFEECt5EeunZpiBB4Kc8g" name="Sets the criterias he's looking for" incoming="_fajlMCt5EeunZpiBB4Kc8g" outgoing="_CXwH4Ct6EeunZpiBB4Kc8g" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_nTq2gCt5EeunZpiBB4Kc8g" name="Looks through all the loads available" incoming="_nUTvsCt5EeunZpiBB4Kc8g" outgoing="_hsuocCwDEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_CXRmwCt6EeunZpiBB4Kc8g" name="Looks for the loads with the required criterias" incoming="_CXwH4Ct6EeunZpiBB4Kc8g" outgoing="_9P1NkCwCEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_9OslICwCEeuiM7ALEAk1Kw" name="" incoming="_9P1NkCwCEeuiM7ALEAk1Kw" outgoing="_NYqSUCwDEeuiM7ALEAk1Kw _R1koQCxgEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_hrM-cCwDEeuiM7ALEAk1Kw" name="" incoming="_hsuocCwDEeuiM7ALEAk1Kw" outgoing="_imdQUCwEEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ilbVkCwEEeuiM7ALEAk1Kw" name="Informs that the user has looked through all loads" incoming="_imdQUCwEEeuiM7ALEAk1Kw" outgoing="_2auAMCxgEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_uQvTQCxeEeuiM7ALEAk1Kw" name="The load is booked" incoming="_kPjQQCxgEeuiM7ALEAk1Kw" outgoing="_4TJhcCxgEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_COQxoCxfEeuiM7ALEAk1Kw" name="Enter login information" incoming="_MkOf4CxfEeuiM7ALEAk1Kw" outgoing="_N6P3oCxfEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_LMvIgCxfEeuiM7ALEAk1Kw" name="" outgoing="_MkOf4CxfEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_R0uTsCxgEeuiM7ALEAk1Kw" name="" incoming="_R1koQCxgEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw" outgoing="_kPjQQCxgEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_2Zml4CxgEeuiM7ALEAk1Kw" name="" incoming="_2auAMCxgEeuiM7ALEAk1Kw _4TJhcCxgEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
   </packagedElement>
 </uml:Model>
