@@ -853,13 +853,6 @@ Post - conditions: &lt;none>&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_AQ5K0CwDEeucVbdh1vVRAw" name="uber scoot/bike worker" type="_JeckoBktEeugnPTAsPFJnw" association="_AQ38sCwDEeucVbdh1vVRAw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_AQ5K0SwDEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_AQ38sCwDEeucVbdh1vVRAw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_Hi6m8CwDEeucVbdh1vVRAw" memberEnd="_Hi7OAiwDEeucVbdh1vVRAw _Hi7OAywDEeucVbdh1vVRAw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hi7OACwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hi7OASwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Hi7OAiwDEeucVbdh1vVRAw" type="_u1RogCwCEeucVbdh1vVRAw" association="_Hi6m8CwDEeucVbdh1vVRAw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Hi7OAywDEeucVbdh1vVRAw" name="receiver" type="_QBz5EBkvEeugnPTAsPFJnw" association="_Hi6m8CwDEeucVbdh1vVRAw"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_RN4QYCwDEeucVbdh1vVRAw" memberEnd="_RN43ciwDEeucVbdh1vVRAw _RN43cywDEeucVbdh1vVRAw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RN43cCwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RN43cSwDEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
