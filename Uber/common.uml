@@ -844,7 +844,7 @@ Post - conditions: &lt;none>&#xD;
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01cbMSwCEeucVbdh1vVRAw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_01cbMiwCEeucVbdh1vVRAw" name="person" type="_u1RogCwCEeucVbdh1vVRAw" association="_01bNECwCEeucVbdh1vVRAw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_01cbMywCEeucVbdh1vVRAw" name="uber eats employee" type="_fBzG8Ct5Eeu_Df5IHcwvIQ" association="_01bNECwCEeucVbdh1vVRAw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_01cbMywCEeucVbdh1vVRAw" name="uber eats employee" type="_-ucQoBkqEeugnPTAsPFJnw" association="_01bNECwCEeucVbdh1vVRAw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_AQ38sCwDEeucVbdh1vVRAw" memberEnd="_AQ5K0CwDEeucVbdh1vVRAw _AQ5K0SwDEeucVbdh1vVRAw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AQ4jwCwDEeucVbdh1vVRAw" source="org.eclipse.papyrus">
@@ -873,5 +873,12 @@ Post - conditions: &lt;none>&#xD;
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_t0ymcSwDEeucVbdh1vVRAw" name="pay" type="_1Uv2gCt3Eeu_Df5IHcwvIQ" association="_t0xYUCwDEeucVbdh1vVRAw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_t0ymciwDEeucVbdh1vVRAw" type="_oz2zMBkrEeugnPTAsPFJnw" association="_t0xYUCwDEeucVbdh1vVRAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PpUGcCzsEeu_UKr1Z3JUeA" memberEnd="_PpXJwCzsEeu_UKr1Z3JUeA _PpZmACzsEeu_UKr1Z3JUeA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PpV7oCzsEeu_UKr1Z3JUeA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PpWisCzsEeu_UKr1Z3JUeA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PpXJwCzsEeu_UKr1Z3JUeA" type="_u1RogCwCEeucVbdh1vVRAw" association="_PpUGcCzsEeu_UKr1Z3JUeA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PpZmACzsEeu_UKr1Z3JUeA" name="admin" type="_Nx4IsBktEeugnPTAsPFJnw" association="_PpUGcCzsEeu_UKr1Z3JUeA"/>
   </packagedElement>
 </uml:Package>

@@ -278,4 +278,27 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <node xmi:type="uml:OpaqueAction" xmi:id="_fEhTUCtDEeuhjcpthdBAqA" name="Print user and pickup location information" incoming="_jFkt8CtDEeuhjcpthdBAqA" outgoing="_OkfaECtEEeuhjcpthdBAqA" inPartition="_K5TpICtBEeuhjcpthdBAqA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_NYsVUCtEEeuhjcpthdBAqA" name="" incoming="_OkfaECtEEeuhjcpthdBAqA" inPartition="_K5TpICtBEeuhjcpthdBAqA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_A-Iy0CzpEeu_UKr1Z3JUeA" name="Person">
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_jvdnQCzqEeu_UKr1Z3JUeA" name="name"/>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_kdjcUCzqEeu_UKr1Z3JUeA" name="email"/>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_lJhxgCzqEeu_UKr1Z3JUeA" name="password"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DTHGICzpEeu_UKr1Z3JUeA" name="User">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bNFL8CzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_lEsp8CzsEeu_UKr1Z3JUeA" name="paymentMethod"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z2hosCzpEeu_UKr1Z3JUeA" name="Driver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_bptdkCzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_nYxlYCzsEeu_UKr1Z3JUeA" name="car"/>
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_vNhUECzsEeu_UKr1Z3JUeA" name="driverLicense"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_45hxQCzqEeu_UKr1Z3JUeA" name="Receiver">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Fq_4oCzrEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mxWOcCzrEeu_UKr1Z3JUeA" name=" Uber Scoot/Bike worker">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Y8C2ECzsEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eHYSgCzsEeu_UKr1Z3JUeA" name="Uber Eats Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iNGKsCzsEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+  </packagedElement>
 </uml:Package>
