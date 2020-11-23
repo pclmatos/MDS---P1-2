@@ -393,7 +393,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N4CJKBkvEeugnPTAsPFJnw"/>
               </children>
               <element xmi:type="uml:UseCase" href="common.uml#_N3iZ4BkvEeugnPTAsPFJnw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N4CJIRkvEeugnPTAsPFJnw" x="54" y="312" width="121" height="41"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N4CJIRkvEeugnPTAsPFJnw" x="34" y="303" width="161" height="41"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_6kYqABk1EeulX5DAYB4Giw" type="UseCase_Shape_CN">
               <children xmi:type="notation:DecorationNode" xmi:id="_6kZREBk1EeulX5DAYB4Giw" type="UseCase_NameLabel_CN"/>
