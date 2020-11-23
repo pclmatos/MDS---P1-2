@@ -1,0 +1,112 @@
+model Uber
+
+abstract class Person
+attributes
+	name: String
+	email: String
+	password: String
+    phoneNumber: Integer
+operations
+	login()
+end
+
+class User < Person
+attributes
+	paymentMethod: String
+operations
+	selectPaymentMethod()
+	pay()
+	setupRide()
+	ride()
+	inputLoadDetails()
+	trackLoad()
+    startScootBike()
+    createComplaint()
+    makeOrder()
+    receiveOrder()
+end
+
+class Driver < Person
+attributes
+    licensePlate: String
+    driverLicense: String
+    paymentMethod: String
+operations
+    respondToRideRequest()
+    pickupUser()
+    driveToDestination()
+    pickupDelivery()
+    postTruck()
+    takePictureOfConfirmation()
+    deliverLoad()
+    callSupport()
+    bookLoad()
+end
+
+class UberScootBikeWorker < Person
+operations 
+    rechargeScootsAndBikes()
+end
+
+class UberEatsEmployee < Person
+attributes
+    driverLicense: String
+operations
+    respondToOrder()
+    pickupFood()
+    deliverOrder()
+end
+
+class Admin < Person
+attributes
+    adminId: Integer
+operations
+    solveProblem()
+end
+
+abstract class PersonWithoutAccount
+attributes 
+    name: String
+	email: String
+	password: String
+    phoneNumber: Integer
+operations
+    createAccount()
+end
+
+class UserWithoutAccount < PersonWithoutAccount
+end
+
+class DriverWithoutAccount < PersonWithoutAccount
+attributes
+    driverLicense: String
+    licensePlate: String
+operations
+    registerCar()
+end
+
+class RestaurantEmployee
+attributes
+    restaurantName: String
+operations
+    setOrder()
+    deliverFood()
+end
+
+class Receiver
+attributes
+    receiverName: String
+operations
+    receiveLoad()
+end
+
+class BankEntity
+operations
+    pay()
+end
+
+class Time
+operations
+    pay()
+end
+
