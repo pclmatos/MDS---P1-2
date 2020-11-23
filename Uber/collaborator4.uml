@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q3mgEA2TEeujq4q3EywG0A" name="collaborator4">
-  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _vq1kkCqvEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _n68ZUCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _nz_dgCtGEeuhjcpthdBAqA _1916ACt7EeuGcpIETXw3uQ">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ggstIA2ZEeujq4q3EywG0A" name="Setup Ride" node="_MNiiUCqrEeuwD96ifJLZLA _VN-oECqrEeuwD96ifJLZLA _uvD1oCqrEeuwD96ifJLZLA _MkCkgCqwEeuwD96ifJLZLA _ZBQTICqwEeuwD96ifJLZLA _bvPRcCqyEeuwD96ifJLZLA _8ux0oCqyEeuwD96ifJLZLA _RMgAkCq0EeuwD96ifJLZLA _b08l8Cq0EeuwD96ifJLZLA _1916ACt7EeuGcpIETXw3uQ _62NfIC2UEeuMYb8iZH_v0Q _Dx4ZoC2VEeuMYb8iZH_v0Q">
     <ownedRule xmi:type="uml:Constraint" xmi:id="_xodXkC0PEeuFzLejrbAz_A" name="Constraint29" constrainedElement="_1916ACt7EeuGcpIETXw3uQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xopk0C0PEeuFzLejrbAz_A" name="constraintSpec">
         <language>OCL</language>
@@ -10,32 +10,28 @@
     </ownedRule>
     <edge xmi:type="uml:ControlFlow" xmi:id="_gU6gQCqrEeuwD96ifJLZLA" target="_VN-oECqrEeuwD96ifJLZLA" source="_MNiiUCqrEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_A3RQ0CqvEeuwD96ifJLZLA" target="_uvD1oCqrEeuwD96ifJLZLA" source="_VN-oECqrEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_2gwTgCqvEeuwD96ifJLZLA" target="_vq1kkCqvEeuwD96ifJLZLA" source="_uvD1oCqrEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_3pKtECqvEeuwD96ifJLZLA" name="[else]" target="_VN-oECqrEeuwD96ifJLZLA" source="_vq1kkCqvEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_SmtRkCqwEeuwD96ifJLZLA" name="[locations are valid]" target="_MkCkgCqwEeuwD96ifJLZLA" source="_vq1kkCqvEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_OX1A4CqxEeuwD96ifJLZLA" target="_ZBQTICqwEeuwD96ifJLZLA" source="_MkCkgCqwEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_tqq8QCqyEeuwD96ifJLZLA" target="_n68ZUCqyEeuwD96ifJLZLA" source="_bvPRcCqyEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_wWtrwCqyEeuwD96ifJLZLA" name="[else]" target="_bvPRcCqyEeuwD96ifJLZLA" source="_n68ZUCqyEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_PgwF4CqzEeuwD96ifJLZLA" name="[found available driver]" target="_8ux0oCqyEeuwD96ifJLZLA" source="_n68ZUCqyEeuwD96ifJLZLA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_bmWb8CtGEeuhjcpthdBAqA" target="_RMgAkCq0EeuwD96ifJLZLA" source="_8ux0oCqyEeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_srZ4YCtGEeuhjcpthdBAqA" target="_nz_dgCtGEeuhjcpthdBAqA" source="_RMgAkCq0EeuwD96ifJLZLA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_uMROMCtGEeuhjcpthdBAqA" name="[driver arrived]" target="_b08l8Cq0EeuwD96ifJLZLA" source="_nz_dgCtGEeuhjcpthdBAqA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_FvlHgCtHEeuhjcpthdBAqA" name="[else]" target="_RMgAkCq0EeuwD96ifJLZLA" source="_nz_dgCtGEeuhjcpthdBAqA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uMROMCtGEeuhjcpthdBAqA" name="[driver arrived]" target="_b08l8Cq0EeuwD96ifJLZLA" source="_Dx4ZoC2VEeuMYb8iZH_v0Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FvlHgCtHEeuhjcpthdBAqA" name="[else]" target="_RMgAkCq0EeuwD96ifJLZLA" source="_Dx4ZoC2VEeuMYb8iZH_v0Q"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_DWmq4Ct8EeuGcpIETXw3uQ" target="_bvPRcCqyEeuwD96ifJLZLA" source="_1916ACt7EeuGcpIETXw3uQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_EJp4cCt8EeuGcpIETXw3uQ" target="_1916ACt7EeuGcpIETXw3uQ" source="_ZBQTICqwEeuwD96ifJLZLA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-U5MgC2UEeuMYb8iZH_v0Q" target="_62NfIC2UEeuMYb8iZH_v0Q" source="_bvPRcCqyEeuwD96ifJLZLA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__oBoUC2UEeuMYb8iZH_v0Q" name="[found available driver]" target="_8ux0oCqyEeuwD96ifJLZLA" source="_62NfIC2UEeuMYb8iZH_v0Q"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LFDsUC2VEeuMYb8iZH_v0Q" target="_Dx4ZoC2VEeuMYb8iZH_v0Q" source="_RMgAkCq0EeuwD96ifJLZLA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MbdekC2VEeuMYb8iZH_v0Q" name="[else]" target="_bvPRcCqyEeuwD96ifJLZLA" source="_62NfIC2UEeuMYb8iZH_v0Q"/>
     <node xmi:type="uml:InitialNode" xmi:id="_MNiiUCqrEeuwD96ifJLZLA" name="" outgoing="_gU6gQCqrEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_VN-oECqrEeuwD96ifJLZLA" name="User chooses pickup locations and destination" incoming="_gU6gQCqrEeuwD96ifJLZLA _3pKtECqvEeuwD96ifJLZLA" outgoing="_A3RQ0CqvEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_uvD1oCqrEeuwD96ifJLZLA" name="System checks if locations are valid" incoming="_A3RQ0CqvEeuwD96ifJLZLA" outgoing="_2gwTgCqvEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_vq1kkCqvEeuwD96ifJLZLA" name="" incoming="_2gwTgCqvEeuwD96ifJLZLA" outgoing="_3pKtECqvEeuwD96ifJLZLA _SmtRkCqwEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_MkCkgCqwEeuwD96ifJLZLA" name="System prompts information about types of cars available, and the cost of the ride" incoming="_SmtRkCqwEeuwD96ifJLZLA" outgoing="_OX1A4CqxEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_VN-oECqrEeuwD96ifJLZLA" name="User chooses pickup locations and destination" incoming="_gU6gQCqrEeuwD96ifJLZLA" outgoing="_A3RQ0CqvEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_uvD1oCqrEeuwD96ifJLZLA" name="System checks if locations are valid" incoming="_A3RQ0CqvEeuwD96ifJLZLA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MkCkgCqwEeuwD96ifJLZLA" name="System prompts information about types of cars available, and the cost of the ride" outgoing="_OX1A4CqxEeuwD96ifJLZLA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_ZBQTICqwEeuwD96ifJLZLA" name="Users chooses one available type of car" incoming="_OX1A4CqxEeuwD96ifJLZLA" outgoing="_EJp4cCt8EeuGcpIETXw3uQ"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_bvPRcCqyEeuwD96ifJLZLA" name="System checks if there is any available driver close to the pickup location" incoming="_wWtrwCqyEeuwD96ifJLZLA _DWmq4Ct8EeuGcpIETXw3uQ" outgoing="_tqq8QCqyEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_n68ZUCqyEeuwD96ifJLZLA" name="" incoming="_tqq8QCqyEeuwD96ifJLZLA" outgoing="_wWtrwCqyEeuwD96ifJLZLA _PgwF4CqzEeuwD96ifJLZLA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_8ux0oCqyEeuwD96ifJLZLA" name="User gets to pickup location" incoming="_PgwF4CqzEeuwD96ifJLZLA" outgoing="_bmWb8CtGEeuhjcpthdBAqA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_RMgAkCq0EeuwD96ifJLZLA" name="System pdates user about the driver whereabouts" incoming="_bmWb8CtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA" outgoing="_srZ4YCtGEeuhjcpthdBAqA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_bvPRcCqyEeuwD96ifJLZLA" name="System checks if there is any available driver close to the pickup location" incoming="_DWmq4Ct8EeuGcpIETXw3uQ _MbdekC2VEeuMYb8iZH_v0Q" outgoing="_-U5MgC2UEeuMYb8iZH_v0Q"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_8ux0oCqyEeuwD96ifJLZLA" name="User gets to pickup location" incoming="__oBoUC2UEeuMYb8iZH_v0Q" outgoing="_bmWb8CtGEeuhjcpthdBAqA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RMgAkCq0EeuwD96ifJLZLA" name="System pdates user about the driver whereabouts" incoming="_bmWb8CtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA" outgoing="_LFDsUC2VEeuMYb8iZH_v0Q"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_b08l8Cq0EeuwD96ifJLZLA" name="" incoming="_uMROMCtGEeuhjcpthdBAqA"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_nz_dgCtGEeuhjcpthdBAqA" name="" incoming="_srZ4YCtGEeuhjcpthdBAqA" outgoing="_uMROMCtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_1916ACt7EeuGcpIETXw3uQ" name="System checks if payment method has enough credit" incoming="_EJp4cCt8EeuGcpIETXw3uQ" outgoing="_DWmq4Ct8EeuGcpIETXw3uQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_62NfIC2UEeuMYb8iZH_v0Q" name="" incoming="_-U5MgC2UEeuMYb8iZH_v0Q" outgoing="__oBoUC2UEeuMYb8iZH_v0Q _MbdekC2VEeuMYb8iZH_v0Q"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Dx4ZoC2VEeuMYb8iZH_v0Q" name="" incoming="_LFDsUC2VEeuMYb8iZH_v0Q" outgoing="_uMROMCtGEeuhjcpthdBAqA _FvlHgCtHEeuhjcpthdBAqA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_owSkwA2ZEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_raorIA2ZEeujq4q3EywG0A" name="StateMachine4">
@@ -265,26 +261,38 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_M2znkBktEeuwGKbHftMADg" name="driver without account" type="_4ObFEBe9EeuxvcKDEk6LAw" association="_M2qdoBktEeuwGKbHftMADg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_M2znkRktEeuwGKbHftMADg" name="create account" type="_PnQUEBe7EeuXq-tJP09PJw" association="_M2qdoBktEeuwGKbHftMADg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_MddY8CtAEeuhjcpthdBAqA" name="Respond to Ride Request" node="_Hb21YCtCEeuhjcpthdBAqA _eGO7kCtCEeuhjcpthdBAqA _Afu7UCtDEeuhjcpthdBAqA _Jx0KsCtDEeuhjcpthdBAqA _RI1bkCtDEeuhjcpthdBAqA _fEhTUCtDEeuhjcpthdBAqA _NYsVUCtEEeuhjcpthdBAqA">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_MddY8CtAEeuhjcpthdBAqA" name="Respond to Ride Request" node="_Hb21YCtCEeuhjcpthdBAqA _eGO7kCtCEeuhjcpthdBAqA _Afu7UCtDEeuhjcpthdBAqA _RI1bkCtDEeuhjcpthdBAqA _fEhTUCtDEeuhjcpthdBAqA _NYsVUCtEEeuhjcpthdBAqA _TwPTwC2VEeuMYb8iZH_v0Q">
     <edge xmi:type="uml:ControlFlow" xmi:id="_k7h_cCtCEeuhjcpthdBAqA" target="_eGO7kCtCEeuhjcpthdBAqA" source="_Hb21YCtCEeuhjcpthdBAqA"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_GhuS8CtDEeuhjcpthdBAqA" target="_Afu7UCtDEeuhjcpthdBAqA" source="_eGO7kCtCEeuhjcpthdBAqA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_NrDGECtDEeuhjcpthdBAqA" target="_Jx0KsCtDEeuhjcpthdBAqA" source="_Afu7UCtDEeuhjcpthdBAqA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_Vk5-QCtDEeuhjcpthdBAqA" name="[else]" target="_RI1bkCtDEeuhjcpthdBAqA" source="_Jx0KsCtDEeuhjcpthdBAqA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Vk5-QCtDEeuhjcpthdBAqA" name="[else]" target="_RI1bkCtDEeuhjcpthdBAqA" source="_TwPTwC2VEeuMYb8iZH_v0Q"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_Z3spICtDEeuhjcpthdBAqA" target="_eGO7kCtCEeuhjcpthdBAqA" source="_RI1bkCtDEeuhjcpthdBAqA"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_jFkt8CtDEeuhjcpthdBAqA" name="[driver accepts request]" target="_fEhTUCtDEeuhjcpthdBAqA" source="_Jx0KsCtDEeuhjcpthdBAqA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jFkt8CtDEeuhjcpthdBAqA" name="[driver accepts request]" target="_fEhTUCtDEeuhjcpthdBAqA" source="_TwPTwC2VEeuMYb8iZH_v0Q"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_OkfaECtEEeuhjcpthdBAqA" target="_NYsVUCtEEeuhjcpthdBAqA" source="_fEhTUCtDEeuhjcpthdBAqA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bJojMC2VEeuMYb8iZH_v0Q" target="_TwPTwC2VEeuMYb8iZH_v0Q" source="_Afu7UCtDEeuhjcpthdBAqA"/>
     <node xmi:type="uml:InitialNode" xmi:id="_Hb21YCtCEeuhjcpthdBAqA" name="" outgoing="_k7h_cCtCEeuhjcpthdBAqA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_eGO7kCtCEeuhjcpthdBAqA" name="System sends a ride request to an available driver" incoming="_k7h_cCtCEeuhjcpthdBAqA _Z3spICtDEeuhjcpthdBAqA" outgoing="_GhuS8CtDEeuhjcpthdBAqA"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_Afu7UCtDEeuhjcpthdBAqA" name="Driver gets request and choose to accept the ride or not" incoming="_GhuS8CtDEeuhjcpthdBAqA" outgoing="_NrDGECtDEeuhjcpthdBAqA"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_Jx0KsCtDEeuhjcpthdBAqA" name="" incoming="_NrDGECtDEeuhjcpthdBAqA" outgoing="_Vk5-QCtDEeuhjcpthdBAqA _jFkt8CtDEeuhjcpthdBAqA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Afu7UCtDEeuhjcpthdBAqA" name="Driver gets request and choose to accept the ride or not" incoming="_GhuS8CtDEeuhjcpthdBAqA" outgoing="_bJojMC2VEeuMYb8iZH_v0Q"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_RI1bkCtDEeuhjcpthdBAqA" name="System searches for another driver" incoming="_Vk5-QCtDEeuhjcpthdBAqA" outgoing="_Z3spICtDEeuhjcpthdBAqA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_fEhTUCtDEeuhjcpthdBAqA" name="System prints user and pickup location information" incoming="_jFkt8CtDEeuhjcpthdBAqA" outgoing="_OkfaECtEEeuhjcpthdBAqA"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_NYsVUCtEEeuhjcpthdBAqA" name="" incoming="_OkfaECtEEeuhjcpthdBAqA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_TwPTwC2VEeuMYb8iZH_v0Q" name="" incoming="_bJojMC2VEeuMYb8iZH_v0Q" outgoing="_jFkt8CtDEeuhjcpthdBAqA _Vk5-QCtDEeuhjcpthdBAqA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_A-Iy0CzpEeu_UKr1Z3JUeA" name="Person">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usB54C2XEeuMYb8iZH_v0Q" name="phoneNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usDvEC2XEeuMYb8iZH_v0Q" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usE9MC2XEeuMYb8iZH_v0Q" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usFkQC2XEeuMYb8iZH_v0Q" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5n3XUC2BEeuMYb8iZH_v0Q" name="login"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_DTHGICzpEeu_UKr1Z3JUeA" name="User">
+  <packagedElement xmi:type="uml:Class" xmi:id="_DTHGICzpEeu_UKr1Z3JUeA" name="User" visibility="package">
     <generalization xmi:type="uml:Generalization" xmi:id="_bNFL8CzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_EiFoMC2NEeuMYb8iZH_v0Q" name="selectPaymentMethod"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_M6xxcC2NEeuMYb8iZH_v0Q" name="pay"/>
@@ -303,6 +311,15 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Z2hosCzpEeu_UKr1Z3JUeA" name="Driver">
     <generalization xmi:type="uml:Generalization" xmi:id="_bptdkCzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OKao0C2XEeuMYb8iZH_v0Q" name="licensePlate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QKwI4C2XEeuMYb8iZH_v0Q" name="driverLicense">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fS9eIC2XEeuMYb8iZH_v0Q" name="paymentMethod">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jybpMC2OEeuMYb8iZH_v0Q" name="respondToRideRequest"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_k519MC2OEeuMYb8iZH_v0Q" name="pickupUser"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_mVYuIC2OEeuMYb8iZH_v0Q" name="driveToDestination"/>
@@ -321,6 +338,9 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_eHYSgCzsEeu_UKr1Z3JUeA" name="Uber Eats Employee">
     <generalization xmi:type="uml:Generalization" xmi:id="_iNGKsCzsEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kV3XUC2XEeuMYb8iZH_v0Q" name="driverLicense">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_iRScAC2NEeuMYb8iZH_v0Q" name="respondToOrder"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jSUbMC2NEeuMYb8iZH_v0Q" name="pickupFood"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kVV-cC2NEeuMYb8iZH_v0Q" name="deliverOrder"/>
@@ -328,9 +348,24 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_r-6X4C2NEeuMYb8iZH_v0Q" name="Admin">
     <generalization xmi:type="uml:Generalization" xmi:id="_vyFukC2NEeuMYb8iZH_v0Q" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pGU1oC2XEeuMYb8iZH_v0Q" name="adminId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_idugEC2OEeuMYb8iZH_v0Q" name="solveProblem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_2GSbEC2OEeuMYb8iZH_v0Q" name="PersonWithouAccount">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtnUcC2YEeuMYb8iZH_v0Q" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpJoC2YEeuMYb8iZH_v0Q" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpwsC2YEeuMYb8iZH_v0Q" name="phoneNumber">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Btq-0C2YEeuMYb8iZH_v0Q" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3xWOsC2OEeuMYb8iZH_v0Q" name="createAccount"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_5EgfsC2OEeuMYb8iZH_v0Q" name="UserWithoutAccount">
@@ -338,12 +373,24 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_-Q2BsC2OEeuMYb8iZH_v0Q" name="DriverWithoutAccount">
     <generalization xmi:type="uml:Generalization" xmi:id="_BZ7SgC2PEeuMYb8iZH_v0Q" general="_2GSbEC2OEeuMYb8iZH_v0Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG4J4C2YEeuMYb8iZH_v0Q" name="licensePlate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG5_EC2YEeuMYb8iZH_v0Q" name="driverLicense">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__dQxgC2OEeuMYb8iZH_v0Q" name="registerCar"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_HvXKkC2PEeuMYb8iZH_v0Q" name="Receiver">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QShvYC2YEeuMYb8iZH_v0Q" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Iv9r8C2PEeuMYb8iZH_v0Q" name="receiveLoad"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_MV1mcC2PEeuMYb8iZH_v0Q" name="RestaurantEmployee">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Fz0U0C2YEeuMYb8iZH_v0Q" name="restaurantName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_NhycMC2PEeuMYb8iZH_v0Q" name="setOrder"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OcB24C2PEeuMYb8iZH_v0Q" name="deliverFood"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_V8Iq8C2SEeuMYb8iZH_v0Q" name="confirmOrder"/>
@@ -354,4 +401,10 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   <packagedElement xmi:type="uml:Class" xmi:id="_WMkbAC2PEeuMYb8iZH_v0Q" name="Time">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XLuK4C2PEeuMYb8iZH_v0Q" name="pay"/>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RGulwC2TEeuMYb8iZH_v0Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RGwa8C2TEeuMYb8iZH_v0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
