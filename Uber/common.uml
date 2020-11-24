@@ -441,23 +441,41 @@ Main flow:&#xD;
 Post-Conditions: The systems informs the user about payment method.</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_FR384Bk1EeulX5DAYB4Giw" name="Solve Problem">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FR384Bk1EeulX5DAYB4Giw" name="Solve Complaints">
         <ownedComment xmi:type="uml:Comment" xmi:id="_e35p8Bk3Eeu1zppl6aty6A">
           <body>Name: Solve Complaints&#xD;
 Description: This UC describes the actions preformed by an Uber Admin to solve the complaints created by a User&#xD;
 Actor:&#xD;
 	Main: Admin&#xD;
-	Secondary: User/Driver&#xD;
+	Secondary: User&#xD;
 Pre-conditions. There are complaints to solve&#xD;
 Main flow:&#xD;
 	1. The Admin selects the complaint that needs to be solved&#xD;
-	2. The Admin reads the report written by the User/Driver&#xD;
+	2. The Admin reads the report written by the User&#xD;
 	3. The Admin evaluates the situation&#xD;
+	4. The System gives possible solution for the complaint&#xD;
 	4. The Admin chooses the action that must be performed to solve the situation&#xD;
 	5. The Admin marks the complaint as &quot;solved&quot;&#xD;
 	6. The UC ends.&#xD;
-Alternative flows: &lt;none>&#xD;
-Post-conditions: &lt;none></body>
+Alternative flows: The Admin doesn't found any solutions for the complaint&#xD;
+Post-conditions: &lt;none>&#xD;
+&#xD;
+-----------------&#xD;
+&#xD;
+Alternative Flow&#xD;
+Name: Solution was not found&#xD;
+Description: The Admin evaluated the complaint but no solution or help was possible&#xD;
+Actor:&#xD;
+	Main: Admin&#xD;
+	Secondary: &lt;none>&#xD;
+Main Flow:&#xD;
+	1. This UC starts after step 3 of the Main Flow&#xD;
+	2. The System doesn't find any solution to solve the problem or find it unsolvable&#xD;
+	3. A sorry message is sent by the system to the user&#xD;
+	4. The admin marks the complaint as &quot;solved&quot;&#xD;
+	5. The UC ends.&#xD;
+&#xD;
+</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_TUqRQBksEeugnPTAsPFJnw" name="Login">
