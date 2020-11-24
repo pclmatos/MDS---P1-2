@@ -8,11 +8,13 @@ attributes
     phoneNumber: Integer
 operations
 	login()
+    checkCredentials()
 end
 
 class User < Person
 attributes
 	paymentMethod: String
+    address : String
 operations
 	selectPaymentMethod()
 	pay()
@@ -24,6 +26,11 @@ operations
     createComplaint()
     makeOrder()
     receiveOrder()
+    respondToRideRequest()
+    rateDriver()
+    endRide()
+    photographParking()
+    scanQRCode()
 end
 
 class Driver < Person
@@ -31,6 +38,7 @@ attributes
     licensePlate: String
     driverLicense: String
     paymentMethod: String
+     rating: Integer
 operations
     respondToRideRequest()
     pickupUser()
@@ -41,6 +49,9 @@ operations
     deliverLoad()
     callSupport()
     bookLoad()
+    researchLoad()
+    loadsAvailable()
+    receiveBookConfirmation()
 end
 
 class UberScootBikeWorker < Person
@@ -55,6 +66,7 @@ operations
     respondToOrder()
     pickupFood()
     deliverOrder()
+    confirmOrder()
 end
 
 class Admin < Person
@@ -72,6 +84,7 @@ attributes
     phoneNumber: Integer
 operations
     createAccount()
+    validatePassword()
 end
 
 class UserWithoutAccount < PersonWithoutAccount
@@ -83,14 +96,16 @@ attributes
     licensePlate: String
 operations
     registerCar()
+    checkCarRegistrationCond()
 end
 
-class RestaurantEmployee
+class Restaurant
 attributes
     restaurantName: String
 operations
     setOrder()
     deliverFood()
+    confirmOrder()
 end
 
 class Receiver
@@ -101,12 +116,115 @@ operations
 end
 
 class BankEntity
+attributes
+    accbalance: Real
 operations
     pay()
+    selectPaymentMethod()
 end
 
 class Time
+attributes
+  hour : Integer
+  minute : Integer
+  second : Integer
 operations
     pay()
+    selectPaymentMethod()
 end
 
+class ScootBike
+attributes
+    qrCode : Integer
+    battery : Integer
+end
+
+--Associations
+associationclass rides between
+  User [1] role user
+  Driver [1] role driver
+attributes
+  duration : Integer
+  cost: Integer
+  tip : Integer
+  startLocation: String
+  destination: String
+end
+
+associationclass transports between
+    Driver [1] role driver
+    Receiver [1] role receiver
+attributes
+    weight : Integer
+    end
+
+association delivers between
+    UberEatsEmployee[1..*] role deliverPerson
+    Restaurant[1..*] role restaurant
+end
+
+associationclass deliversEat between
+    UberEatsEmployee[1] role driverEats
+    User[1] role user
+    attributes
+     tip : Integer
+     addrPickUp : String
+     addrUser : String
+end
+
+associationclass Withdraw between
+    BankEntity[1] role bank
+    Time[1] role clock
+    attributes
+        transferTime: Time
+        amount : Integer
+end
+
+association account between
+    BankEntity[1] role bank
+   Person[1] role person 
+end
+
+association uses between
+    User[1] role user
+    ScootBike[1] role bike_scoot
+end
+
+association recharge between
+    UberScootBikeWorker[1] role worker
+    ScootBike[1] role bike_scoot
+end
+
+--Invariants
+constraints
+
+
+context Person
+inv uniquePerson: 
+    Person.allInstances() -> forAll(x,y| x<>y implies x.email <> y.email)
+
+context deliversEat
+inv diff_locations:
+    self.addrPickUp <> self.addrUser
+inv collect_location:
+    self.addrUser = self.user.address
+
+context Withdraw
+inv enought_money:
+    self.amount <= self.bank.accbalance
+
+context rides
+    inv different_start_destination: 
+        self.startLocation <> self.destination
+
+context Driver
+    inv rate_up_to_five: 
+        self.rating <= 5
+
+context ScootBike
+    inv batteryValuesMAX:
+        ScootBike.allInstances() -> forAll(self.battery <= 100)
+    inv batteryValuesMIN:
+        ScootBike.allInstances() -> forAll(self.battery >= 0)
+    inv diffQR:
+        ScootBike.allInstances() -> forAll(x,y| x<>y implies x.qrCode <> y.qrCode)
