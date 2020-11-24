@@ -651,7 +651,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HaFX8Sv_EeuRk76_sd48iw"/>
       </children>
       <element xmi:type="uml:Activity" href="collaborator5.uml#_GRR8wCv_EeuRk76_sd48iw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HaFX8iv_EeuRk76_sd48iw" width="861" height="441"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HaFX8iv_EeuRk76_sd48iw" width="741" height="441"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_HaFX8yv_EeuRk76_sd48iw" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_HaFX9Cv_EeuRk76_sd48iw"/>
