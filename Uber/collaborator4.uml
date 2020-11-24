@@ -491,6 +491,28 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QP91QC41Eeu2OpQ4_JJA5Q" value="1"/>
     </ownedEnd>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9nWGwC5UEeuLFIAxlIEltg" name="ScootBike">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CpXPIC5VEeuLFIAxlIEltg" name="qrCode">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5iJIC5VEeuLFIAxlIEltg" name="battery">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hnOOcC5VEeuLFIAxlIEltg" name="recharge" memberEnd="_hnOOcy5VEeuLFIAxlIEltg _hnOOdC5VEeuLFIAxlIEltg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hnOOcS5VEeuLFIAxlIEltg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hnOOci5VEeuLFIAxlIEltg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hnOOcy5VEeuLFIAxlIEltg" name=" uber scootbike worker" type="_mxWOcCzrEeu_UKr1Z3JUeA" association="_hnOOcC5VEeuLFIAxlIEltg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hnOOdC5VEeuLFIAxlIEltg" name="scootbike" type="_9nWGwC5UEeuLFIAxlIEltg" association="_hnOOcC5VEeuLFIAxlIEltg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m-dY4C5VEeuLFIAxlIEltg" name="uses" memberEnd="_m-dY4y5VEeuLFIAxlIEltg _m-dY5C5VEeuLFIAxlIEltg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-dY4S5VEeuLFIAxlIEltg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-dY4i5VEeuLFIAxlIEltg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m-dY4y5VEeuLFIAxlIEltg" name="user" type="_DTHGICzpEeu_UKr1Z3JUeA" association="_m-dY4C5VEeuLFIAxlIEltg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m-dY5C5VEeuLFIAxlIEltg" name="scootbike" type="_9nWGwC5UEeuLFIAxlIEltg" association="_m-dY4C5VEeuLFIAxlIEltg"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RGulwC2TEeuMYb8iZH_v0Q">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RGwa8C2TEeuMYb8iZH_v0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
