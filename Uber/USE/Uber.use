@@ -1,4 +1,4 @@
-model Uber
+ model Uber
 
 abstract class Person
 attributes
@@ -235,6 +235,16 @@ context Time
 	inv limit_minutes:
 		self.minutes <= 60 and self.minutes >= 0
 	inv limit_seconds:
-		self.seconds <= 60 and self.seconds >= 0        
-        
+		self.seconds <= 60 and self.seconds >= 0
+		
+context transports
+	inv enoughWeightCapacity:
+		self.weigh <= self.weightCapacity
+	inv correctReceiver:
+		self.receiverName = self.receiver.name
+		
+context Receiver
+	inv diffCargId:
+		Receiver.allInstances() -> forAll(x,y | x<>y implies x.cargId <> y.cargId)
+		
         
