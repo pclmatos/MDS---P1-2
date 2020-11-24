@@ -323,6 +323,9 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fS9eIC2XEeuMYb8iZH_v0Q" name="paymentMethod">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M1XMEC40Eeu2OpQ4_JJA5Q" name="rating">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jybpMC2OEeuMYb8iZH_v0Q" name="respondToRideRequest"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_k519MC2OEeuMYb8iZH_v0Q" name="pickupUser"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_mVYuIC2OEeuMYb8iZH_v0Q" name="driveToDestination"/>
@@ -461,6 +464,32 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     </ownedAttribute>
     <ownedEnd xmi:type="uml:Property" xmi:id="_wUViYi3BEeuyad8jxbm3rQ" name="receiver" type="_HvXKkC2PEeuMYb8iZH_v0Q" association="_wUTGIC3BEeuyad8jxbm3rQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_wUWJcC3BEeuyad8jxbm3rQ" name="driver" type="_Z2hosCzpEeu_UKr1Z3JUeA" association="_wUTGIC3BEeuyad8jxbm3rQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_BYbZQC41Eeu2OpQ4_JJA5Q" name="rides" memberEnd="_BYtGEC41Eeu2OpQ4_JJA5Q _BYttIC41Eeu2OpQ4_JJA5Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BYsfAC41Eeu2OpQ4_JJA5Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BYsfAS41Eeu2OpQ4_JJA5Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FDQFMC41Eeu2OpQ4_JJA5Q" name="duration">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HJ8E4C41Eeu2OpQ4_JJA5Q" name="cost">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I8WdsC41Eeu2OpQ4_JJA5Q" name="tip">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LFjl4C41Eeu2OpQ4_JJA5Q" name="startLocation">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NH54IC41Eeu2OpQ4_JJA5Q" name="destination">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BYtGEC41Eeu2OpQ4_JJA5Q" name="driver" type="_Z2hosCzpEeu_UKr1Z3JUeA" association="_BYbZQC41Eeu2OpQ4_JJA5Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S3nM8C41Eeu2OpQ4_JJA5Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BYttIC41Eeu2OpQ4_JJA5Q" name="user" type="_DTHGICzpEeu_UKr1Z3JUeA" association="_BYbZQC41Eeu2OpQ4_JJA5Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QP91QC41Eeu2OpQ4_JJA5Q" value="1"/>
+    </ownedEnd>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RGulwC2TEeuMYb8iZH_v0Q">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RGwa8C2TEeuMYb8iZH_v0Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
