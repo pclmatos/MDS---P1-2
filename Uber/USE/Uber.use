@@ -111,6 +111,7 @@ end
 class Receiver
 attributes
     receiverName: String
+    cargId: Integer
 operations
     receiveLoad()
 end
@@ -139,6 +140,12 @@ attributes
     battery : Integer
 end
 
+class Car
+attributes
+	licensePlate: String
+	weightCapacity: Integer
+end
+
 --Associations
 associationclass rides between
   User [1] role user
@@ -156,6 +163,7 @@ associationclass transports between
     Receiver [1] role receiver
 attributes
     weight : Integer
+    receiverName: String
     end
 
 association delivers between
@@ -193,6 +201,11 @@ end
 association recharge between
     UberScootBikeWorker[1] role worker
     ScootBike[1] role bike_scoot
+end
+
+association carBelongs between
+	Driver [1] role driver
+	Car[1] role car
 end
 
 --Invariants
@@ -239,7 +252,7 @@ context Time
 		
 context transports
 	inv enoughWeightCapacity:
-		self.weigh <= self.weightCapacity
+		self.weigh <= self.driver.car.weightCapacity
 	inv correctReceiver:
 		self.receiverName = self.receiver.name
 		
