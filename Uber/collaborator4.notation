@@ -1439,13 +1439,13 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrheC5VEeuLFIAxlIEltg" x="6" y="-47"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_hnrheS5VEeuLFIAxlIEltg" type="Association_SourceRoleLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrhei5VEeuLFIAxlIEltg" y="-73"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrhei5VEeuLFIAxlIEltg" x="20" y="-93"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_hnrhey5VEeuLFIAxlIEltg" type="Association_SourceMultiplicityLabel">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrhfC5VEeuLFIAxlIEltg" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_hnrhfS5VEeuLFIAxlIEltg" type="Association_TargetMultiplicityLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrhfi5VEeuLFIAxlIEltg" y="-20"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hnrhfi5VEeuLFIAxlIEltg" x="20" y="25"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_hnrhcS5VEeuLFIAxlIEltg"/>
       <element xmi:type="uml:Association" href="collaborator4.uml#_hnOOcC5VEeuLFIAxlIEltg"/>
