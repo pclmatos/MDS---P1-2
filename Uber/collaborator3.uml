@@ -268,22 +268,27 @@ Main Flow:&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_GcIO8RiEEeuqIsKbvW_1jA" name="user" type="_UQs_oBhkEeuqhqCrHvvM5g" association="_GcGZwBiEEeuqIsKbvW_1jA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_GcI2ABiEEeuqIsKbvW_1jA" name="check payment method" type="_N2aAQBhlEeuqhqCrHvvM5g" association="_GcGZwBiEEeuqIsKbvW_1jA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_zuZOcCtQEeuDNK96ffKGQQ" name="Recharge Scoot" node="_C871MCtREeuDNK96ffKGQQ _i0FiECtTEeuDNK96ffKGQQ _4tlk8CtTEeuDNK96ffKGQQ _C0bSECtUEeuDNK96ffKGQQ _XhLN8CtUEeuDNK96ffKGQQ _foFDoCtUEeuDNK96ffKGQQ _lEclsCtUEeuDNK96ffKGQQ" group="__9GnACtQEeuDNK96ffKGQQ _A3B4oCtREeuDNK96ffKGQQ">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_zuZOcCtQEeuDNK96ffKGQQ" name="Recharge Scoot" node="_C871MCtREeuDNK96ffKGQQ _i0FiECtTEeuDNK96ffKGQQ _4tlk8CtTEeuDNK96ffKGQQ _C0bSECtUEeuDNK96ffKGQQ _XhLN8CtUEeuDNK96ffKGQQ _foFDoCtUEeuDNK96ffKGQQ _lEclsCtUEeuDNK96ffKGQQ _DxQw0C9REeuSYsYe1k2aDw" group="__9GnACtQEeuDNK96ffKGQQ _A3B4oCtREeuDNK96ffKGQQ">
     <edge xmi:type="uml:ControlFlow" xmi:id="_i02-ICtTEeuDNK96ffKGQQ" inPartition="__9GnACtQEeuDNK96ffKGQQ" target="_i0FiECtTEeuDNK96ffKGQQ" source="_C871MCtREeuDNK96ffKGQQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_4uN3ECtTEeuDNK96ffKGQQ" target="_4tlk8CtTEeuDNK96ffKGQQ" source="_i0FiECtTEeuDNK96ffKGQQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_C07BUCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ" target="_C0bSECtUEeuDNK96ffKGQQ" source="_4tlk8CtTEeuDNK96ffKGQQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_XhwcwCtUEeuDNK96ffKGQQ" target="_XhLN8CtUEeuDNK96ffKGQQ" source="_C0bSECtUEeuDNK96ffKGQQ"/>
-    <edge xmi:type="uml:ControlFlow" xmi:id="_fpDUACtUEeuDNK96ffKGQQ" target="_foFDoCtUEeuDNK96ffKGQQ" source="_XhLN8CtUEeuDNK96ffKGQQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ" target="_lEclsCtUEeuDNK96ffKGQQ" source="_foFDoCtUEeuDNK96ffKGQQ"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="__9GnACtQEeuDNK96ffKGQQ" name="System" node="_C871MCtREeuDNK96ffKGQQ _i0FiECtTEeuDNK96ffKGQQ _XhLN8CtUEeuDNK96ffKGQQ" edge="_i02-ICtTEeuDNK96ffKGQQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Jia3IC9REeuSYsYe1k2aDw" name="[available drop area]" target="_foFDoCtUEeuDNK96ffKGQQ" source="_DxQw0C9REeuSYsYe1k2aDw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PhKGcC9REeuSYsYe1k2aDw" name="[else]" inPartition="__9GnACtQEeuDNK96ffKGQQ" target="_XhLN8CtUEeuDNK96ffKGQQ" source="_DxQw0C9REeuSYsYe1k2aDw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SRKv8C9REeuSYsYe1k2aDw" inPartition="__9GnACtQEeuDNK96ffKGQQ" target="_DxQw0C9REeuSYsYe1k2aDw" source="_XhLN8CtUEeuDNK96ffKGQQ"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="__9GnACtQEeuDNK96ffKGQQ" name="System" node="_C871MCtREeuDNK96ffKGQQ _i0FiECtTEeuDNK96ffKGQQ _XhLN8CtUEeuDNK96ffKGQQ _DxQw0C9REeuSYsYe1k2aDw" edge="_i02-ICtTEeuDNK96ffKGQQ _PhKGcC9REeuSYsYe1k2aDw _SRKv8C9REeuSYsYe1k2aDw"/>
     <group xmi:type="uml:ActivityPartition" xmi:id="_A3B4oCtREeuDNK96ffKGQQ" name="Worker" node="_4tlk8CtTEeuDNK96ffKGQQ _C0bSECtUEeuDNK96ffKGQQ _foFDoCtUEeuDNK96ffKGQQ _lEclsCtUEeuDNK96ffKGQQ" edge="_C07BUCtUEeuDNK96ffKGQQ _nF78UCtUEeuDNK96ffKGQQ"/>
     <node xmi:type="uml:InitialNode" xmi:id="_C871MCtREeuDNK96ffKGQQ" name="" outgoing="_i02-ICtTEeuDNK96ffKGQQ" inPartition="__9GnACtQEeuDNK96ffKGQQ"/>
     <node xmi:type="uml:BroadcastSignalAction" xmi:id="_i0FiECtTEeuDNK96ffKGQQ" name="Notifies worker with low batery product" incoming="_i02-ICtTEeuDNK96ffKGQQ" outgoing="_4uN3ECtTEeuDNK96ffKGQQ" inPartition="__9GnACtQEeuDNK96ffKGQQ"/>
     <node xmi:type="uml:BroadcastSignalAction" xmi:id="_4tlk8CtTEeuDNK96ffKGQQ" name="Goes to the product to be recharged" incoming="_4uN3ECtTEeuDNK96ffKGQQ" outgoing="_C07BUCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
     <node xmi:type="uml:BroadcastSignalAction" xmi:id="_C0bSECtUEeuDNK96ffKGQQ" name="Picks up the product and recharge it" incoming="_C07BUCtUEeuDNK96ffKGQQ" outgoing="_XhwcwCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
-    <node xmi:type="uml:BroadcastSignalAction" xmi:id="_XhLN8CtUEeuDNK96ffKGQQ" name="Notifies  the designated area for the drop of product" incoming="_XhwcwCtUEeuDNK96ffKGQQ" outgoing="_fpDUACtUEeuDNK96ffKGQQ" inPartition="__9GnACtQEeuDNK96ffKGQQ"/>
-    <node xmi:type="uml:BroadcastSignalAction" xmi:id="_foFDoCtUEeuDNK96ffKGQQ" name="Drops off the product" incoming="_fpDUACtUEeuDNK96ffKGQQ" outgoing="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
+    <node xmi:type="uml:BroadcastSignalAction" xmi:id="_XhLN8CtUEeuDNK96ffKGQQ" name="Notifies  the designated area for the drop of product" incoming="_XhwcwCtUEeuDNK96ffKGQQ _PhKGcC9REeuSYsYe1k2aDw" outgoing="_SRKv8C9REeuSYsYe1k2aDw" inPartition="__9GnACtQEeuDNK96ffKGQQ"/>
+    <node xmi:type="uml:BroadcastSignalAction" xmi:id="_foFDoCtUEeuDNK96ffKGQQ" name="Drops off the product" incoming="_Jia3IC9REeuSYsYe1k2aDw" outgoing="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_lEclsCtUEeuDNK96ffKGQQ" name="" incoming="_nF78UCtUEeuDNK96ffKGQQ" inPartition="_A3B4oCtREeuDNK96ffKGQQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_DxQw0C9REeuSYsYe1k2aDw" incoming="_SRKv8C9REeuSYsYe1k2aDw" outgoing="_Jia3IC9REeuSYsYe1k2aDw _PhKGcC9REeuSYsYe1k2aDw" inPartition="__9GnACtQEeuDNK96ffKGQQ">
+      <name xsi:nil="true"/>
+    </node>
   </packagedElement>
   <packagedElement xmi:type="uml:Activity" xmi:id="_zvgBoCwUEeu0M9aCU_zLaw" name="SolveComplaints" node="_yy16MCwWEeu0M9aCU_zLaw _VT3o0CwYEeu0M9aCU_zLaw _eiqToCwYEeu0M9aCU_zLaw _2QKDsCwYEeu0M9aCU_zLaw _D6BLoCwZEeu0M9aCU_zLaw _NrGEICwZEeu0M9aCU_zLaw _SVBcoCwZEeu0M9aCU_zLaw _mVjLsCwZEeu0M9aCU_zLaw _q6_QUCwaEeu0M9aCU_zLaw _tivVsCwaEeu0M9aCU_zLaw _6hj8kCwaEeu0M9aCU_zLaw _KpoMUCwbEeu0M9aCU_zLaw" group="_7Ra68CwUEeu0M9aCU_zLaw _8JlSACwUEeu0M9aCU_zLaw">
     <edge xmi:type="uml:ControlFlow" xmi:id="_VUNnECwYEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw" target="_VT3o0CwYEeu0M9aCU_zLaw" source="_yy16MCwWEeu0M9aCU_zLaw"/>
