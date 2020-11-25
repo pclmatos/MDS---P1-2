@@ -260,4 +260,8 @@ context Receiver
 	inv diffCargId:
 		Receiver.allInstances() -> forAll(x,y | x<>y implies x.cargId <> y.cargId)
 		
+context DriverWithoutAccount
+inv uniquePlate: 
+    DriverWithoutAccount.allInstances() -> forAll(x,y| x<>y implies x.licensePlate <> y.licensePlate)
+		
         
