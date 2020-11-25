@@ -31,25 +31,27 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_m2jDYCt-EeutJ-OfswSYjg" name="Prompt User with message" incoming="_m3DZsCt-EeutJ-OfswSYjg _q0vXQCt-EeutJ-OfswSYjg" outgoing="_-iD2cCt-EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_-hfOsCt-EeutJ-OfswSYjg" name="Reset" incoming="_-iD2cCt-EeutJ-OfswSYjg" outgoing="_CecMcCt_EeutJ-OfswSYjg" inPartition="_1Q2mQCt9EeutJ-OfswSYjg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_GRR8wCv_EeuRk76_sd48iw" name="Login" node="_Lz530Cv_EeuRk76_sd48iw _SyL4kCv_EeuRk76_sd48iw _po0SECv_EeuRk76_sd48iw _snJEYCv_EeuRk76_sd48iw _lrRpACwAEeuRk76_sd48iw _4GmfYCwBEeuRk76_sd48iw">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_GRR8wCv_EeuRk76_sd48iw" name="Login" node="_Lz530Cv_EeuRk76_sd48iw _SyL4kCv_EeuRk76_sd48iw _po0SECv_EeuRk76_sd48iw _snJEYCv_EeuRk76_sd48iw _lrRpACwAEeuRk76_sd48iw _4GmfYCwBEeuRk76_sd48iw" group="_CpIcAC8NEeuUp9oq93fGHA _GxIMIC8NEeuUp9oq93fGHA">
     <edge xmi:type="uml:ControlFlow" xmi:id="_ppH0ECv_EeuRk76_sd48iw" target="_po0SECv_EeuRk76_sd48iw" source="_Lz530Cv_EeuRk76_sd48iw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_snaxMCv_EeuRk76_sd48iw" target="_snJEYCv_EeuRk76_sd48iw" source="_po0SECv_EeuRk76_sd48iw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_r43MoCwAEeuRk76_sd48iw" name="username[valid]" target="_n5E9UCwAEeuRk76_sd48iw" source="_vkFWoCv_EeuRk76_sd48iw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_vOBKkCwAEeuRk76_sd48iw" name="password[valid]" target="_p0EqYCwAEeuRk76_sd48iw" source="_xtJU4Cv_EeuRk76_sd48iw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_4HFAgCwBEeuRk76_sd48iw" target="_4GmfYCwBEeuRk76_sd48iw" source="_lrRpACwAEeuRk76_sd48iw"/>
-    <node xmi:type="uml:InitialNode" xmi:id="_Lz530Cv_EeuRk76_sd48iw" name="" outgoing="_ppH0ECv_EeuRk76_sd48iw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_CpIcAC8NEeuUp9oq93fGHA" name="User" node="_Lz530Cv_EeuRk76_sd48iw _po0SECv_EeuRk76_sd48iw _snJEYCv_EeuRk76_sd48iw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_GxIMIC8NEeuUp9oq93fGHA" name="System" node="_lrRpACwAEeuRk76_sd48iw _4GmfYCwBEeuRk76_sd48iw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_Lz530Cv_EeuRk76_sd48iw" name="" outgoing="_ppH0ECv_EeuRk76_sd48iw" inPartition="_CpIcAC8NEeuUp9oq93fGHA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_SyL4kCv_EeuRk76_sd48iw" name="OpaqueAction3"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_po0SECv_EeuRk76_sd48iw" name="Get Username" incoming="_ppH0ECv_EeuRk76_sd48iw" outgoing="_snaxMCv_EeuRk76_sd48iw">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_po0SECv_EeuRk76_sd48iw" name="Get Username" incoming="_ppH0ECv_EeuRk76_sd48iw" outgoing="_snaxMCv_EeuRk76_sd48iw" inPartition="_CpIcAC8NEeuUp9oq93fGHA">
       <outputValue xmi:type="uml:OutputPin" xmi:id="_vkFWoCv_EeuRk76_sd48iw" outgoing="_r43MoCwAEeuRk76_sd48iw">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_vkHL0Cv_EeuRk76_sd48iw" value="1"/>
       </outputValue>
     </node>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_snJEYCv_EeuRk76_sd48iw" name="Get Password" incoming="_snaxMCv_EeuRk76_sd48iw">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_snJEYCv_EeuRk76_sd48iw" name="Get Password" incoming="_snaxMCv_EeuRk76_sd48iw" inPartition="_CpIcAC8NEeuUp9oq93fGHA">
       <outputValue xmi:type="uml:OutputPin" xmi:id="_xtJU4Cv_EeuRk76_sd48iw" name="" outgoing="_vOBKkCwAEeuRk76_sd48iw">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_xtJ78Cv_EeuRk76_sd48iw" value="1"/>
       </outputValue>
     </node>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_lrRpACwAEeuRk76_sd48iw" name="Check Credentials" outgoing="_4HFAgCwBEeuRk76_sd48iw">
+    <node xmi:type="uml:OpaqueAction" xmi:id="_lrRpACwAEeuRk76_sd48iw" name="Check Credentials" outgoing="_4HFAgCwBEeuRk76_sd48iw" inPartition="_GxIMIC8NEeuUp9oq93fGHA">
       <inputValue xmi:type="uml:InputPin" xmi:id="_n5E9UCwAEeuRk76_sd48iw" incoming="_r43MoCwAEeuRk76_sd48iw">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_n5FkYCwAEeuRk76_sd48iw" value="1"/>
       </inputValue>
@@ -57,6 +59,6 @@
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_p0F4gCwAEeuRk76_sd48iw" value="1"/>
       </inputValue>
     </node>
-    <node xmi:type="uml:ActivityFinalNode" xmi:id="_4GmfYCwBEeuRk76_sd48iw" name="" incoming="_4HFAgCwBEeuRk76_sd48iw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_4GmfYCwBEeuRk76_sd48iw" name="" incoming="_4HFAgCwBEeuRk76_sd48iw" inPartition="_GxIMIC8NEeuUp9oq93fGHA"/>
   </packagedElement>
 </uml:Package>
