@@ -885,7 +885,7 @@
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_yy7ZwiwWEeu0M9aCU_zLaw" y="15"/>
               </children>
               <element xmi:type="uml:InitialNode" href="collaborator3.uml#_yy16MCwWEeu0M9aCU_zLaw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yy6ysSwWEeu0M9aCU_zLaw" x="374" y="35"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yy6ysSwWEeu0M9aCU_zLaw" x="368" y="35"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_2QPjQCwYEeu0M9aCU_zLaw" type="MergeNode_Shape">
               <children xmi:type="notation:DecorationNode" xmi:id="_2QQKUCwYEeu0M9aCU_zLaw" type="MergeNode_FloatingNameLabel">
@@ -942,7 +942,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JqxlCwUEeu0M9aCU_zLaw"/>
           </children>
           <element xmi:type="uml:ActivityPartition" href="collaborator3.uml#_8JlSACwUEeu0M9aCU_zLaw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JqKgSwUEeu0M9aCU_zLaw" x="495" y="8" width="460" height="720"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8JqKgSwUEeu0M9aCU_zLaw" x="495" y="8" width="520" height="720"/>
         </children>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1IwToSwUEeu0M9aCU_zLaw"/>
       </children>
