@@ -233,6 +233,8 @@ context rides
 context Driver
     inv rate_up_to_five: 
         self.rating <= 5 and self.rating >= 0 
+    inv uniquePlate: 
+    	Driver.allInstances() -> forAll(x,y| x<>y implies x.licensePlate <> y.licensePlate)
 
 context ScootBike
     inv batteryValuesMAX:
@@ -259,9 +261,4 @@ context transports
 context Receiver
 	inv diffCargId:
 		Receiver.allInstances() -> forAll(x,y | x<>y implies x.cargId <> y.cargId)
-		
-context DriverWithoutAccount
-inv uniquePlate: 
-    DriverWithoutAccount.allInstances() -> forAll(x,y| x<>y implies x.licensePlate <> y.licensePlate)
-		
         
