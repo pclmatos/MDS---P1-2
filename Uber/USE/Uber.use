@@ -14,7 +14,6 @@ end
 class User < Person
 attributes
 	paymentMethod: String
-    address : String
 operations
 	selectPaymentMethod()
 	pay()
@@ -35,10 +34,9 @@ end
 
 class Driver < Person
 attributes
-    licensePlate: String
     driverLicense: String
     paymentMethod: String
-     rating: Integer
+    rating: Integer
 operations
     respondToRideRequest()
     pickupUser()
@@ -69,36 +67,6 @@ operations
     confirmOrder()
 end
 
-class Admin < Person
-attributes
-    adminId: Integer
-operations
-    solveProblem()
-end
-
-abstract class PersonWithoutAccount
-attributes 
-    name: String
-	email: String
-	password: String
-    phoneNumber: Integer
-operations
-    createAccount()
-    validatePassword()
-end
-
-class UserWithoutAccount < PersonWithoutAccount
-end
-
-class DriverWithoutAccount < PersonWithoutAccount
-attributes
-    driverLicense: String
-    licensePlate: String
-operations
-    registerCar()
-    checkCarRegistrationCond()
-end
-
 class Restaurant
 attributes
     restaurantName: String
@@ -110,7 +78,7 @@ end
 
 class Receiver
 attributes
-    receiverName: String
+    name: String
     cargId: Integer
 operations
     receiveLoad()
@@ -134,10 +102,19 @@ operations
     selectPaymentMethod()
 end
 
+class Location
+attributes
+    streetName: String
+    latitude: Real
+    longitude: Real
+    county: String
+end
+
 class ScootBike
 attributes
     qrCode : Integer
     battery : Integer
+    minBattery: Integer
 end
 
 class Car
@@ -158,6 +135,21 @@ attributes
   destination: String
 end
 
+association located_at between
+    rides [1] role ride
+    Location [2] role locations
+end
+
+association user_addr between
+    User[1] role user
+    Location[1] role user_loc
+end
+
+association restaurant_addr between
+    Restaurant[1] role restaurant
+    Location[1] role restaurant_loc
+end
+
 associationclass transports between
     Driver [1] role driver
     Receiver [1] role receiver
@@ -175,9 +167,8 @@ associationclass deliversEat between
     UberEatsEmployee[1] role driverEats
     User[1] role user
     attributes
-     tip : Integer
-     addrPickUp : String
-     addrUser : String
+        tip : Integer
+        location: Location
 end
 
 associationclass Withdraw between
@@ -213,48 +204,43 @@ constraints
 
 
 context Person
-inv uniquePerson: 
-    Person.allInstances() -> forAll(x,y| x<>y implies x.email <> y.email)
+    inv uniquePerson: 
+        Person.allInstances() -> forAll(x,y| x<>y implies x.email <> y.email)
 
 context deliversEat
-inv diff_locations:
-    self.addrPickUp <> self.addrUser
-inv collect_location:
-    self.addrUser = self.user.address
+    inv collect_location:
+        self.location.streetName = self.user.user_loc.streetName
+    inv tip_threshold:
+        self.tip >= 0 and self.tip <= 10
+
+    inv same_county:
+        self.driverEats.restaurant.restaurant_loc.county -> includes(self.user.user_loc.county)
 
 context Withdraw
-inv enought_money:
-    self.amount <= self.bank.accbalance
+    inv enought_money:
+        self.amount <= self.bank.accbalance
 
 context rides
     inv different_start_destination: 
         self.startLocation <> self.destination
 
 context Driver
-    inv rate_up_to_five: 
-        self.rating <= 5 and self.rating >= 0 
     inv uniquePlate: 
-    	Driver.allInstances() -> forAll(x,y| x<>y implies x.licensePlate <> y.licensePlate)
+    	Driver.allInstances() -> forAll(x,y| x<>y implies x.car.licensePlate <> y.car.licensePlate)
 
 context ScootBike
-    inv batteryValuesMAX:
-        ScootBike.allInstances() -> forAll(self.battery <= 100)
-    inv batteryValuesMIN:
-        ScootBike.allInstances() -> forAll(self.battery >= 0)
+    inv battery:
+        self.battery <= 100 and self.battery >= 0
     inv diffQR:
         ScootBike.allInstances() -> forAll(x,y| x<>y implies x.qrCode <> y.qrCode)
         
 context Time
-	inv limit_hour:
-		self.hour <= 23 and self.hour >= 0
-	inv limit_minutes:
-		self.minutes <= 60 and self.minutes >= 0
-	inv limit_seconds:
-		self.seconds <= 60 and self.seconds >= 0
+    inv time_limits:
+        self.hour <= 23 and self.hour >= 0 and self.minute <= 60 and self.minute >= 0 and self.second <= 60 and self.second >= 0
 		
 context transports
 	inv enoughWeightCapacity:
-		self.weigh <= self.driver.car.weightCapacity
+		self.weight <= self.driver.car.weightCapacity
 	inv correctReceiver:
 		self.receiverName = self.receiver.name
 		
@@ -262,3 +248,14 @@ context Receiver
 	inv diffCargId:
 		Receiver.allInstances() -> forAll(x,y | x<>y implies x.cargId <> y.cargId)
         
+context rides
+    inv user_driver_not_same_person:
+        self.user.email <> self.driver.email
+
+context Car
+    inv sameLicensePlate:
+        self.licensePlate = driver.car.licensePlate
+    
+context UberScootBikeWorker
+    inv can_recharge_if:
+        self.bike_scoot.battery < self.bike_scoot.minBattery
