@@ -38,8 +38,8 @@
     <edge xmi:type="uml:ControlFlow" xmi:id="_LNBVACxiEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw" target="_LLwJsCxiEeuiM7ALEAk1Kw" source="_ilbVkCwEEeuiM7ALEAk1Kw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_PZGT4CxiEeuiM7ALEAk1Kw" target="_LLwJsCxiEeuiM7ALEAk1Kw" source="_uQvTQCxeEeuiM7ALEAk1Kw"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_RDupsCxiEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw" target="_RCON0CxiEeuiM7ALEAk1Kw" source="_LLwJsCxiEeuiM7ALEAk1Kw"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_4ssYkCwNEeuiM7ALEAk1Kw" name="Driver" node="_faFEECt5EeunZpiBB4Kc8g _COQxoCxfEeuiM7ALEAk1Kw _LMvIgCxfEeuiM7ALEAk1Kw _ilbVkCwEEeuiM7ALEAk1Kw _LLwJsCxiEeuiM7ALEAk1Kw _RCON0CxiEeuiM7ALEAk1Kw" edge="_MkOf4CxfEeuiM7ALEAk1Kw _LNBVACxiEeuiM7ALEAk1Kw _RDupsCxiEeuiM7ALEAk1Kw"/>
-    <group xmi:type="uml:ActivityPartition" xmi:id="_DXdOICw6EeuiM7ALEAk1Kw" name="System" node="_nTq2gCt5EeunZpiBB4Kc8g _XP1mgCt5EeunZpiBB4Kc8g _CXRmwCt6EeunZpiBB4Kc8g _hrM-cCwDEeuiM7ALEAk1Kw _9OslICwCEeuiM7ALEAk1Kw _Lv5_gCt5EeunZpiBB4Kc8g _R0uTsCxgEeuiM7ALEAk1Kw _uQvTQCxeEeuiM7ALEAk1Kw" edge="_R1koQCxgEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_4ssYkCwNEeuiM7ALEAk1Kw" name="Driver" node="_faFEECt5EeunZpiBB4Kc8g _COQxoCxfEeuiM7ALEAk1Kw _LMvIgCxfEeuiM7ALEAk1Kw _ilbVkCwEEeuiM7ALEAk1Kw" edge="_MkOf4CxfEeuiM7ALEAk1Kw _LNBVACxiEeuiM7ALEAk1Kw _RDupsCxiEeuiM7ALEAk1Kw"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_DXdOICw6EeuiM7ALEAk1Kw" name="System" node="_nTq2gCt5EeunZpiBB4Kc8g _XP1mgCt5EeunZpiBB4Kc8g _CXRmwCt6EeunZpiBB4Kc8g _hrM-cCwDEeuiM7ALEAk1Kw _9OslICwCEeuiM7ALEAk1Kw _Lv5_gCt5EeunZpiBB4Kc8g _R0uTsCxgEeuiM7ALEAk1Kw _uQvTQCxeEeuiM7ALEAk1Kw _LLwJsCxiEeuiM7ALEAk1Kw _RCON0CxiEeuiM7ALEAk1Kw" edge="_R1koQCxgEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_Lv5_gCt5EeunZpiBB4Kc8g" name="Enters the app" incoming="_N6P3oCxfEeuiM7ALEAk1Kw" outgoing="_XQS5gCt5EeunZpiBB4Kc8g" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_XP1mgCt5EeunZpiBB4Kc8g" name="" incoming="_XQS5gCt5EeunZpiBB4Kc8g _NYqSUCwDEeuiM7ALEAk1Kw" outgoing="_fajlMCt5EeunZpiBB4Kc8g _nUTvsCt5EeunZpiBB4Kc8g" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_faFEECt5EeunZpiBB4Kc8g" name="Sets the criterias he's looking for" incoming="_fajlMCt5EeunZpiBB4Kc8g" outgoing="_CXwH4Ct6EeunZpiBB4Kc8g" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
@@ -52,8 +52,8 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_COQxoCxfEeuiM7ALEAk1Kw" name="Enter login information" incoming="_MkOf4CxfEeuiM7ALEAk1Kw" outgoing="_N6P3oCxfEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:InitialNode" xmi:id="_LMvIgCxfEeuiM7ALEAk1Kw" name="" outgoing="_MkOf4CxfEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:MergeNode" xmi:id="_R0uTsCxgEeuiM7ALEAk1Kw" name="" incoming="_R1koQCxgEeuiM7ALEAk1Kw _d1jBQCxgEeuiM7ALEAk1Kw" outgoing="_kPjQQCxgEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:MergeNode" xmi:id="_LLwJsCxiEeuiM7ALEAk1Kw" name="" incoming="_LNBVACxiEeuiM7ALEAk1Kw _PZGT4CxiEeuiM7ALEAk1Kw" outgoing="_RDupsCxiEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
-    <node xmi:type="uml:ActivityFinalNode" xmi:id="_RCON0CxiEeuiM7ALEAk1Kw" name="" incoming="_RDupsCxiEeuiM7ALEAk1Kw" inPartition="_4ssYkCwNEeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_LLwJsCxiEeuiM7ALEAk1Kw" name="" incoming="_LNBVACxiEeuiM7ALEAk1Kw _PZGT4CxiEeuiM7ALEAk1Kw" outgoing="_RDupsCxiEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_RCON0CxiEeuiM7ALEAk1Kw" name="" incoming="_RDupsCxiEeuiM7ALEAk1Kw" inPartition="_DXdOICw6EeuiM7ALEAk1Kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Activity" xmi:id="_GfaL0CxhEeuiM7ALEAk1Kw" name="Activity3" node="_YRo3UCxhEeuiM7ALEAk1Kw _Z9DQQCxhEeuiM7ALEAk1Kw _ed5lQCxhEeuiM7ALEAk1Kw _udEXsCxhEeuiM7ALEAk1Kw _yb_rYCxhEeuiM7ALEAk1Kw _4SJmcCxhEeuiM7ALEAk1Kw __CvwgCxhEeuiM7ALEAk1Kw _gDra0CxiEeuiM7ALEAk1Kw _jaF9ACxiEeuiM7ALEAk1Kw" group="_OFw5MCxhEeuiM7ALEAk1Kw _PCzJMCxhEeuiM7ALEAk1Kw">
     <ownedRule xmi:type="uml:Constraint" xmi:id="_la7o0CxhEeuiM7ALEAk1Kw" name="Constraint8" constrainedElement="_ed5lQCxhEeuiM7ALEAk1Kw">
