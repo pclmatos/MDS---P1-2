@@ -20,57 +20,80 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_BV-TkBkrEeugnPTAsPFJnw" name="Deliver Order">
         <ownedComment xmi:type="uml:Comment" xmi:id="_w-7k8BkwEeuwGKbHftMADg">
           <body>Name: Deliver Order&#xD;
-Description: This UC delivers the order to the Client.&#xD;
+Description: This UC delivers the order to the User.&#xD;
 Actors: &#xD;
 	Main: Uber Employee&#xD;
 	Secondary: &lt;none>&#xD;
 &#xD;
-Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the Client is collecting the order. &#xD;
+Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the User is collecting the order. &#xD;
 &#xD;
 Main Flow:&#xD;
-1. The UC starts when the Uber Employee arrives at the place arranged bye the Client&#xD;
+1. The UC starts when the Uber Employee arrives at the place arranged bye the User&#xD;
 2. Include &lt;Confirm Order>&#xD;
 4. The system records that the order was delivered&#xD;
 5. The UC ends.&#xD;
 &#xD;
-Alternative Flows: Client is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
+Alternative Flows: User is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
 &#xD;
 Post Conditions: The order is recorded as delivered.&#xD;
 &#xD;
 ------------------------------------------------------------------------------------------------------------&#xD;
 &#xD;
-Alternative Flow: Client is not at the place arranged.&#xD;
-Description: The Client is not at the place he said he would be, in the App, to collect the order.&#xD;
+Alternative Flow: User is not at the place arranged.&#xD;
+Description: The User is not at the place he said he would be, in the App, to collect the order.&#xD;
 Actor:&#xD;
 	Main:  Uber Employee&#xD;
-	Secondary: &lt;none>&#xD;
+	Secondary: User&#xD;
 &#xD;
-Pre- conditions: The ticket is expired.&#xD;
+Pre- conditions: &lt;none>&#xD;
 &#xD;
 Main Flow: &#xD;
-1. The alternative flow starts after step 3 of the main flow. &#xD;
-2. The system informs that the ticket is expired.&#xD;
-3. The system shows a message asking the Client to contact the Help Desk&#xD;
-4. The main UC ends.&#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs the User that the Uber Employee has arrived. &#xD;
+3. The Uber Employee can call or text the User that he has arrived. &#xD;
+4. The User is in a diferrent location that he said in the App.&#xD;
+5. The UC ends.&#xD;
 &#xD;
-Post - conditions: &lt;none>&#xD;
+Alternative Flow: The place where the User is at is close enough for the Uber Employee to drive and deliver the order.&#xD;
+&#xD;
+Post - conditions: The order is recorded as delivered.&#xD;
 &#xD;
 ------------------------------------------------------------------------------------&#xD;
 &#xD;
-Alternative Flow: Not enough credit&#xD;
-Description: the ticket does not have the minimum amount&#xD;
+Alternative Flow: Order is not correct.&#xD;
+Description: the order that the User made is not correct.&#xD;
 Actor:&#xD;
-	Main: Client&#xD;
-	Secondary: &lt;none>&#xD;
+	Main:  Uber Employee&#xD;
+	Secondary: User&#xD;
 &#xD;
-Pre- conditions: The ticket does not have the minimum amount&#xD;
+Pre- conditions: &lt;none>&#xD;
 &#xD;
 Main Flow: &#xD;
-1. The alternative flow starts after step 4 of the main flow. &#xD;
-2. The system informs that the ticket does not have minimum credit and that the client has to charge the ticket.&#xD;
-3. The main UC ends.&#xD;
+1. The alternative flow starts after step 2 of the main flow. &#xD;
+2. The User informs the App that the order he received is not correct.&#xD;
+3. The UC ends.&#xD;
 &#xD;
-Post - conditions: &lt;none></body>
+Post - conditions: The order is not recorded as delivered.&#xD;
+&#xD;
+-----------------------------------------------------------------------------------&#xD;
+&#xD;
+Alternative Flow: Uber Employee is at the wrong place.&#xD;
+Description: The Uber Employee is not at the place the User said, in the App, to collect the order.&#xD;
+Actor:&#xD;
+	Main:  Uber Employee&#xD;
+	Secondary: User&#xD;
+&#xD;
+Pre- conditions: &lt;none>&#xD;
+&#xD;
+Main Flow: &#xD;
+1. The alternative flow starts after step 1 of the main flow. &#xD;
+2. The system informs the User that the Uber Employee has arrived. &#xD;
+3. The Uber Employee can call or text the User that he has arrived. &#xD;
+4. The Uber Employee is in a diferrent location that he said in the App.&#xD;
+5. The Uber Employee has to drive to where the User is at.&#xD;
+6. The UC ends.&#xD;
+&#xD;
+Post - conditions: The order is recorded as delivered.</body>
         </ownedComment>
         <include xmi:type="uml:Include" xmi:id="_A0z7sBk1EeulX5DAYB4Giw" addition="_FmUHYBkrEeugnPTAsPFJnw"/>
       </packagedElement>
@@ -104,7 +127,11 @@ Flow:&#xD;
           </ownedComment>
         </include>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_bDOYkCt5Eeu_Df5IHcwvIQ" name="Respond To Order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bDOYkCt5Eeu_Df5IHcwvIQ" name="Respond To Order">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_HZhckEILEeu714gXS8M7DQ">
+          <body>Responds to the order that the User made.</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_-59HoBkrEeugnPTAsPFJnw" name="Scoot/Bike">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_2YyiYBksEeugnPTAsPFJnw" name="Scan QR Code">

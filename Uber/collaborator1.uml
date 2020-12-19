@@ -186,27 +186,27 @@ Post - conditions: &lt;none></body>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_dp2hgBh-Eeu8ms_OI6OgPg" name="Deliver Order">
       <ownedComment xmi:type="uml:Comment" xmi:id="_RfSzsBh_Eeu8ms_OI6OgPg">
         <body>Name: Deliver Order&#xD;
-Description: This UC delivers the order to the Client.&#xD;
+Description: This UC delivers the order to the User.&#xD;
 Actors: &#xD;
 	Main: Uber Employee&#xD;
 	Secondary: &lt;none>&#xD;
 &#xD;
-Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the Client is collecting the order. &#xD;
+Pre conditions: The Uber Employee must have the order in condition. The Uber Employee must be where the User is collecting the order. &#xD;
 &#xD;
 Main Flow:&#xD;
-1. The UC starts when the Uber Employee arrives at the place arranged bye the Client&#xD;
+1. The UC starts when the Uber Employee arrives at the place arranged bye the User&#xD;
 2. Include &lt;Confirm Order>&#xD;
 4. The system records that the order was delivered&#xD;
 5. The UC ends.&#xD;
 &#xD;
-Alternative Flows: Client is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
+Alternative Flows: User is not at the place arranged. Order is not correct. Uber Employee is at the wrong place.&#xD;
 &#xD;
 Post Conditions: The order is recorded as delivered.&#xD;
 &#xD;
 ------------------------------------------------------------------------------------------------------------&#xD;
 &#xD;
-Alternative Flow: Client is not at the place arranged.&#xD;
-Description: The Client is not at the place he said he would be, in the App, to collect the order.&#xD;
+Alternative Flow: User is not at the place arranged.&#xD;
+Description: The User is not at the place he said he would be, in the App, to collect the order.&#xD;
 Actor:&#xD;
 	Main:  Uber Employee&#xD;
 	Secondary: User&#xD;
