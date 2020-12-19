@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="Activity Diagrams">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TlGBEA2TEeujq4q3EywG0A" name="Activity Diagrams">
   <packagedElement xmi:type="uml:Activity" xmi:id="_2KfgEA2ZEeujq4q3EywG0A" name="Activity1"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_4eRgkA2ZEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_DIx7cA2aEeujq4q3EywG0A" name="Interaction3"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_E2RYAA2aEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_FVkjIA2aEeujq4q3EywG0A" name="Region1"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:Activity" xmi:id="_0k6m8Ct1EeutJ-OfswSYjg" name="Scan QR Code" node="_4yruQCt9EeutJ-OfswSYjg __GZIACt9EeutJ-OfswSYjg _CJg6wCt-EeutJ-OfswSYjg _GJuA0Ct-EeutJ-OfswSYjg _Lu12QCt-EeutJ-OfswSYjg _QynSICt-EeutJ-OfswSYjg _YE7pMCt-EeutJ-OfswSYjg _i5L18Ct-EeutJ-OfswSYjg _m2jDYCt-EeutJ-OfswSYjg _-hfOsCt-EeutJ-OfswSYjg" group="_yzek4Ct9EeutJ-OfswSYjg _1Q2mQCt9EeutJ-OfswSYjg">
     <edge xmi:type="uml:ControlFlow" xmi:id="__GnxgCt9EeutJ-OfswSYjg" inPartition="_yzek4Ct9EeutJ-OfswSYjg" target="__GZIACt9EeutJ-OfswSYjg" source="_4yruQCt9EeutJ-OfswSYjg"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_CJyAgCt-EeutJ-OfswSYjg" target="_CJg6wCt-EeutJ-OfswSYjg" source="__GZIACt9EeutJ-OfswSYjg"/>
@@ -61,4 +58,46 @@
     </node>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_4GmfYCwBEeuRk76_sd48iw" name="" incoming="_4HFAgCwBEeuRk76_sd48iw" inPartition="_GxIMIC8NEeuUp9oq93fGHA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_WBWMIEIMEeuix6KRiTUNeQ" name="Login">
+    <region xmi:type="uml:Region" xmi:id="_ZIMoUEIMEeuix6KRiTUNeQ" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_PHt4sEJKEeudIs96yC5JeA" source="_JfsgQEJKEeudIs96yC5JeA" target="_LfcKcEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_brka0EJKEeudIs96yC5JeA" source="_LfcKcEJKEeudIs96yC5JeA" target="_UKLtAEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_cg9KsEJKEeudIs96yC5JeA" source="_LfcKcEJKEeudIs96yC5JeA" target="_XyDLkEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dIhhAEJKEeudIs96yC5JeA" source="_LfcKcEJKEeudIs96yC5JeA" target="_ZsKu4EJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_gRGbgEJKEeudIs96yC5JeA" source="_UKLtAEJKEeudIs96yC5JeA" target="_esXSUEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_g-rTMEJKEeudIs96yC5JeA" source="_XyDLkEJKEeudIs96yC5JeA" target="_esXSUEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_rVk1kEJKEeudIs96yC5JeA" source="_esXSUEJKEeudIs96yC5JeA" target="_ZsKu4EJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_1kwmYEJKEeudIs96yC5JeA" source="_ZsKu4EJKEeudIs96yC5JeA" target="_z7gwoEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PVxtYEJLEeudIs96yC5JeA" source="__WYRcEJKEeudIs96yC5JeA" target="_MaYTQEJLEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QYThYEJLEeudIs96yC5JeA" source="_AfaWEEJLEeudIs96yC5JeA" target="_MaYTQEJLEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TZO7wEJLEeudIs96yC5JeA" source="_MaYTQEJLEeudIs96yC5JeA" target="_JfsgQEJKEeudIs96yC5JeA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bNPqoEJLEeudIs96yC5JeA" source="_J2tcoEJLEeudIs96yC5JeA" target="_Z2c20EJLEeudIs96yC5JeA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_JfsgQEJKEeudIs96yC5JeA" name=""/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_LfcKcEJKEeudIs96yC5JeA" kind="fork"/>
+      <subvertex xmi:type="uml:State" xmi:id="_UKLtAEJKEeudIs96yC5JeA" name="input username"/>
+      <subvertex xmi:type="uml:State" xmi:id="_XyDLkEJKEeudIs96yC5JeA" name="input password"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ZsKu4EJKEeudIs96yC5JeA" name="login"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_esXSUEJKEeudIs96yC5JeA" kind="join"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xb2QQEJKEeudIs96yC5JeA" name="Check credentials">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_z7gwoEJKEeudIs96yC5JeA" name="check credentials" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="__WYRcEJKEeudIs96yC5JeA" name="invalid username" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_AfaWEEJLEeudIs96yC5JeA" name="invalid password" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_J2tcoEJLEeudIs96yC5JeA" name="valid" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_39gmcEJKEeudIs96yC5JeA" name="Region2">
+          <transition xmi:type="uml:Transition" xmi:id="_CJYkkEJLEeudIs96yC5JeA" source="_8-wSwEJKEeudIs96yC5JeA" target="_AfaWEEJLEeudIs96yC5JeA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Cu2pIEJLEeudIs96yC5JeA" source="_39iboEJKEeudIs96yC5JeA" target="__WYRcEJKEeudIs96yC5JeA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_39iboEJKEeudIs96yC5JeA" name="verify username"/>
+          <subvertex xmi:type="uml:State" xmi:id="_8-wSwEJKEeudIs96yC5JeA" name="verify password"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_MaYTQEJLEeudIs96yC5JeA" name="inform user"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_Z2c20EJLEeudIs96yC5JeA"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G44iwEINEeuix6KRiTUNeQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G46X8EINEeuix6KRiTUNeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
