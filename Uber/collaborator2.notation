@@ -107,6 +107,26 @@
               <element xmi:type="uml:OpaqueAction" href="collaborator2.uml#_uQvTQCxeEeuiM7ALEAk1Kw"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uREqdSxeEeuiM7ALEAk1Kw" x="94" y="610"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_LMJyUCxiEeuiM7ALEAk1Kw" type="MergeNode_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_LMKZYCxiEeuiM7ALEAk1Kw" type="MergeNode_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_LMKZYSxiEeuiM7ALEAk1Kw" y="15"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_LMKZYixiEeuiM7ALEAk1Kw" type="MergeNode_StereotypeLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_LMKZYyxiEeuiM7ALEAk1Kw" y="15"/>
+              </children>
+              <element xmi:type="uml:MergeNode" href="collaborator2.uml#_LLwJsCxiEeuiM7ALEAk1Kw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LMJyUSxiEeuiM7ALEAk1Kw" x="58" y="710" width="27" height="45"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_RCq5wCxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_RCrg0CxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RCrg0SxiEeuiM7ALEAk1Kw" y="15"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_RCsH4CxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_StereotypeLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_RCsH4SxiEeuiM7ALEAk1Kw" y="15"/>
+              </children>
+              <element xmi:type="uml:ActivityFinalNode" href="collaborator2.uml#_RCON0CxiEeuiM7ALEAk1Kw"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RCq5wSxiEeuiM7ALEAk1Kw" x="58" y="770"/>
+            </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DYE5NCw6EeuiM7ALEAk1Kw"/>
           </children>
           <element xmi:type="uml:ActivityPartition" href="collaborator2.uml#_DXdOICw6EeuiM7ALEAk1Kw"/>
@@ -151,26 +171,6 @@
               </children>
               <element xmi:type="uml:OpaqueAction" href="collaborator2.uml#_ilbVkCwEEeuiM7ALEAk1Kw"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_il2zYCwEEeuiM7ALEAk1Kw" x="14" y="650"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_LMJyUCxiEeuiM7ALEAk1Kw" type="MergeNode_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_LMKZYCxiEeuiM7ALEAk1Kw" type="MergeNode_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_LMKZYSxiEeuiM7ALEAk1Kw" y="15"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_LMKZYixiEeuiM7ALEAk1Kw" type="MergeNode_StereotypeLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_LMKZYyxiEeuiM7ALEAk1Kw" y="15"/>
-              </children>
-              <element xmi:type="uml:MergeNode" href="collaborator2.uml#_LLwJsCxiEeuiM7ALEAk1Kw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LMJyUSxiEeuiM7ALEAk1Kw" x="368" y="706" width="27" height="45"/>
-            </children>
-            <children xmi:type="notation:Shape" xmi:id="_RCq5wCxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_Shape">
-              <children xmi:type="notation:DecorationNode" xmi:id="_RCrg0CxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_FloatingNameLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_RCrg0SxiEeuiM7ALEAk1Kw" y="15"/>
-              </children>
-              <children xmi:type="notation:DecorationNode" xmi:id="_RCsH4CxiEeuiM7ALEAk1Kw" type="ActivityFinalNode_StereotypeLabel">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_RCsH4SxiEeuiM7ALEAk1Kw" y="15"/>
-              </children>
-              <element xmi:type="uml:ActivityFinalNode" href="collaborator2.uml#_RCON0CxiEeuiM7ALEAk1Kw"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RCq5wSxiEeuiM7ALEAk1Kw" x="374" y="770"/>
             </children>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4tCW1CwNEeuiM7ALEAk1Kw"/>
           </children>
