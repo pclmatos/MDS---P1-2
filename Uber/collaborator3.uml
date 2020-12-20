@@ -8,31 +8,23 @@
     <region xmi:type="uml:Region" xmi:id="_QViGEA2ZEeujq4q3EywG0A" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_aKP5kEJsEeuOcfhLPkZgeQ" source="_UZW5AEJsEeuOcfhLPkZgeQ" target="_WeINIEJsEeuOcfhLPkZgeQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_dCstYEJsEeuOcfhLPkZgeQ" source="_WeINIEJsEeuOcfhLPkZgeQ" target="_bA6b0EJsEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_jUF9gEJtEeuOcfhLPkZgeQ" source="_iG7cQEJsEeuOcfhLPkZgeQ" target="_hOx20EJtEeuOcfhLPkZgeQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_pVm0AEJtEeuOcfhLPkZgeQ" source="_hOx20EJtEeuOcfhLPkZgeQ" target="_kmKpYEJtEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_MNYrMEJuEeuOcfhLPkZgeQ" source="_kmKpYEJtEeuOcfhLPkZgeQ" target="_FiDboEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_UZdUwEJuEeuOcfhLPkZgeQ" source="_NWlH4EJuEeuOcfhLPkZgeQ" target="_RqRKoEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_vtrT4EJuEeuOcfhLPkZgeQ" source="_FiDboEJuEeuOcfhLPkZgeQ" target="_uTvFcEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_wO5KkEJuEeuOcfhLPkZgeQ" source="_RqRKoEJuEeuOcfhLPkZgeQ" target="_uTvFcEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_x3h8UEJuEeuOcfhLPkZgeQ" source="_uTvFcEJuEeuOcfhLPkZgeQ" target="_5bboEEJtEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_3oPWsEJuEeuOcfhLPkZgeQ" source="_5bboEEJtEeuOcfhLPkZgeQ" target="_23q1YEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_4UhN4EJuEeuOcfhLPkZgeQ" source="_iG7cQEJsEeuOcfhLPkZgeQ" target="_23q1YEJuEeuOcfhLPkZgeQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_5ASuwEJuEeuOcfhLPkZgeQ" source="_23q1YEJuEeuOcfhLPkZgeQ" target="_1D-qMEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MNYrMEJuEeuOcfhLPkZgeQ" name="[solveFound=false]" source="_kmKpYEJtEeuOcfhLPkZgeQ" target="_FiDboEJuEeuOcfhLPkZgeQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_5gDz8EJuEeuOcfhLPkZgeQ" source="_1D-qMEJuEeuOcfhLPkZgeQ" target="_d9UikEJsEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_WIkcIELVEeuoUp_J-Hh67w" name="[solveFound=true]" source="_kmKpYEJtEeuOcfhLPkZgeQ" target="_RqRKoEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_k-txAELVEeuoUp_J-Hh67w" name="[complaints=0]" source="_bA6b0EJsEeuOcfhLPkZgeQ" target="_1D-qMEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ly8qUELVEeuoUp_J-Hh67w" name="[complaints>0]" source="_bA6b0EJsEeuOcfhLPkZgeQ" target="_hOx20EJtEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wMJSwELVEeuoUp_J-Hh67w" source="_FiDboEJuEeuOcfhLPkZgeQ" target="_1D-qMEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_xcL-UELVEeuoUp_J-Hh67w" source="_RqRKoEJuEeuOcfhLPkZgeQ" target="_1D-qMEJuEeuOcfhLPkZgeQ"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_UZW5AEJsEeuOcfhLPkZgeQ" name=""/>
-      <subvertex xmi:type="uml:State" xmi:id="_WeINIEJsEeuOcfhLPkZgeQ" name="GetComplaints"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_bA6b0EJsEeuOcfhLPkZgeQ" name="[complaints=0]" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WeINIEJsEeuOcfhLPkZgeQ" name="GettingComplaints"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_bA6b0EJsEeuOcfhLPkZgeQ" name="" kind="choice"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_d9UikEJsEeuOcfhLPkZgeQ" name=""/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_iG7cQEJsEeuOcfhLPkZgeQ" name="[complaints>0]" kind="choice"/>
-      <subvertex xmi:type="uml:State" xmi:id="_hOx20EJtEeuOcfhLPkZgeQ" name="FindSolution"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_kmKpYEJtEeuOcfhLPkZgeQ" name="[solFound=true]" kind="choice"/>
-      <subvertex xmi:type="uml:State" xmi:id="_5bboEEJtEeuOcfhLPkZgeQ" name="ComplaintDone"/>
-      <subvertex xmi:type="uml:State" xmi:id="_FiDboEJuEeuOcfhLPkZgeQ" name="MessageUser"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_NWlH4EJuEeuOcfhLPkZgeQ" name="[solFound=false]" kind="choice"/>
-      <subvertex xmi:type="uml:State" xmi:id="_RqRKoEJuEeuOcfhLPkZgeQ" name="PerformsSolution"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_uTvFcEJuEeuOcfhLPkZgeQ" name="" kind="junction"/>
-      <subvertex xmi:type="uml:State" xmi:id="_1D-qMEJuEeuOcfhLPkZgeQ" name="Terminated"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_23q1YEJuEeuOcfhLPkZgeQ" name="" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hOx20EJtEeuOcfhLPkZgeQ" name="FindingSolution"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_kmKpYEJtEeuOcfhLPkZgeQ" name="" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FiDboEJuEeuOcfhLPkZgeQ" name="SendingMessage"/>
+      <subvertex xmi:type="uml:State" xmi:id="_RqRKoEJuEeuOcfhLPkZgeQ" name="PerformingSolution"/>
+      <subvertex xmi:type="uml:State" xmi:id="_1D-qMEJuEeuOcfhLPkZgeQ" name="Terminating"/>
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_pDtxQBfEEeuPdtFRHZD2IQ" name="Uber Scoot">
@@ -351,4 +343,10 @@ Main Flow:&#xD;
     <node xmi:type="uml:AddVariableValueAction" xmi:id="_6hj8kCwaEeu0M9aCU_zLaw" name="Sends sorry message to the user" incoming="_6iOD4CwaEeu0M9aCU_zLaw" outgoing="_N_bDcCwbEeu0M9aCU_zLaw" inPartition="_7Ra68CwUEeu0M9aCU_zLaw"/>
     <node xmi:type="uml:AddStructuralFeatureValueAction" xmi:id="_KpoMUCwbEeu0M9aCU_zLaw" name="Marks the complaint as &quot;solved&quot;" incoming="_KqmcsCwbEeu0M9aCU_zLaw _N_bDcCwbEeu0M9aCU_zLaw" outgoing="_OrNycCwbEeu0M9aCU_zLaw" inPartition="_8JlSACwUEeu0M9aCU_zLaw"/>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vWSBwELVEeuoUp_J-Hh67w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vWZ9kELVEeuoUp_J-Hh67w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
