@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ew5rkCt2EeunZpiBB4Kc8g" name="model">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ew5rkCt2EeunZpiBB4Kc8g" name="model">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_eyRkkCt2EeunZpiBB4Kc8g">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -83,4 +83,44 @@
     <node xmi:type="uml:MergeNode" xmi:id="_gDra0CxiEeuiM7ALEAk1Kw" name="" incoming="_gEkysCxiEeuiM7ALEAk1Kw _iWX2MCxiEeuiM7ALEAk1Kw" outgoing="_ja_78CxiEeuiM7ALEAk1Kw" inPartition="_OFw5MCxhEeuiM7ALEAk1Kw"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_jaF9ACxiEeuiM7ALEAk1Kw" name="" incoming="_ja_78CxiEeuiM7ALEAk1Kw" inPartition="_OFw5MCxhEeuiM7ALEAk1Kw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_PcGusELWEeukP5VyriFX1A" name="StateMachine4">
+    <region xmi:type="uml:Region" xmi:id="_QzVnYELWEeukP5VyriFX1A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_nl288ELWEeukP5VyriFX1A" name="login" source="_hg6_AELWEeukP5VyriFX1A" target="_kxXcEELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tvVcoELWEeukP5VyriFX1A" source="_kxXcEELWEeukP5VyriFX1A" target="_rHG2IELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HIsRkELXEeukP5VyriFX1A" name="[has criterias to set]" source="_rHG2IELWEeukP5VyriFX1A" target="_xc-MAELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Jf8c0ELXEeukP5VyriFX1A" name="[else]" source="_rHG2IELWEeukP5VyriFX1A" target="_up6OgELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ONJLwELXEeukP5VyriFX1A" source="_xc-MAELWEeukP5VyriFX1A" target="_00AZQELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_P3spEELXEeukP5VyriFX1A" name="[no loads with criterias set]" source="_00AZQELWEeukP5VyriFX1A" target="_up6OgELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_WEPq4ELXEeukP5VyriFX1A" name="[else]" source="_00AZQELWEeukP5VyriFX1A" target="_5aO9gELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YpfO0ELXEeukP5VyriFX1A" source="_up6OgELWEeukP5VyriFX1A" target="_-ExaAELWEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_e4yCoELXEeukP5VyriFX1A" name="select load" source="_-ExaAELWEeukP5VyriFX1A" target="_dj1B4ELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_giqxkELXEeukP5VyriFX1A" name="select load" source="_5aO9gELWEeukP5VyriFX1A" target="_dj1B4ELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_nURoQELXEeukP5VyriFX1A" name="evaluate load" source="_dj1B4ELXEeukP5VyriFX1A" target="_lgeIUELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8MChUELXEeukP5VyriFX1A" name="[found load to book]" source="_lgeIUELXEeukP5VyriFX1A" target="_t4uzwELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="__TCHcELXEeukP5VyriFX1A" name="[no more loads to evaluate]" source="_lgeIUELXEeukP5VyriFX1A" target="_2fTA8ELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_E8ylQELYEeukP5VyriFX1A" name="[else]" source="_lgeIUELXEeukP5VyriFX1A" target="_dj1B4ELXEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OF3CkELYEeukP5VyriFX1A" source="_t4uzwELXEeukP5VyriFX1A" target="_IE2iYELYEeukP5VyriFX1A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Ox1-0ELYEeukP5VyriFX1A" source="_2fTA8ELXEeukP5VyriFX1A" target="_HMU-8ELYEeukP5VyriFX1A"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_hg6_AELWEeukP5VyriFX1A" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_kxXcEELWEeukP5VyriFX1A" name="Driver enters app"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_rHG2IELWEeukP5VyriFX1A" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_up6OgELWEeukP5VyriFX1A" name="" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xc-MAELWEeukP5VyriFX1A" name="Input criterias"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_00AZQELWEeukP5VyriFX1A" name="" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_5aO9gELWEeukP5VyriFX1A" name="Look through loads with criterias"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-ExaAELWEeukP5VyriFX1A" name="Look through all loads"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_dj1B4ELXEeukP5VyriFX1A" name="" kind="junction"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_lgeIUELXEeukP5VyriFX1A" name="" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_t4uzwELXEeukP5VyriFX1A" name="Book load"/>
+      <subvertex xmi:type="uml:State" xmi:id="_2fTA8ELXEeukP5VyriFX1A" name="Informs driver"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_HMU-8ELYEeukP5VyriFX1A" name=""/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_IE2iYELYEeukP5VyriFX1A" name=""/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jsjwIELWEeukP5VyriFX1A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jsk-QELWEeukP5VyriFX1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
