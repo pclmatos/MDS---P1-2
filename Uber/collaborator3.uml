@@ -4,8 +4,36 @@
   <packagedElement xmi:type="uml:Activity" xmi:id="__6WtEA2YEeujq4q3EywG0A" name="Activity2"/>
   <packagedElement xmi:type="uml:Activity" xmi:id="_BshOQA2ZEeujq4q3EywG0A" name="Activity3"/>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_MQgxcA2ZEeujq4q3EywG0A" name="Interaction4"/>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_PlMOQA2ZEeujq4q3EywG0A" name="StateMachine5">
-    <region xmi:type="uml:Region" xmi:id="_QViGEA2ZEeujq4q3EywG0A" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_PlMOQA2ZEeujq4q3EywG0A" name="SolveComplaints">
+    <region xmi:type="uml:Region" xmi:id="_QViGEA2ZEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_aKP5kEJsEeuOcfhLPkZgeQ" source="_UZW5AEJsEeuOcfhLPkZgeQ" target="_WeINIEJsEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dCstYEJsEeuOcfhLPkZgeQ" source="_WeINIEJsEeuOcfhLPkZgeQ" target="_bA6b0EJsEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_jUF9gEJtEeuOcfhLPkZgeQ" source="_iG7cQEJsEeuOcfhLPkZgeQ" target="_hOx20EJtEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pVm0AEJtEeuOcfhLPkZgeQ" source="_hOx20EJtEeuOcfhLPkZgeQ" target="_kmKpYEJtEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MNYrMEJuEeuOcfhLPkZgeQ" source="_kmKpYEJtEeuOcfhLPkZgeQ" target="_FiDboEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UZdUwEJuEeuOcfhLPkZgeQ" source="_NWlH4EJuEeuOcfhLPkZgeQ" target="_RqRKoEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_vtrT4EJuEeuOcfhLPkZgeQ" source="_FiDboEJuEeuOcfhLPkZgeQ" target="_uTvFcEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wO5KkEJuEeuOcfhLPkZgeQ" source="_RqRKoEJuEeuOcfhLPkZgeQ" target="_uTvFcEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_x3h8UEJuEeuOcfhLPkZgeQ" source="_uTvFcEJuEeuOcfhLPkZgeQ" target="_5bboEEJtEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_3oPWsEJuEeuOcfhLPkZgeQ" source="_5bboEEJtEeuOcfhLPkZgeQ" target="_23q1YEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4UhN4EJuEeuOcfhLPkZgeQ" source="_iG7cQEJsEeuOcfhLPkZgeQ" target="_23q1YEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5ASuwEJuEeuOcfhLPkZgeQ" source="_23q1YEJuEeuOcfhLPkZgeQ" target="_1D-qMEJuEeuOcfhLPkZgeQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5gDz8EJuEeuOcfhLPkZgeQ" source="_1D-qMEJuEeuOcfhLPkZgeQ" target="_d9UikEJsEeuOcfhLPkZgeQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_UZW5AEJsEeuOcfhLPkZgeQ" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_WeINIEJsEeuOcfhLPkZgeQ" name="GetComplaints"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_bA6b0EJsEeuOcfhLPkZgeQ" name="[complaints=0]" kind="choice"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_d9UikEJsEeuOcfhLPkZgeQ" name=""/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_iG7cQEJsEeuOcfhLPkZgeQ" name="[complaints>0]" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hOx20EJtEeuOcfhLPkZgeQ" name="FindSolution"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_kmKpYEJtEeuOcfhLPkZgeQ" name="[solFound=true]" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_5bboEEJtEeuOcfhLPkZgeQ" name="ComplaintDone"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FiDboEJuEeuOcfhLPkZgeQ" name="MessageUser"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_NWlH4EJuEeuOcfhLPkZgeQ" name="[solFound=false]" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_RqRKoEJuEeuOcfhLPkZgeQ" name="PerformsSolution"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_uTvFcEJuEeuOcfhLPkZgeQ" name="" kind="junction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_1D-qMEJuEeuOcfhLPkZgeQ" name="Terminated"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_23q1YEJuEeuOcfhLPkZgeQ" name="" kind="junction"/>
+    </region>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_pDtxQBfEEeuPdtFRHZD2IQ" name="Uber Scoot">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Mhw-ABhkEeuqhqCrHvvM5g" name="Create Account">
