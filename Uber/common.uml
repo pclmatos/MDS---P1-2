@@ -919,4 +919,43 @@ Post - conditions: &lt;none>&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_PpXJwCzsEeu_UKr1Z3JUeA" type="_u1RogCwCEeucVbdh1vVRAw" association="_PpUGcCzsEeu_UKr1Z3JUeA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_PpZmACzsEeu_UKr1Z3JUeA" name="admin" type="_Nx4IsBktEeugnPTAsPFJnw" association="_PpUGcCzsEeu_UKr1Z3JUeA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8rI4IELXEeuIg569H3cmZQ" name="Person"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_93xqYELXEeuIg569H3cmZQ" name="Bank Entity"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__I7JMELXEeuIg569H3cmZQ" name="Time"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_A3XoAELYEeuIg569H3cmZQ" name="UberScootBikeWorker"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DlgpQELYEeuIg569H3cmZQ" name="Admin"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_E6TR8ELYEeuIg569H3cmZQ" name="Driver"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GELEEELYEeuIg569H3cmZQ" name="User"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HSl_AELYEeuIg569H3cmZQ" name="Uber Eats Employee"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TnPAcELYEeuIg569H3cmZQ" memberEnd="_TnYxcELYEeuIg569H3cmZQ _TnZ_kELYEeuIg569H3cmZQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TnW8QELYEeuIg569H3cmZQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TnXjUELYEeuIg569H3cmZQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TnYxcELYEeuIg569H3cmZQ" name="bank entity" type="_93xqYELXEeuIg569H3cmZQ" association="_TnPAcELYEeuIg569H3cmZQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TnZ_kELYEeuIg569H3cmZQ" name="person" type="_8rI4IELXEeuIg569H3cmZQ" association="_TnPAcELYEeuIg569H3cmZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_VPjCEELYEeuIg569H3cmZQ" name="Withdraw" memberEnd="_VPjpIkLYEeuIg569H3cmZQ _VPleUELYEeuIg569H3cmZQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VPjpIELYEeuIg569H3cmZQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VPjpIULYEeuIg569H3cmZQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VPjpIkLYEeuIg569H3cmZQ" name="time" type="__I7JMELXEeuIg569H3cmZQ" association="_VPjCEELYEeuIg569H3cmZQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VPleUELYEeuIg569H3cmZQ" name="bank entity" type="_93xqYELXEeuIg569H3cmZQ" association="_VPjCEELYEeuIg569H3cmZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_ZwTQcELYEeuIg569H3cmZQ" name="DeliverEats" memberEnd="_ZwUekULYEeuIg569H3cmZQ _ZwXh4ELYEeuIg569H3cmZQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZwT3gELYEeuIg569H3cmZQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZwUekELYEeuIg569H3cmZQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZwUekULYEeuIg569H3cmZQ" name="user" type="_GELEEELYEeuIg569H3cmZQ" association="_ZwTQcELYEeuIg569H3cmZQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZwXh4ELYEeuIg569H3cmZQ" name="uber eats employee" type="_HSl_AELYEeuIg569H3cmZQ" association="_ZwTQcELYEeuIg569H3cmZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_d4NhAELYEeuIg569H3cmZQ" name="Receiver"/>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_gIqgsELYEeuIg569H3cmZQ" name="transports" memberEnd="_gIrHwkLYEeuIg569H3cmZQ _gIsV4ELYEeuIg569H3cmZQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gIrHwELYEeuIg569H3cmZQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gIrHwULYEeuIg569H3cmZQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gIrHwkLYEeuIg569H3cmZQ" name="receiver" type="_d4NhAELYEeuIg569H3cmZQ" association="_gIqgsELYEeuIg569H3cmZQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gIsV4ELYEeuIg569H3cmZQ" name="driver" type="_E6TR8ELYEeuIg569H3cmZQ" association="_gIqgsELYEeuIg569H3cmZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jzWpwELYEeuIg569H3cmZQ" name="Location"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pAO-UELYEeuIg569H3cmZQ" name="rides"/>
 </uml:Package>
