@@ -58,7 +58,50 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Interaction" xmi:id="_tqLzQA2WEeujq4q3EywG0A" name="Interaction3"/>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_zBKfAA2WEeujq4q3EywG0A" name="StateMachine4">
-    <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1"/>
+    <region xmi:type="uml:Region" xmi:id="_0M-K0A2WEeujq4q3EywG0A" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_ffil0ELFEeuIg569H3cmZQ" source="_XYOgcELFEeuIg569H3cmZQ" target="_axBoQELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wynQIELFEeuIg569H3cmZQ" source="_axBoQELFEeuIg569H3cmZQ" target="_ledbUELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yQMBYELFEeuIg569H3cmZQ" source="_ledbUELFEeuIg569H3cmZQ" target="_hZdU0ELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_9TAOkELFEeuIg569H3cmZQ" source="_hZdU0ELFEeuIg569H3cmZQ" target="_6fj2kELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_CVMWEELGEeuIg569H3cmZQ" source="_6fj2kELFEeuIg569H3cmZQ" target="_Aqd5oELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KfeP4ELGEeuIg569H3cmZQ" source="_Aqd5oELGEeuIg569H3cmZQ" target="_HiQQ0ELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_T-2UYELGEeuIg569H3cmZQ" name="[continue Ordering]" source="_HiQQ0ELGEeuIg569H3cmZQ" target="_ledbUELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_blBbkELGEeuIg569H3cmZQ" name="[else]" source="_HiQQ0ELGEeuIg569H3cmZQ" target="_Zeel0ELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_gqpRkELGEeuIg569H3cmZQ" source="_Zeel0ELGEeuIg569H3cmZQ" target="_dCllwELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_oXfogELGEeuIg569H3cmZQ" name="[else]" source="_dCllwELGEeuIg569H3cmZQ" target="_-zuoMELKEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pBwtgELGEeuIg569H3cmZQ" name="[return]" source="_dCllwELGEeuIg569H3cmZQ" target="_jsTEsELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_y0FjMELGEeuIg569H3cmZQ" source="_lvV6gELGEeuIg569H3cmZQ" target="_vUvugELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4yNHcELGEeuIg569H3cmZQ" source="_jsTEsELGEeuIg569H3cmZQ" target="_z_1koELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8m_AoELGEeuIg569H3cmZQ" source="_z_1koELGEeuIg569H3cmZQ" target="_ledbUELFEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_C7zQ0ELLEeuIg569H3cmZQ" name="[as soon as possibly]" source="_-zuoMELKEeuIg569H3cmZQ" target="_lvV6gELGEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_FRJ-oELLEeuIg569H3cmZQ" name="[schedule]" source="_-zuoMELKEeuIg569H3cmZQ" target="_4Y8WEELKEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TEKbgELLEeuIg569H3cmZQ" source="_4Y8WEELKEeuIg569H3cmZQ" target="_WZAiUELJEeuIg569H3cmZQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_maev8ELLEeuIg569H3cmZQ" name="[restaurant is close]" source="_hpcUwELJEeuIg569H3cmZQ" target="_ledbUELFEeuIg569H3cmZQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_XYOgcELFEeuIg569H3cmZQ"/>
+      <subvertex xmi:type="uml:State" xmi:id="_axBoQELFEeuIg569H3cmZQ" name="User enters App"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hZdU0ELFEeuIg569H3cmZQ" name="Select Restaurant"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_ledbUELFEeuIg569H3cmZQ"/>
+      <subvertex xmi:type="uml:State" xmi:id="_6fj2kELFEeuIg569H3cmZQ" name="Select Menu"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Aqd5oELGEeuIg569H3cmZQ" name="Add To Cart"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_HiQQ0ELGEeuIg569H3cmZQ" name="" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Zeel0ELGEeuIg569H3cmZQ" name="Check-Out"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_dCllwELGEeuIg569H3cmZQ" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jsTEsELGEeuIg569H3cmZQ" name="Cancel Order"/>
+      <subvertex xmi:type="uml:State" xmi:id="_lvV6gELGEeuIg569H3cmZQ" name="Confirm Order"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_vUvugELGEeuIg569H3cmZQ" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_z_1koELGEeuIg569H3cmZQ" name="Refresh Cart"/>
+      <subvertex xmi:type="uml:State" xmi:id="_WZAiUELJEeuIg569H3cmZQ">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_hpcUwELJEeuIg569H3cmZQ" name="" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_vCqGsELLEeuIg569H3cmZQ" name="" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_aUb2EELJEeuIg569H3cmZQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_mxfMoELJEeuIg569H3cmZQ" source="_aUcdJkLJEeuIg569H3cmZQ" target="_hpcUwELJEeuIg569H3cmZQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_5hmKwELLEeuIg569H3cmZQ" name="[valid]" source="_vCqGsELLEeuIg569H3cmZQ" target="_vUvugELGEeuIg569H3cmZQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_aUcdJkLJEeuIg569H3cmZQ" name="Verify restaurant opening hours"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_4Y8WEELKEeuIg569H3cmZQ" name="Input Date and Time"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_-zuoMELKEeuIg569H3cmZQ" name="" kind="choice"/>
+    </region>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_CkxxoBh-Eeu8ms_OI6OgPg" name="Eats">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_G9qdcBh-Eeu8ms_OI6OgPg" name="Open App"/>
@@ -363,4 +406,10 @@ Flow:&#xD;
   <packagedElement xmi:type="uml:Class" xmi:id="_t6hiYCwAEeucVbdh1vVRAw" name="Driver">
     <generalization xmi:type="uml:Generalization" xmi:id="_l8h7oCwBEeucVbdh1vVRAw" general="_VOtv8CwAEeucVbdh1vVRAw"/>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_0hmqYELFEeuIg569H3cmZQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0hptsELFEeuIg569H3cmZQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Package>
