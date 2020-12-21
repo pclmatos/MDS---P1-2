@@ -962,6 +962,26 @@ Post - conditions: &lt;none>&#xD;
       <ownedOperation xmi:type="uml:Operation" xmi:id="_6vbGoEMJEeuFvtRC61k2Nw" name="getEmail"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_8oDcMEMJEeuFvtRC61k2Nw" name="getPassword"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_9jUxoEMJEeuFvtRC61k2Nw" name="getPhoneNumber"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_086ZMEN8Eeulg7TdhUjuDg" name="setName">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7pT_wEN8Eeulg7TdhUjuDg" name="newName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4Ymc8EN8Eeulg7TdhUjuDg" name="setEmail" visibility="private">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-HstwEN8Eeulg7TdhUjuDg" name="newEmail">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__a-6kEN8Eeulg7TdhUjuDg" name="setPhoneNumber">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_CJaPsEN9Eeulg7TdhUjuDg" name="number">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_D0J6QEN9Eeulg7TdhUjuDg" name="setPassword">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_HIJakEN9Eeulg7TdhUjuDg" name="newPassword">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_93xqYELXEeuIg569H3cmZQ" name="BankEntity">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_0cQ98ELyEeupYtYxDefdcw" name="bankId">
