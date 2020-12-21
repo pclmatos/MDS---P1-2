@@ -279,25 +279,15 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <node xmi:type="uml:DecisionNode" xmi:id="_TwPTwC2VEeuMYb8iZH_v0Q" name="" incoming="_bJojMC2VEeuMYb8iZH_v0Q" outgoing="_jFkt8CtDEeuhjcpthdBAqA _Vk5-QCtDEeuhjcpthdBAqA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_A-Iy0CzpEeu_UKr1Z3JUeA" name="Person">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_usB54C2XEeuMYb8iZH_v0Q" name="phoneNumber">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_usDvEC2XEeuMYb8iZH_v0Q" name="email">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_usE9MC2XEeuMYb8iZH_v0Q" name="name" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_usFkQC2XEeuMYb8iZH_v0Q" name="password">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usB54C2XEeuMYb8iZH_v0Q" name="phoneNumber"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usDvEC2XEeuMYb8iZH_v0Q" name="email"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usE9MC2XEeuMYb8iZH_v0Q" name="name" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_usFkQC2XEeuMYb8iZH_v0Q" name="password"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5n3XUC2BEeuMYb8iZH_v0Q" name="login"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_DTHGICzpEeu_UKr1Z3JUeA" name="User" visibility="package">
     <generalization xmi:type="uml:Generalization" xmi:id="_bNFL8CzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_iD2fUC3BEeuyad8jxbm3rQ" name="paymentMethod">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iD2fUC3BEeuyad8jxbm3rQ" name="paymentMethod"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_EiFoMC2NEeuMYb8iZH_v0Q" name="selectPaymentMethod"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_M6xxcC2NEeuMYb8iZH_v0Q" name="pay"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PNzkAC2NEeuMYb8iZH_v0Q" name="setupRide"/>
@@ -315,18 +305,10 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Z2hosCzpEeu_UKr1Z3JUeA" name="Driver">
     <generalization xmi:type="uml:Generalization" xmi:id="_bptdkCzpEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OKao0C2XEeuMYb8iZH_v0Q" name="licensePlate">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_QKwI4C2XEeuMYb8iZH_v0Q" name="driverLicense">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fS9eIC2XEeuMYb8iZH_v0Q" name="paymentMethod">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_M1XMEC40Eeu2OpQ4_JJA5Q" name="rating">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OKao0C2XEeuMYb8iZH_v0Q" name="licensePlate"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QKwI4C2XEeuMYb8iZH_v0Q" name="driverLicense"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fS9eIC2XEeuMYb8iZH_v0Q" name="paymentMethod"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M1XMEC40Eeu2OpQ4_JJA5Q" name="rating"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jybpMC2OEeuMYb8iZH_v0Q" name="respondToRideRequest"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_k519MC2OEeuMYb8iZH_v0Q" name="pickupUser"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_mVYuIC2OEeuMYb8iZH_v0Q" name="driveToDestination"/>
@@ -345,9 +327,7 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_eHYSgCzsEeu_UKr1Z3JUeA" name="Uber Eats Employee">
     <generalization xmi:type="uml:Generalization" xmi:id="_iNGKsCzsEeu_UKr1Z3JUeA" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_kV3XUC2XEeuMYb8iZH_v0Q" name="driverLicense">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kV3XUC2XEeuMYb8iZH_v0Q" name="driverLicense"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_iRScAC2NEeuMYb8iZH_v0Q" name="respondToOrder"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jSUbMC2NEeuMYb8iZH_v0Q" name="pickupFood"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kVV-cC2NEeuMYb8iZH_v0Q" name="deliverOrder"/>
@@ -355,24 +335,14 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_r-6X4C2NEeuMYb8iZH_v0Q" name="Admin">
     <generalization xmi:type="uml:Generalization" xmi:id="_vyFukC2NEeuMYb8iZH_v0Q" general="_A-Iy0CzpEeu_UKr1Z3JUeA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_pGU1oC2XEeuMYb8iZH_v0Q" name="adminId">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pGU1oC2XEeuMYb8iZH_v0Q" name="adminId"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_idugEC2OEeuMYb8iZH_v0Q" name="solveProblem"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_2GSbEC2OEeuMYb8iZH_v0Q" name="PersonWithouAccount">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtnUcC2YEeuMYb8iZH_v0Q" name="email">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpJoC2YEeuMYb8iZH_v0Q" name="password">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpwsC2YEeuMYb8iZH_v0Q" name="phoneNumber">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Btq-0C2YEeuMYb8iZH_v0Q" name="name" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtnUcC2YEeuMYb8iZH_v0Q" name="email"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpJoC2YEeuMYb8iZH_v0Q" name="password"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BtpwsC2YEeuMYb8iZH_v0Q" name="phoneNumber"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Btq-0C2YEeuMYb8iZH_v0Q" name="name" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_3xWOsC2OEeuMYb8iZH_v0Q" name="createAccount"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_5EgfsC2OEeuMYb8iZH_v0Q" name="UserWithoutAccount">
@@ -380,27 +350,17 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_-Q2BsC2OEeuMYb8iZH_v0Q" name="DriverWithoutAccount">
     <generalization xmi:type="uml:Generalization" xmi:id="_BZ7SgC2PEeuMYb8iZH_v0Q" general="_2GSbEC2OEeuMYb8iZH_v0Q"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG4J4C2YEeuMYb8iZH_v0Q" name="licensePlate">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG5_EC2YEeuMYb8iZH_v0Q" name="driverLicense">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG4J4C2YEeuMYb8iZH_v0Q" name="licensePlate"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LG5_EC2YEeuMYb8iZH_v0Q" name="driverLicense"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="__dQxgC2OEeuMYb8iZH_v0Q" name="registerCar"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_HvXKkC2PEeuMYb8iZH_v0Q" name="Receiver">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_QShvYC2YEeuMYb8iZH_v0Q" name="name" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_VF-5cC5rEeuZae-vycC2iA" name="cargId" visibility="public">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QShvYC2YEeuMYb8iZH_v0Q" name="name" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VF-5cC5rEeuZae-vycC2iA" name="cargId" visibility="public"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Iv9r8C2PEeuMYb8iZH_v0Q" name="receiveLoad"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_MV1mcC2PEeuMYb8iZH_v0Q" name="Restaurant">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Fz0U0C2YEeuMYb8iZH_v0Q" name="restaurantName">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Fz0U0C2YEeuMYb8iZH_v0Q" name="restaurantName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_NhycMC2PEeuMYb8iZH_v0Q" name="setOrder"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OcB24C2PEeuMYb8iZH_v0Q" name="deliverFood"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_V8Iq8C2SEeuMYb8iZH_v0Q" name="confirmOrder"/>
@@ -409,15 +369,9 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VDhvUC2PEeuMYb8iZH_v0Q" name="pay"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WMkbAC2PEeuMYb8iZH_v0Q" name="Time">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_TI14kC3BEeuyad8jxbm3rQ" name="hour">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ul3QMC3BEeuyad8jxbm3rQ" name="minute">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WOJcoC3BEeuyad8jxbm3rQ" name="seconds">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TI14kC3BEeuyad8jxbm3rQ" name="hour"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ul3QMC3BEeuyad8jxbm3rQ" name="minute"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WOJcoC3BEeuyad8jxbm3rQ" name="seconds"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XLuK4C2PEeuMYb8iZH_v0Q" name="pay"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_-AjQMC3AEeuyad8jxbm3rQ" memberEnd="_-AwEgC3AEeuyad8jxbm3rQ _-Ax5sC3AEeuyad8jxbm3rQ">
@@ -431,10 +385,8 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B5kJIC3BEeuyad8jxbm3rQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B5kwMC3BEeuyad8jxbm3rQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_NKK6sC3BEeuyad8jxbm3rQ" name="transferTime" type="_WMkbAC2PEeuMYb8iZH_v0Q"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_QqBswC3BEeuyad8jxbm3rQ" name="amount">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NKK6sC3BEeuyad8jxbm3rQ" name="transferTime"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QqBswC3BEeuyad8jxbm3rQ" name="amount"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_B5l-UC3BEeuyad8jxbm3rQ" name="time" type="_WMkbAC2PEeuMYb8iZH_v0Q" association="_B5hF0C3BEeuyad8jxbm3rQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I2thcC3BEeuyad8jxbm3rQ" name="1" value="1"/>
     </ownedEnd>
@@ -446,9 +398,7 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d16fQC3BEeuyad8jxbm3rQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_d16fQS3BEeuyad8jxbm3rQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fvGOcC3BEeuyad8jxbm3rQ" name="tip">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fvGOcC3BEeuyad8jxbm3rQ" name="tip"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_d16fQi3BEeuyad8jxbm3rQ" name="user" type="_DTHGICzpEeu_UKr1Z3JUeA" association="_d14qEC3BEeuyad8jxbm3rQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_d1-wsC3BEeuyad8jxbm3rQ" name="uber eats employee" type="_eHYSgCzsEeu_UKr1Z3JUeA" association="_d14qEC3BEeuyad8jxbm3rQ"/>
   </packagedElement>
@@ -463,12 +413,8 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wUViYC3BEeuyad8jxbm3rQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUViYS3BEeuyad8jxbm3rQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ykcj0C3BEeuyad8jxbm3rQ" name="weight">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DgzygC5rEeuZae-vycC2iA" name="receiverName" visibility="public">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ykcj0C3BEeuyad8jxbm3rQ" name="weight"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DgzygC5rEeuZae-vycC2iA" name="receiverName" visibility="public"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_wUViYi3BEeuyad8jxbm3rQ" name="receiver" type="_HvXKkC2PEeuMYb8iZH_v0Q" association="_wUTGIC3BEeuyad8jxbm3rQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_wUWJcC3BEeuyad8jxbm3rQ" name="driver" type="_Z2hosCzpEeu_UKr1Z3JUeA" association="_wUTGIC3BEeuyad8jxbm3rQ"/>
   </packagedElement>
@@ -476,21 +422,11 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BYsfAC41Eeu2OpQ4_JJA5Q" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BYsfAS41Eeu2OpQ4_JJA5Q" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_FDQFMC41Eeu2OpQ4_JJA5Q" name="duration">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_HJ8E4C41Eeu2OpQ4_JJA5Q" name="cost">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_I8WdsC41Eeu2OpQ4_JJA5Q" name="tip">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LFjl4C41Eeu2OpQ4_JJA5Q" name="startLocation">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_NH54IC41Eeu2OpQ4_JJA5Q" name="destination">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FDQFMC41Eeu2OpQ4_JJA5Q" name="duration"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HJ8E4C41Eeu2OpQ4_JJA5Q" name="cost"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I8WdsC41Eeu2OpQ4_JJA5Q" name="tip"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LFjl4C41Eeu2OpQ4_JJA5Q" name="startLocation"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NH54IC41Eeu2OpQ4_JJA5Q" name="destination"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_BYtGEC41Eeu2OpQ4_JJA5Q" name="driver" type="_Z2hosCzpEeu_UKr1Z3JUeA" association="_BYbZQC41Eeu2OpQ4_JJA5Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S3nM8C41Eeu2OpQ4_JJA5Q" value="1"/>
     </ownedEnd>
@@ -499,12 +435,8 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9nWGwC5UEeuLFIAxlIEltg" name="ScootBike">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_CpXPIC5VEeuLFIAxlIEltg" name="qrCode">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5iJIC5VEeuLFIAxlIEltg" name="battery">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CpXPIC5VEeuLFIAxlIEltg" name="qrCode"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5iJIC5VEeuLFIAxlIEltg" name="battery"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_hnOOcC5VEeuLFIAxlIEltg" name="recharge" memberEnd="_hnOOcy5VEeuLFIAxlIEltg _hnOOdC5VEeuLFIAxlIEltg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hnOOcS5VEeuLFIAxlIEltg" source="org.eclipse.papyrus">
@@ -521,12 +453,8 @@ Post-Conditions: The systems informs the user about password's validation&#xD;
     <ownedEnd xmi:type="uml:Property" xmi:id="_m-dY5C5VEeuLFIAxlIEltg" name="scootbike" type="_9nWGwC5UEeuLFIAxlIEltg" association="_m-dY4C5VEeuLFIAxlIEltg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_s9Ji4C5rEeuZae-vycC2iA" name="Car">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vO2fwC5rEeuZae-vycC2iA" name="licensePlate" visibility="public">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_0rZA8C5rEeuZae-vycC2iA" name="weightCapacity" visibility="public">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vO2fwC5rEeuZae-vycC2iA" name="licensePlate" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0rZA8C5rEeuZae-vycC2iA" name="weightCapacity" visibility="public"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_VOijEC5sEeuZae-vycC2iA"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RGulwC2TEeuMYb8iZH_v0Q">

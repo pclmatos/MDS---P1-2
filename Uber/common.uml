@@ -1082,6 +1082,14 @@ Post - conditions: &lt;none>&#xD;
       <ownedOperation xmi:type="uml:Operation" xmi:id="_nkEIMEMNEeuFvtRC61k2Nw" name="getDriverLicense"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_oywI4EMNEeuFvtRC61k2Nw" name="getCar"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_p1mF8EMNEeuFvtRC61k2Nw" name="getPaymentMethod"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_upL5sENuEeuPPNdhC-mL8Q" name="setVehicle">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yDKtQENuEeuPPNdhC-mL8Q" name="v" type="_QatvMELaEeuIg569H3cmZQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_y3AlAENuEeuPPNdhC-mL8Q" name="setPaymentMethod">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1i8m0ENuEeuPPNdhC-mL8Q" name="method">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GELEEELYEeuIg569H3cmZQ" name="User">
       <generalization xmi:type="uml:Generalization" xmi:id="_s3-2gELZEeuIg569H3cmZQ" general="_8rI4IELXEeuIg569H3cmZQ"/>
@@ -1237,6 +1245,12 @@ Post - conditions: &lt;none>&#xD;
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_1jTqQEMNEeuFvtRC61k2Nw" name="getQRCode"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_2oCdsEMNEeuFvtRC61k2Nw" name="getBattery"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_GqMREENuEeuPPNdhC-mL8Q" name="setQRCode">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_K8tPIENuEeuPPNdhC-mL8Q" name="qrCode">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MInBkENuEeuPPNdhC-mL8Q" name="rechargeBattery"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_T8yu0ELaEeuIg569H3cmZQ" memberEnd="_T8z88kLaEeuIg569H3cmZQ _T81yIELaEeuIg569H3cmZQ" navigableOwnedEnd="_T81yIELaEeuIg569H3cmZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T8z88ELaEeuIg569H3cmZQ" source="org.eclipse.papyrus">
@@ -1267,6 +1281,11 @@ Post - conditions: &lt;none>&#xD;
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_3E25YEMJEeuFvtRC61k2Nw" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kyuK4ENuEeuPPNdhC-mL8Q" name="setName">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mR6FsENuEeuPPNdhC-mL8Q" name="newName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_g5z-4ELaEeuIg569H3cmZQ" memberEnd="_g51NAkLaEeuIg569H3cmZQ _g510EELaEeuIg569H3cmZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g51NAELaEeuIg569H3cmZQ" source="org.eclipse.papyrus">
@@ -1368,6 +1387,11 @@ Post - conditions: &lt;none>&#xD;
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_v5zn8EMJEeuFvtRC61k2Nw" name="getDescription"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_D9dmsEMOEeuFvtRC61k2Nw" name="getComplaintID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3U4T8ENtEeuPPNdhC-mL8Q" name="setDescription">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8nkVkENtEeuPPNdhC-mL8Q" name="descr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_bDShUELjEeupYtYxDefdcw" visibility="protected" memberEnd="_bDbrQELjEeupYtYxDefdcw _bDdgcELjEeupYtYxDefdcw" navigableOwnedEnd="_bDbrQELjEeupYtYxDefdcw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bDWLsELjEeupYtYxDefdcw" source="org.eclipse.papyrus">
@@ -1393,6 +1417,11 @@ Post - conditions: &lt;none>&#xD;
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_-5Pe4EMNEeuFvtRC61k2Nw" name="getID"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="__wWtEEMNEeuFvtRC61k2Nw" name="getDescription"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hZm6AENuEeuPPNdhC-mL8Q" name="setDescription">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j8cDIENuEeuPPNdhC-mL8Q" name="descr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_KbCqwELlEeupYtYxDefdcw" memberEnd="_KbD44kLlEeupYtYxDefdcw _KbHjQELlEeupYtYxDefdcw" navigableOwnedEnd="_KbHjQELlEeupYtYxDefdcw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KbD44ELlEeupYtYxDefdcw" source="org.eclipse.papyrus">
